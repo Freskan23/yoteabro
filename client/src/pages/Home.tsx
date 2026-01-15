@@ -478,7 +478,7 @@ export default function Home() {
                     <div>
                       <h3 className="font-bold text-gray-900 text-lg">Teléfono de contacto</h3>
                       <p className="text-gray-600">{APP_PHONE_DISPLAY}</p>
-                      <p className="text-xs text-[#FF6B35] font-semibold uppercase mt-1">Atención 24 Horas</p>
+                      <p className="text-xs text-[#E55A2B] font-bold uppercase mt-1">Atención 24 Horas</p>
                     </div>
                   </div>
 
