@@ -33,7 +33,7 @@ export default function Footer() {
           <div className="lg:col-span-4 space-y-6">
             <div className="inline-flex items-center gap-3 p-2 bg-white rounded-2xl shadow-xl">
               <img
-                src="/logo-aguado.jpg"
+                src="/logo-aguado.webp"
                 alt={`Logo de ${APP_BUSINESS_NAME}`}
                 width="150"
                 height="40"

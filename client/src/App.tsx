@@ -8,6 +8,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import { HelmetProvider } from "react-helmet-async";
 import SchemaMarkup from "./components/SchemaMarkup";
 import Home from "./pages/Home";
+import { WeatherProvider } from "@/context/WeatherContext";
 
 // Lazy loading for other pages to reduce initial JS bundle
 const Zarzaquemada = lazy(() => import("./pages/Zarzaquemada"));
@@ -111,7 +112,9 @@ function App() {
           <TooltipProvider>
             <Toaster />
             <SchemaMarkup />
-            <Router />
+            <WeatherProvider>
+              <Router />
+            </WeatherProvider>
           </TooltipProvider>
         </ThemeProvider>
       </HelmetProvider>

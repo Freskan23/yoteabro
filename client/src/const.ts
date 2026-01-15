@@ -3,7 +3,7 @@ export { COOKIE_NAME, ONE_YEAR_MS } from "@shared/const";
 export const APP_TITLE = "Cerrajeros Leganés Aguado 24h | Urgencias 20 min";
 export const APP_DESCRIPTION = "Cerrajeros en Leganés 24 horas. Llegamos en 20 minutos. Apertura de puertas desde 90€. Profesionales con más de 20 años de experiencia. Llama ahora.";
 
-export const APP_LOGO = "/logo-aguado.jpg";
+export const APP_LOGO = "/logo-aguado.webp";
 
 // Cerrajería Aguado - Business Information
 export const APP_PHONE = "+34 624 940 941";
