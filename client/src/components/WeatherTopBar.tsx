@@ -5,36 +5,29 @@ import { APP_LOCATION } from "@/const";
 export default function WeatherTopBar() {
   const { temperature, weatherDescription, weatherIcon, isAdverseWeather, loading } = useWeather();
 
-  if (loading) {
-    return (
-      <div className="bg-gray-800 text-white py-2 text-center text-xs md:text-sm">
-        <div className="container flex items-center justify-center gap-2">
-          <Loader2 className="h-3 w-3 animate-spin" />
-          <span>Calculando tiempo de llegada...</span>
-        </div>
-      </div>
-    );
-  }
+  if (loading) return null;
 
   const estimatedTime = isAdverseWeather ? "40-50 min" : "20-30 min";
-  const message = isAdverseWeather
-    ? `Condiciones adversas detectadas en ${APP_LOCATION}`
-    : `Tiempo actual en ${APP_LOCATION}`;
 
   return (
-    <div className={`${isAdverseWeather ? 'bg-orange-600' : 'bg-gray-800'} text-white py-2 text-center text-xs md:text-sm transition-colors`}>
-      <div className="container flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
-        <div className="flex items-center gap-2">
-          <span className="text-base">{weatherIcon}</span>
-          <span className="font-medium">
-            {message}: {temperature}°C {weatherDescription}
+    <div className={`${isAdverseWeather ? 'bg-orange-600/90' : 'bg-[#001529]'} text-white py-1.5 text-[11px] md:text-xs transition-colors backdrop-blur-sm`}>
+      <div className="container flex items-center justify-between opacity-90">
+        <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1.5 border-r border-white/10 pr-3">
+            <span className="text-sm leading-none">{weatherIcon}</span>
+            <span className="font-medium tracking-tight">
+              {temperature}°C en {APP_LOCATION}
+            </span>
+          </div>
+          <span className="text-white/60 hidden sm:inline uppercase tracking-widest text-[10px]">
+            {weatherDescription}
           </span>
         </div>
-        <span className="hidden md:inline text-gray-300">•</span>
-        <div className="flex items-center gap-2">
+
+        <div className="flex items-center gap-2 font-bold text-[#FF6B35]">
           <Clock className="h-3 w-3" />
-          <span className="font-semibold">
-            Llegada estimada: {estimatedTime}
+          <span className="uppercase tracking-wider">
+            Llegada: {estimatedTime}
           </span>
         </div>
       </div>
