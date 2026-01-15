@@ -77,27 +77,27 @@ server {
     server_name cerrajeromajadahonda.madrid www.cerrajeromajadahonda.madrid;
     
     # Redirigir a HTTPS
-    return 301 https://cerrajeromajadahonda.madrid$request_uri;
+    return 301 https://cerrajerosdeleganes.madrid$request_uri;
 }
 
 server {
     listen 443 ssl http2;
-    server_name www.cerrajeromajadahonda.madrid;
+    server_name www.cerrajerosdeleganes.madrid;
     
     # Redirigir www a no-www
-    return 301 https://cerrajeromajadahonda.madrid$request_uri;
+    return 301 https://cerrajerosdeleganes.madrid$request_uri;
 }
 
 server {
     listen 443 ssl http2;
-    server_name cerrajeromajadahonda.madrid;
+    server_name cerrajerosdeleganes.madrid;
     
-    root /var/www/cerrajeromajadahonda.madrid;
+    root /var/www/cerrajerosdeleganes.madrid;
     index index.html;
     
     # Certificado SSL (Let's Encrypt recomendado)
-    ssl_certificate /etc/letsencrypt/live/cerrajeromajadahonda.madrid/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/cerrajeromajadahonda.madrid/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/cerrajerosdeleganes.madrid/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cerrajerosdeleganes.madrid/privkey.pem;
     
     # SPA routing
     location / {
