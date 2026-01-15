@@ -6,16 +6,16 @@ on:
 
 jobs:
   web-deploy:
-    name: 🎉 Deploy Client
+    name: 🎉 Deploy Detective
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Obtener código
       uses: actions/checkout@v4
 
-    - name: 🟢 Instalar PNPM (Versión 9)
+    - name: 🟢 Instalar PNPM 9
       uses: pnpm/action-setup@v3
       with:
-        version: 9                # <--- ¡AQUÍ ESTÁ EL CAMBIO MÁGICO!
+        version: 9
 
     - name: 🟢 Instalar Node.js
       uses: actions/setup-node@v4
@@ -23,20 +23,21 @@ jobs:
         node-version: '20'
         cache: 'pnpm'
 
-    - name: 🔨 Instalar y Construir
+    - name: 🔨 Instalar y Construir (Desde la Raíz)
       run: |
-        # Instalamos desde la raíz para que funcionen los parches del workspace
         pnpm install --no-frozen-lockfile
-        
-        # Entramos a la carpeta del cliente para construir la web
-        cd client
         pnpm run build
+        
+        echo "================ DONDE ESTA DIST? ================"
+        ls -la
+        ls -la client/
+        echo "=================================================="
 
-    - name: 📂 Subir a FTP
+    - name: 📂 Subir a FTP (Intento Client)
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./client/dist/
+        local-dir: ./client/dist/    # Probamos aquí primero
         server-dir: ./
