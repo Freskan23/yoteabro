@@ -10,57 +10,57 @@ import SEOHead from "@/components/SEOHead";
 const blogPosts = [
   {
     id: "robos-trasteros-leganes-norte",
-    title: "Oleada de robos en trasteros de Leganés Norte: Cómo protegerte",
+    title: "Oleada de robos en trasteros de Leganés Norte: Cómo protegerte con Cerrajeros Leganés",
     excerpt: "¿Vives en la zona de la Ronda Norte? Los trasteros son el nuevo objetivo. Descubre qué cerraduras resisten a los ladrones.",
     date: "2025-10-20",
     category: "Seguridad",
     icon: <Shield className="h-6 w-6 text-[#FF6B35]" />,
-    image: "/blog-robos-trasteros.png"
+    image: "/blog-robos-trasteros.webp"
   },
   {
     id: "cerraduras-antibumping-zarzaquemada",
-    title: "El peligro de las llaves antiguas en los pisos de Zarzaquemada",
+    title: "Cerraduras Antibumping en Leganés: Protege tu piso en Zarzaquemada",
     excerpt: "La mayoría de bloques en Zarzaquemada tienen cerraduras de hace 20 años. El bumping las abre en segundos. ¿Es tu caso?",
     date: "2025-10-18",
     category: "Prevención",
     icon: <Lock className="h-6 w-6 text-[#FF6B35]" />,
-    image: "/blog-cerradura-antibumping.png"
+    image: "/blog-cerradura-antibumping.webp"
   },
   {
     id: "seguridad-chalets-arroyo-culebro",
-    title: "Guía de seguridad para chalets en Arroyo Culebro y Valdepelayo",
+    title: "Seguridad para Chalets en Leganés: Guía para Arroyo Culebro y Valdepelayo",
     excerpt: "Vivir en un chalet es genial, pero requiere seguridad extra. Cerrojos, escudos y alarmas para dormir tranquilo.",
     date: "2025-10-15",
     category: "Hogar",
     icon: <Key className="h-6 w-6 text-[#FF6B35]" />,
-    image: "/blog-seguridad-chalets.png"
+    image: "/blog-seguridad-chalets.webp"
   },
   {
     id: "llaves-coche-parquesur",
-    title: "¿Perdiste las llaves del coche en Parquesur? No entres en pánico",
+    title: "Cerrajeros de Coches en Leganés: Solución rápida si pierdes las llaves en Parquesur",
     excerpt: "Te explicamos paso a paso qué hacer si te quedas tirado en el parking del centro comercial. Soluciones rápidas.",
     date: "2025-10-12",
     category: "Emergencias",
     icon: <AlertTriangle className="h-6 w-6 text-[#FF6B35]" />,
-    image: "/blog-llaves-coche.png"
+    image: "/blog-llaves-coche.webp"
   },
   {
     id: "puertas-okupas-leganes",
-    title: "Puertas Anti-Okupa: La solución para pisos vacíos en San Nicasio",
+    title: "Evita la Ocupación en Leganés: Puertas Anti-Okupa en San Nicasio y Centro",
     excerpt: "Si tienes un piso cerrado en la zona antigua, cuidado. Las puertas anti-okupa son tu mejor inversión.",
     date: "2025-10-10",
     category: "Seguridad",
     icon: <Shield className="h-6 w-6 text-[#FF6B35]" />,
-    image: "/blog-puerta-antiokupa.png"
+    image: "/blog-puerta-antiokupa.webp"
   },
   {
     id: "bombines-seguridad-baratos",
-    title: "¿Bombines de seguridad baratos? Lo barato sale caro",
+    title: "¿Cerraduras Baratas en Leganés? Por qué lo barato sale caro en seguridad",
     excerpt: "Analizamos las marcas que venden en ferreterías de barrio vs. lo que realmente instala un profesional.",
     date: "2025-10-08",
     category: "Consejos",
     icon: <Lock className="h-6 w-6 text-[#FF6B35]" />,
-    image: "/blog-bombines-comparativa.png"
+    image: "/blog-bombines-comparativa.webp"
   }
 ];
 

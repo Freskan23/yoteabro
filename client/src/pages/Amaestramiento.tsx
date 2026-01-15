@@ -260,14 +260,14 @@ export default function Amaestramiento() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
                 <div className="rounded-xl overflow-hidden h-64">
                   <img
-                    src="/proceso-llegada.png"
+                    src="/proceso-llegada.webp"
                     alt="Cerrajero Aguado llegando en furgoneta a Leganés"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="rounded-xl overflow-hidden h-64">
                   <img
-                    src="/proceso-herramientas.png"
+                    src="/proceso-herramientas.webp"
                     alt="Herramientas profesionales de cerrajería"
                     className="w-full h-full object-cover"
                   />

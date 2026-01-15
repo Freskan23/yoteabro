@@ -43,7 +43,7 @@ export default function ZoneLanding({
         <section className="relative bg-[#001529] text-white py-20 overflow-hidden">
           <div className="absolute inset-0 z-0 opacity-20">
             {/* Usamos un patrón o imagen genérica de fondo oscurecida */}
-            <div className="w-full h-full bg-[url('/images/hero-nano-banana.jpg')] bg-cover bg-center"></div>
+            <div className="w-full h-full bg-[url('/hero-cerrajero.webp')] bg-cover bg-center"></div>
           </div>
 
           <div className="container relative z-10">

@@ -33,28 +33,28 @@ export default function Home() {
       title: "Apertura de puertas",
       description:
         "¿Te has dejado las llaves en casa? Abrimos puertas en todo Leganés desde 90€. Sin romper, rápido y barato.",
-      image: "/servicio-apertura-puertas-3d.jpg",
+      image: "/servicio-apertura-puertas-3d.webp",
     },
     {
       icon: <Lock className="h-12 w-12 text-[#FF6B35]" />,
       title: "Cambio de cerraduras",
       description:
         "Cambiamos tu cerradura antigua por una de alta seguridad. Ideal para los pisos de Zarzaquemada y San Nicasio.",
-      image: "/servicio-cerraduras-3d.jpg",
+      image: "/servicio-cerraduras-3d.webp",
     },
     {
       icon: <Key className="h-12 w-12 text-[#FF6B35]" />,
       title: "Cambio de bombín",
       description:
         "Protege tu hogar contra el bumping. Instalamos bombines anti-robo en el acto. Duerme tranquilo hoy mismo.",
-      image: "/servicio-llaves-3d.jpg",
+      image: "/servicio-llaves-3d.webp",
     },
     {
       icon: <Settings className="h-12 w-12 text-[#FF6B35]" />,
       title: "Amaestramiento",
       description:
         "Una sola llave para todo. La solución perfecta para las comunidades de vecinos de Leganés y empresas del polígono.",
-      image: "/servicio-domicilio-3d.jpg",
+      image: "/servicio-domicilio-3d.webp",
     },
   ];
 
@@ -151,9 +151,9 @@ export default function Home() {
                 </div>
 
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight">
-                  Tu seguridad, <br />
+                  Cerrajeros <span className="text-[#FF6B35]">Leganés</span> <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B35] to-[#FF9F1C]">
-                    nuestra prioridad
+                    Urgencias 24h
                   </span>
                 </h1>
 
@@ -317,7 +317,7 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-[#FF6B35]/20 rounded-3xl transform rotate-3"></div>
                 <img
-                  src="/hero-cerrajero.png"
+                  src="/hero-cerrajero.webp"
                   alt="Cerrajero profesional de Cerrajería Aguado trabajando en Leganés"
                   className="relative rounded-2xl shadow-2xl w-full object-cover h-[600px]"
                 />

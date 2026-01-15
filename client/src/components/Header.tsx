@@ -17,7 +17,7 @@ export default function Header() {
     { href: "/", label: "Inicio" },
     { href: "#servicios", label: "Servicios" },
     { href: "#zonas", label: "Zonas" },
-    { href: "#por-que-elegirnos", label: "Por qué elegirnos" },
+    { href: "#ventajas", label: "Por qué elegirnos" },
     { href: "/blog", label: "Blog" },
     { href: "#contacto", label: "Contacto" },
   ];
@@ -36,13 +36,13 @@ export default function Header() {
     <>
       {/* Top bar con información meteorológica y tiempos */}
       <WeatherTopBar />
-      
+
       {/* Banner de aviso meteorológico */}
       <WeatherWarningBanner />
-      
+
       {/* Banner de aviso de cambio de tarifa */}
       <PricingWarningBanner />
-      
+
       {/* Banner superior con disponibilidad y precio dinámico */}
       <div className="bg-[#A52A2A] text-white py-3 text-center text-sm md:text-base font-semibold" style={{ backgroundColor: 'var(--secondary)' }}>
         <div className="container flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">

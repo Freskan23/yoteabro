@@ -8,94 +8,198 @@ import { APP_PHONE, APP_PHONE_DISPLAY, APP_EMAIL } from "@/const";
 
 const blogPostsContent: Record<string, any> = {
   "robos-trasteros-leganes-norte": {
-    title: "Oleada de robos en trasteros de Leganés Norte: Cómo protegerte",
+    title: "Oleada de robos en trasteros de Leganés Norte: Cómo protegerte con Cerrajeros Leganés",
     date: "2025-10-20",
     category: "Seguridad",
-    image: "/blog-robos-trasteros.png",
-    content: `¿Vives en la zona de la Ronda Norte de Leganés? En las últimas semanas se ha detectado un incremento de los robos en trasteros. Los ladrones aprovechan la poca vigilancia en los garajes para forzar las puertas metálicas convencionales.
+    image: "/blog-robos-trasteros.webp",
+    content: `
+# Seguridad Reforzada: Cómo evitar los robos en trasteros de Leganés Norte
 
-Como cerrajeros en Leganés, hemos visto que la mayoría de estas puertas se abren en segundos con una simple palanca. No dejes que tus pertenencias corran peligro.
+¿Vives en la zona de la Ronda Norte de Leganés? En las últimas semanas se ha detectado un incremento alarmante de los robos en trasteros. Los ladrones aprovechan la poca vigilancia en los garajes y la debilidad de las puertas estándar para forzar las entradas metálicas convencionales en cuestión de segundos.
 
-## ¿Cómo mejorar la seguridad de tu trastero?
+Como **cerrajeros en Leganés** con años de experiencia, hemos visto que la mayoría de estas puertas se abren mediante la técnica de la palanca o rompiendo el bombín básico de obra. No permitas que tus pertenencias, bicicletas o herramientas corran peligro.
 
-La seguridad de un trastero no depende solo del candado. Aquí te damos unos consejos profesionales:
+## ¿Por qué las puertas de trastero son tan vulnerables en Leganés?
 
-1. **Escudos protectores**: Instalar un escudo que cubra el bombín evita que lo partan con una llave grifa.
-2. **Cerraduras de superficie**: Añadir un segundo punto de cierre refuerza enormemente la estructura de la puerta.
-3. **Puntos de anclaje**: Asegúrate de que el marco esté bien anclado a la pared.
+La mayoría de las comunidades en Leganés Norte y Zarzaquemada cuentan con puertas de chapa simple. Estas puertas no están diseñadas para resistir un ataque profesional. Los delincuentes buscan objetivos fáciles donde el ruido sea mínimo y la rapidez máxima.
 
-En Cerrajería Aguado somos especialistas en reforzar accesos en Leganés Norte y Zarzaquemada. Llámanos para una evaluación gratuita.`
+### Medidas de protección recomendadas por expertos
+
+Para mejorar la seguridad de tu trastero, te damos unos consejos profesionales que realmente funcionan:
+
+1.  **Escudos protectores acorazados**: Instalar un escudo que cubra el bombín evita que lo partan con una llave grifa o que lo ataquen con taladros. Es una inversión mínima para una seguridad máxima.
+2.  **Cerraduras de superficie o de tres puntos**: Añadir un segundo punto de cierre refuerza enormemente la estructura de la puerta, dificultando el apalancamiento.
+3.  **Bombines antibumping de alta gama**: Si el ladrón no puede usar la fuerza, intentará el bumping. Un bombín certificado impide esta técnica silenciosa.
+
+> **[CTA]** ¿Te preocupa la seguridad de tu trastero? **Llámanos al ${APP_PHONE_DISPLAY}** y te daremos un presupuesto sin compromiso para reforzar tu puerta hoy mismo.
+
+## Cerrajeros Leganés 24h: Especialistas en seguridad de comunidades
+
+En Cerrajería Aguado somos especialistas en reforzar accesos en urbanizaciones de Leganés Norte y Zarzaquemada. Conocemos los puntos débiles de cada modelo de puerta instalado en la zona. 
+
+No esperes a ser la próxima víctima. Un refuerzo a tiempo es mucho más económico que recuperar lo robado o tramitar partes con el seguro. Ofrecemos **precios cerrados** y llegamos a tu domicilio en menos de 20 minutos para cualquier urgencia o asesoramiento técnico.
+
+### Beneficios de actualizar tu cerradura ahora:
+- **Tranquilidad total** cuando no estás en casa.
+- **Disuasión real** contra bandas organizadas.
+- **Ahorro a largo plazo** en reparaciones post-robo.
+
+Si necesitas un **cerrajero barato en Leganés** pero que trabaje con materiales de primera calidad, somos tu mejor opción. Trabajamos con marcas líderes como Tesa, Mottura y FAC.`
   },
   "cerraduras-antibumping-zarzaquemada": {
-    title: "El peligro de las llaves antiguas en los pisos de Zarzaquemada",
+    title: "Cerraduras Antibumping en Leganés: Protege tu piso en Zarzaquemada",
     date: "2025-10-18",
     category: "Prevención",
-    image: "/blog-cerradura-antibumping.png",
-    content: `Muchos edificios en Zarzaquemada y San Nicasio fueron construidos hace décadas y aún conservan sus cerraduras originales. El problema es que estas llaves de "serreta" o de puntos antiguos son extremadamente vulnerables al 'bumping'.
+    image: "/blog-cerradura-antibumping.webp",
+    content: `
+# El peligro de las llaves antiguas: Urgencia de cambio de cerraduras en Leganés
 
-El bumping es una técnica que permite abrir una puerta en segundos sin dejar rastro de fuerza, lo que además causa problemas con las aseguradoras al no haber signos de violencia.
+Muchos edificios en barrios emblemáticos como Zarzaquemada y San Nicasio fueron construidos hace décadas y aún conservan sus cerraduras originales de "serreta" o de puntos de primera generación. El problema crítico es que estas llaves son extremadamente vulnerables al **bumping**.
 
-## La solución definitiva
+El bumping es una técnica que permite abrir una puerta en segundos sin dejar rastro de fuerza, utilizando una llave maestra modificada y un golpe seco. Como **cerrajeros 24 horas en Leganés**, nos encontramos a diario con viviendas que han sido abiertas sin que los vecinos oyeran nada.
 
-La única forma de dormir tranquilo es instalando un bombín antibumping de alta generación. Estos sistemas cuentan con pines internos que detectan el golpe y bloquean el giro.
+## ¿Qué es el Bumping y por qué es tan peligroso?
 
-En Leganés, recomendamos marcas como Tesa o Mottura, que ofrecen una relación calidad-precio excelente para hogares familiares.`
+Esta técnica es la favorita de los intrusos porque es silenciosa y no deja daños estéticos en la puerta. Esto último causa graves problemas con las aseguradoras, que a menudo se niegan a cubrir el robo al no haber signos de violencia visibles.
+
+### La solución definitiva: Bombines Antibumping Certificados
+
+La única forma de dormir realmente tranquilo es instalando un **bombín antibumping de alta generación**. Estos sistemas cuentan con:
+- **Pines internos telescópicos** que detectan el golpe y bloquean el giro.
+- **Barras de acero antitaladro** para evitar ataques destructivos.
+- **Puentes reforzados** contra la rotura física del cilindro.
+
+En **Leganés**, recomendamos encarecidamente marcas como **Tesa (modelo TK100)** o **Mottura**, que ofrecen una relación calidad-precio excelente para hogares familiares y son resistentes a las técnicas más modernas de apertura.
+
+> **[CTA]** ¡No te la juegues! Actualiza tu seguridad por mucho menos de lo que imaginas. **Contacta ahora con Cerrajería Aguado al ${APP_PHONE_DISPLAY}** y pide tu presupuesto gratuito.
+
+## Servicio de Cerrajería en Leganés con Precio Cerrado
+
+En Cerrajería Aguado creemos en la transparencia. Por eso, siempre damos un **precio cerrado** por teléfono para que no haya sorpresas al finalizar el trabajo. Nuestro equipo de **cerrajeros en Zarzaquemada** llega a cualquier calle de la zona en menos de 20 minutos.
+
+### ¿Cuándo deberías llamar a un cerrajero urgente en Leganés?
+- Si tu llave gira con dificultad.
+- Si notas que la cerradura está floja o baila.
+- Tras el robo o extravío de tus llaves.
+- Si acabas de mudarte a un nuevo piso alquilado o comprado.
+
+La seguridad de tu familia no tiene precio, pero nuestros servicios sí son los más competitivos de la zona sur.`
   },
   "seguridad-chalets-arroyo-culebro": {
-    title: "Guía de seguridad para chalets en Arroyo Culebro y Valdepelayo",
+    title: "Seguridad para Chalets en Leganés: Guía para Arroyo Culebro y Valdepelayo",
     date: "2025-10-15",
     category: "Hogar",
-    image: "/blog-seguridad-chalets.png",
-    content: `Vivir en un chalet en zonas como Arroyo Culebro o Valdepelayo es un privilegio, pero también requiere una estrategia de seguridad diferente a la de un piso. Los accesos son múltiples: garaje, jardín, ventanas traseras...
+    image: "/blog-seguridad-chalets.webp",
+    content: `
+# Guía Profesional: Cómo proteger tu chalet en Arroyo Culebro y Valdepelayo
 
-## Puntos críticos que debes revisar
+Vivir en un chalet en zonas residenciales como Arroyo Culebro o Valdepelayo es un privilegio, pero también requiere una estrategia de seguridad mucho más compleja que la de un piso convencional. Los accesos son múltiples y a menudo están menos vigilados: puertas principales, garajes, jardines traseros y ventanales.
 
-- **La puerta principal**: Debe ser acorazada de grado 3 mínimo.
-- **La puerta del garaje**: El punto más débil. Un cerrojo interior es fundamental.
-- **Ventanas**: Las rejas no tienen por qué ser feas, hoy existen modelos modernos muy seguros.
+Como expertos en **cerrajería técnica en Leganés**, hemos diseñado esta guía para ayudarte a identificar y corregir los puntos débiles de tu hogar.
 
-En Cerrajería Aguado en Leganés llevamos años protegiendo las urbanizaciones de la ciudad con sistemas de alta gama.`
+## Análisis de puntos críticos en viviendas unifamiliares
+
+1.  **La Puerta de Entrada Principal**: No basta con que sea bonita. Debe ser una **puerta acorazada** de grado 3 o 4 como mínimo. La mayoría de los robos se intentan por la vía más rápida si no hay resistencia.
+2.  **La Puerta del Garaje**: Es el punto más débil y olvidado. Un simple cerrojo interior de seguridad puede evitar que los ladrones entren al garaje y, desde ahí, tengan acceso total al resto de la casa.
+3.  **Ventanas y Puertas Correderas**: Las persianas autoblocantes y los cierres de seguridad para correderas son fundamentales en plantas bajas.
+
+> **[CTA]** ¿Quieres una auditoría de seguridad gratuita para tu chalet? **Escríbenos por WhatsApp o llámanos al ${APP_PHONE_DISPLAY}**. Somos tus cerrajeros de confianza en Leganés.
+
+## Soluciones de Alta Seguridad: Amaestramiento e Inteligencia
+
+En Cerrajería Aguado proponemos el **amaestramiento de llaves** para propietarios de chalets. Imagina abrir el portal exterior, el garaje, la puerta principal y el trastero con la comodidad de una sola llave de alta seguridad incopiable. Ganarás en seguridad y, sobre todo, en comodidad diaria.
+
+### Instalación de Cerrojos Adicionales
+Para aquellas puertas que no son acorazadas, la instalación de un **cerrojo FAC de alta seguridad** con cadena interior es una solución económica y muy efectiva para disuadir ataques con palanca.
+
+En Leganés, llevamos años protegiendo las urbanizaciones más exclusivas con sistemas de alta gama. Nuestro compromiso es tu tranquilidad. Llegamos en menos de 30 minutos y trabajamos con **repuestos originales** y marcas de prestigio.`
   },
   "llaves-coche-parquesur": {
-    title: "¿Perdiste las llaves del coche en Parquesur? No entres en pánico",
+    title: "Cerrajeros de Coches en Leganés: Solución rápida si pierdes las llaves en Parquesur",
     date: "2025-10-12",
     category: "Emergencias",
-    image: "/blog-llaves-coche.png",
-    content: `Estás saliendo de hacer unas compras en Parquesur, llegas al parking y... las llaves no aparecen. Es una situación estresante, pero como cerrajeros 24h en Leganés, estamos acostumbrados a solucionarla.
+    image: "/blog-llaves-coche.webp",
+    content: `
+# ¿Te has quedado fuera de tu coche en Parquesur? Mantén la calma
 
-## ¿Qué hacer en ese momento?
+Estás saliendo de una tarde de compras o de cine en Parquesur, llegas al parking cargado y... las llaves no aparecen. O peor aún, están a la vista sobre el asiento con el coche cerrado. Es una situación estresante que nos puede pasar a cualquiera, pero como **cerrajeros de urgencia en Leganés**, tenemos la solución inmediata.
 
-1. **No fuerces la puerta**: Podrías dañar la electrónica del coche o el marco de la ventana.
-2. **Llámanos**: Estamos a menos de 5 minutos de Parquesur.
-3. **Identificación**: Ten a mano la documentación del vehículo una vez que abramos la puerta.
+Estamos ubicados estratégicamente para llegar a Parquesur o al Polígono Cobo Calleja en menos de 10 minutos.
 
-Abrimos coches de todas las marcas sin causar ni un solo rasguño.`
+## Apertura de Vehículos sin Daños en Leganés
+
+A diferencia de lo que mucha gente piensa, no es necesario romper un cristal o forzar el marco de la ventana. Contamos con herramientas de precisión (ganzúas Lishi especializadas por marcas) que nos permiten abrir tu coche de forma limpia y profesional.
+
+### Pasos a seguir si pierdes las llaves del coche:
+1.  **No intentes forzar la puerta**: Podrías dañar la electrónica de la cerradura centralizada o el airbag lateral, lo que resultaría en una reparación carísima.
+2.  **Ten la documentación a mano**: Por seguridad, una vez abramos el vehículo, necesitaremos verificar que eres el propietario legal.
+3.  **Contacta con profesionales**: Un cerrajero generalista puede no tener las herramientas adecuadas para cerraduras de coches modernas.
+
+> **[CTA]** ¿Servicio urgente ahora? **Llama ya al ${APP_PHONE_DISPLAY}**. Estamos en Leganés y te atenderemos en minutos con un precio cerrado garantizado.
+
+## Copia de llaves y mandos en el acto
+Si has perdido tu única llave, no solo abrimos el coche, sino que en muchos casos podemos gestionar la recuperación de la llave mediante el código mecánico. En Cerrajería Aguado somos referentes por nuestra rapidez y eficacia en **aperturas de emergencia en Leganés**.
+
+No dejes que un descuido arruine tu día. Confía en el **cerrajero local de Leganés** que ofrece garantía por escrito en cada intervención.`
   },
   "puertas-okupas-leganes": {
-    title: "Puertas Anti-Okupa: La solución para pisos vacíos en San Nicasio",
+    title: "Evita la Ocupación en Leganés: Puertas Anti-Okupa en San Nicasio y Centro",
     date: "2025-10-10",
     category: "Seguridad",
-    image: "/blog-puerta-antiokupa.png",
-    content: `Tener un piso vacío, ya sea por una herencia o mientras esperas a un inquilino, puede ser una preocupación en barrios antiguos como San Nicasio. La ocupación es un riesgo real.
+    image: "/blog-puerta-antiokupa.webp",
+    content: `
+# Seguridad para Pisos Vacíos: La mejor defensa contra la ocupación en Leganés
 
-## ¿Qué es una puerta anti-okupa?
+Tener una propiedad vacía, ya sea por una herencia en proceso, mientras buscas inquilino o por reformas en barrios como San Nicasio o Leganés Centro, puede ser una fuente constante de estrés. La ocupación ilegal es un riesgo real que puede derivar en procesos judiciales largos y costosos.
 
-Es una estructura de acero reforzado que se instala sobre el marco original sin dañarlo. No tiene cerradura exterior visible y solo se puede abrir con herramientas profesionales o llaves de altísima seguridad por parte del propietario.
+La solución más efectiva y económica que recomendamos como **cerrajeros expertos en seguridad** es la instalación de una **puerta anti-okupa**.
 
-Es, sin duda, la forma más barata y efectiva de evitar problemas legales y dolores de cabeza en Leganés.`
+## ¿Qué es exactamente una puerta anti-okupa y cómo funciona?
+
+No es una puerta convencional. Se trata de una estructura de acero macizo que se instala **sobre el marco original** de tu puerta mediante tornillería especial que no se puede manipular desde el exterior. 
+
+### Ventajas principales:
+- **Sin cerradura visible**: No hay bombín que atacar con bumping o taladro. Se abre con una llave de alta seguridad específica.
+- **Instalación no destructiva**: Una vez que alquiles o vendas el piso, retiramos la puerta y tu puerta original estará intacta.
+- **Disuasión inmediata**: Los okupas buscan objetivos fáciles. Al ver una puerta de acero, pasan de largo directamente.
+
+> **[CTA]** Protege tu inversión hoy mismo. **Llama al ${APP_PHONE_DISPLAY}** y pide presupuesto para tu puerta anti-okupa en Leganés. Instalación en 24h.
+
+## Cerrajeros Leganés Económicos: Seguridad al alcance de todos
+
+Mucha gente piensa que estos sistemas son caros, pero si calculas el coste de un procedimiento de desahucio y los daños en el inmueble, una puerta anti-okupa es la mejor inversión que puedes hacer. Además, en Cerrajería Aguado ofrecemos opciones de **alquiler o compra** adaptadas a lo que necesites.
+
+Somos el referente en **cerrajería de seguridad en Leganés**. Conocemos la normativa local y trabajamos con las comunidades de vecinos para asegurar que la instalación cumple con todos los requisitos de seguridad y estética permitidos.`
   },
   "bombines-seguridad-baratos": {
-    title: "¿Bombines de seguridad baratos? Lo barato sale caro",
+    title: "¿Cerraduras Baratas en Leganés? Por qué lo barato sale caro en seguridad",
     date: "2025-10-08",
     category: "Consejos",
-    image: "/blog-bombines-comparativa.png",
-    content: `En ferreterías de barrio a veces vemos bombines de "seguridad" por 20€. Como profesionales de la cerrajería en Leganés, nuestra obligación es avisarte: esos bombines no son seguros.
+    image: "/blog-bombines-comparativa.webp",
+    content: `
+# La Verdad sobre los Bombines de Oferta: Consejos de Cerrajeros Leganés
 
-## El metal importa
+Es muy común ver en grandes superficies o ferreterías de barrio bombines de "seguridad" por apenas 20 o 30 euros. La oferta es tentadora, pero como profesionales de la **cerrajería en Leganés** con más de 20 años de experiencia, nuestra obligación es advertirte: esos bombines suelen ser solo una ilusión de seguridad.
 
-Los bombines baratos suelen estar fabricados en latón de baja calidad que se corta como mantequilla con una sierra de corona o un extractor. Un bombín de seguridad real está fabricado en acero endurecido y tiene refuerzos antitaladro y antipánico.
+En este artículo te explicamos qué diferencia un bombín de gama baja de uno profesional y por qué tu seguridad depende de esa diferencia.
 
-Invierte una vez, duerme mil noches. En Cerrajería Aguado te asesoramos sobre qué modelo se adapta mejor a tu presupuesto sin sacrificar tu seguridad.`
+## El metal importa: Latón vs. Acero Endurecido
+
+Los bombines baratos suelen estar fabricados en latón de baja calidad. Para un ladrón con una sierra de corona o un extractor, este material se corta como si fuera mantequilla. Un **bombín de alta seguridad real** está fabricado en acero endurecido y cuenta con refuerzos internos antitaladro.
+
+### ¿Qué debe tener un bombín para ser seguro en 2024?
+- **Certificación mínima SKG*** o grado 6 de seguridad europea.
+- **Sistema Antipánico**: Permite abrir desde fuera aunque haya una llave puesta por dentro.
+- **Llave incopiable**: Solo puedes pedir copias presentando una tarjeta de propiedad única, evitando que cualquiera haga una copia de tu llave sin que lo sepas.
+- **Protección Antibumping y Antiganzúa**: Mecanismos internos complejos que bloquean ataques técnicos.
+
+> **[CTA]** ¿No sabes qué bombín tienes instalado? **Mándanos una foto por WhatsApp al ${APP_PHONE_DISPLAY}** y te haremos una evaluación de seguridad gratuita.
+
+## Inversión Inteligente en Cerrajería Leganés
+
+Invierte una vez, duerme tranquilo mil noches. En Cerrajería Aguado no solo vendemos productos, asesoramos personas. Te explicaremos qué modelo se adapta mejor a tu presupuesto sin sacrificar nunca los mínimos de seguridad que tu familia merece.
+
+Si buscas un **cerrajero en Leganés** que te hable con total honestidad y te ofrezca garantías reales por escrito, llámanos. Trabajamos con marcas que han pasado los tests más exigentes de seguridad mundial.`
   }
 };
 
