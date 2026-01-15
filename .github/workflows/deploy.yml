@@ -6,7 +6,7 @@ on:
 
 jobs:
   web-deploy:
-    name: 🎉 Deploy Root
+    name: 🎉 Deploy Final
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Obtener código
@@ -27,7 +27,6 @@ jobs:
       run: |
         pnpm install --no-frozen-lockfile
         pnpm run build
-        # No hacemos 'cd client'. Construimos aquí mismo.
 
     - name: 📂 Subir a FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -35,5 +34,7 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dist/      # <--- ¡AQUÍ ESTÁ EL CAMBIO! (Sin 'client/')
+        # 👇 ¡AQUÍ ESTÁ EL TRUCO! 👇
+        # Añadimos 'public/' para que suba solo el contenido final
+        local-dir: ./dist/public/
         server-dir: ./
