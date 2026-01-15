@@ -7,496 +7,95 @@ import { Link } from "wouter";
 import { APP_PHONE, APP_PHONE_DISPLAY, APP_EMAIL } from "@/const";
 
 const blogPostsContent: Record<string, any> = {
-  "seguridad-majadahonda-consejos": {
-    title: "Seguridad en Majadahonda - Consejos de un Cerrajero Local",
+  "robos-trasteros-leganes-norte": {
+    title: "Oleada de robos en trasteros de Leganés Norte: Cómo protegerte",
     date: "2025-10-20",
     category: "Seguridad",
-    image: "/images/blog-seguridad-hogar.webp",
-    content: `¿Sabías que el 70% de los robos en viviendas de Majadahonda ocurren por puertas con cerraduras antiguas? Como cerrajeros especializados en la zona, hemos observado que muchas casas en urbanizaciones como El Carralero o Conde de Orgaz todavía utilizan cerraduras de hace más de 15 años.
+    image: "/blog-robos-trasteros.png",
+    content: `¿Vives en la zona de la Ronda Norte de Leganés? En las últimas semanas se ha detectado un incremento de los robos en trasteros. Los ladrones aprovechan la poca vigilancia en los garajes para forzar las puertas metálicas convencionales.
 
-Los ladrones tardan menos de 30 segundos en forzar estos sistemas obsoletos. La tecnología de seguridad ha avanzado enormemente en la última década, y las cerraduras modernas ofrecen protección contra técnicas de apertura ilegal como el bumping, ganzuado y taladrado.
+Como cerrajeros en Leganés, hemos visto que la mayoría de estas puertas se abren en segundos con una simple palanca. No dejes que tus pertenencias corran peligro.
 
-## ¿Por qué actualizar tu cerradura?
+## ¿Cómo mejorar la seguridad de tu trastero?
 
-Las cerraduras antiguas son vulnerables a múltiples técnicas de apertura. Los ladrones profesionales pueden identificar rápidamente qué tipo de cerradura tienes y saben exactamente cómo abrirla. Una cerradura moderna con certificación europea puede marcar la diferencia entre un robo consumado y un intento fallido.
+La seguridad de un trastero no depende solo del candado. Aquí te damos unos consejos profesionales:
 
-## Recomendaciones para Majadahonda
+1. **Escudos protectores**: Instalar un escudo que cubra el bombín evita que lo partan con una llave grifa.
+2. **Cerraduras de superficie**: Añadir un segundo punto de cierre refuerza enormemente la estructura de la puerta.
+3. **Puntos de anclaje**: Asegúrate de que el marco esté bien anclado a la pared.
 
-En Cerrajería Aguado recomendamos actualizar a cerraduras de seguridad con certificación europea, especialmente en zonas residenciales. Nuestro servicio incluye:
-
-- Evaluación gratuita de tu sistema actual
-- Presupuesto sin compromiso
-- Instalación profesional en menos de 1 hora
-- Garantía de 5 años
-
-Protege tu hogar en Majadahonda con tecnología moderna. Disponibles 24/7 para emergencias.`
+En Cerrajería Aguado somos especialistas en reforzar accesos en Leganés Norte y Zarzaquemada. Llámanos para una evaluación gratuita.`
   },
-  "llave-rota-bombin-solucion": {
-    title: "¿Llave Rota en el Bombín? Solución Rápida en Majadahonda",
+  "cerraduras-antibumping-zarzaquemada": {
+    title: "El peligro de las llaves antiguas en los pisos de Zarzaquemada",
     date: "2025-10-18",
-    category: "Emergencias",
-    image: "/images/blog-llaves-bombin.webp",
-    content: `Una de las emergencias más comunes que atendemos en Majadahonda es la llave partida dentro del bombín. Esto suele ocurrir con llaves desgastadas o cuando forzamos la cerradura.
+    category: "Prevención",
+    image: "/blog-cerradura-antibumping.png",
+    content: `Muchos edificios en Zarzaquemada y San Nicasio fueron construidos hace décadas y aún conservan sus cerraduras originales. El problema es que estas llaves de "serreta" o de puntos antiguos son extremadamente vulnerables al 'bumping'.
 
-## ¿Qué NO hacer?
+El bumping es una técnica que permite abrir una puerta en segundos sin dejar rastro de fuerza, lo que además causa problemas con las aseguradoras al no haber signos de violencia.
 
-Si te pasa, NO intentes sacarla con pinzas o herramientas caseras, podrías dañar el mecanismo completo y convertir un problema sencillo en uno mucho más costoso.
+## La solución definitiva
 
-## Solución profesional
+La única forma de dormir tranquilo es instalando un bombín antibumping de alta generación. Estos sistemas cuentan con pines internos que detectan el golpe y bloquean el giro.
 
-En Cerrajería Aguado contamos con herramientas profesionales de extracción que recuperan el fragmento sin dañar la cerradura. Utilizamos extractores especializados que permiten retirar la llave rota manteniendo la integridad del bombín.
-
-## Cobertura en Majadahonda
-
-Atendemos en toda la zona:
-- Centro de Majadahonda
-- Montepríncipe
-- Las Lomas
-- El Carralero
-- Conde de Orgaz
-
-Nuestro tiempo de respuesta es de 20-30 minutos. Servicio disponible 24 horas, incluidos festivos. Precio cerrado desde el primer momento, sin sorpresas.`
+En Leganés, recomendamos marcas como Tesa o Mottura, que ofrecen una relación calidad-precio excelente para hogares familiares.`
   },
-  "mantenimiento-cerraduras-hogar": {
-    title: "Mantenimiento de Cerraduras: Evita Problemas en tu Hogar",
+  "seguridad-chalets-arroyo-culebro": {
+    title: "Guía de seguridad para chalets en Arroyo Culebro y Valdepelayo",
     date: "2025-10-15",
-    category: "Mantenimiento",
-    image: "/images/servicio-cerraduras.webp",
-    content: `Las cerraduras, como cualquier mecanismo, necesitan mantenimiento regular. En el clima de Madrid, con veranos calurosos e inviernos fríos, las cerraduras sufren dilataciones que pueden provocar atascos.
+    category: "Hogar",
+    image: "/blog-seguridad-chalets.png",
+    content: `Vivir en un chalet en zonas como Arroyo Culebro o Valdepelayo es un privilegio, pero también requiere una estrategia de seguridad diferente a la de un piso. Los accesos son múltiples: garaje, jardín, ventanas traseras...
 
-## Mantenimiento recomendado
+## Puntos críticos que debes revisar
 
-Recomendamos lubricar el bombín cada 6 meses con grafito en polvo (nunca aceite, que atrae suciedad). El grafito en polvo es el lubricante ideal porque no acumula polvo ni suciedad.
+- **La puerta principal**: Debe ser acorazada de grado 3 mínimo.
+- **La puerta del garaje**: El punto más débil. Un cerrojo interior es fundamental.
+- **Ventanas**: Las rejas no tienen por qué ser feas, hoy existen modelos modernos muy seguros.
 
-## Pasos básicos de mantenimiento:
-
-1. **Limpieza**: Limpia las llaves regularmente con un paño seco
-2. **Lubricación**: Aplica grafito en polvo en el bombín cada 6 meses
-3. **Revisión**: Comprueba que la llave gire suavemente
-4. **Atención a señales**: Si notas resistencia al abrir, es momento de llamar a un profesional
-
-## Servicio profesional
-
-En Cerrajería Aguado ofrecemos servicio de mantenimiento preventivo en Majadahonda y alrededores. Una revisión anual puede ahorrarte una emergencia costosa.
-
-Trabajamos con las mejores marcas: Tesa, Mottura, Mul-T-Lock. Pide tu cita de mantenimiento sin compromiso. Atención personalizada y profesional garantizada.`
+En Cerrajería Aguado en Leganés llevamos años protegiendo las urbanizaciones de la ciudad con sistemas de alta gama.`
   },
-  "cerraduras-antibumping-seguridad": {
-    title: "Cerraduras Antibumping: Máxima Seguridad en Majadahonda",
+  "llaves-coche-parquesur": {
+    title: "¿Perdiste las llaves del coche en Parquesur? No entres en pánico",
     date: "2025-10-12",
-    category: "Seguridad",
-    image: "/images/servicio-cerraduras.webp",
-    content: `El bumping es una técnica de apertura ilegal que utilizan los ladrones con llaves especiales. Muchas cerraduras tradicionales son vulnerables a este método.
+    category: "Emergencias",
+    image: "/blog-llaves-coche.png",
+    content: `Estás saliendo de hacer unas compras en Parquesur, llegas al parking y... las llaves no aparecen. Es una situación estresante, pero como cerrajeros 24h en Leganés, estamos acostumbrados a solucionarla.
 
-## ¿Qué es el bumping?
+## ¿Qué hacer en ese momento?
 
-El bumping consiste en utilizar una llave especialmente diseñada que, al golpearla, hace saltar los pines internos de la cerradura permitiendo la apertura. Es una técnica silenciosa y rápida que no deja apenas rastros.
+1. **No fuerces la puerta**: Podrías dañar la electrónica del coche o el marco de la ventana.
+2. **Llámanos**: Estamos a menos de 5 minutos de Parquesur.
+3. **Identificación**: Ten a mano la documentación del vehículo una vez que abramos la puerta.
 
-## ¿Cómo protegerte?
-
-Instalando cerraduras antibumping certificadas. En Cerrajería Aguado somos especialistas en sistemas de alta seguridad para viviendas en Majadahonda.
-
-## Características de las cerraduras antibumping
-
-Las cerraduras antibumping tienen pines especiales que impiden esta técnica de apertura. Son especialmente recomendables para:
-
-- Chalets y viviendas unifamiliares
-- Zonas como Parque Conde de Orgaz
-- Urbanización Las Retamas
-- Montepríncipe
-
-## Inversión en seguridad
-
-La inversión en seguridad siempre es rentable. Instalación profesional en menos de 1 hora. Garantía de 5 años en todas nuestras instalaciones. Presupuesto gratuito y asesoramiento personalizado.
-
-Protege lo que más te importa.`
+Abrimos coches de todas las marcas sin causar ni un solo rasguño.`
   },
-  "quedado-fuera-casa-solucion": {
-    title: "¿Te Has Quedado Fuera de Casa en Majadahonda? Solución Inmediata",
+  "puertas-okupas-leganes": {
+    title: "Puertas Anti-Okupa: La solución para pisos vacíos en San Nicasio",
     date: "2025-10-10",
-    category: "Emergencias",
-    image: "/images/blog-emergencia-cerrajero.webp",
-    content: `Quedarse fuera de casa es más común de lo que piensas. Llaves olvidadas, perdidas o dentro de la vivienda. En Cerrajería Aguado ofrecemos servicio de apertura de puertas 24/7 en Majadahonda sin romper la cerradura.
+    category: "Seguridad",
+    image: "/blog-puerta-antiokupa.png",
+    content: `Tener un piso vacío, ya sea por una herencia o mientras esperas a un inquilino, puede ser una preocupación en barrios antiguos como San Nicasio. La ocupación es un riesgo real.
 
-## Técnicas no destructivas
+## ¿Qué es una puerta anti-okupa?
 
-Nuestros profesionales utilizan técnicas de apertura no destructivas que preservan tu bombín y cerradura. Esto significa que no tendrás que pagar por una cerradura nueva, solo por el servicio de apertura.
+Es una estructura de acero reforzado que se instala sobre el marco original sin dañarlo. No tiene cerradura exterior visible y solo se puede abrir con herramientas profesionales o llaves de altísima seguridad por parte del propietario.
 
-## Cobertura completa
-
-Llegamos en 20-30 minutos a cualquier punto de Majadahonda:
-- Centro urbano
-- Urbanizaciones residenciales
-- Polígonos industriales
-- Zonas periféricas
-
-## Precio transparente
-
-Precio cerrado de 90€ por apertura, sin cobrar desplazamiento. Trabajamos con todas las marcas y tipos de cerraduras.
-
-## Disponibilidad total
-
-Servicio disponible festivos y madrugadas. Atención telefónica inmediata en el ${APP_PHONE_DISPLAY}. Profesionales certificados con más de 15 años de experiencia.
-
-Solución rápida, eficaz y económica. Confía en los expertos locales.`
+Es, sin duda, la forma más barata y efectiva de evitar problemas legales y dolores de cabeza en Leganés.`
   },
-  "cambio-bombin-cuando-porque": {
-    title: "Cambio de Bombín: Cuándo y Por Qué Hacerlo",
+  "bombines-seguridad-baratos": {
+    title: "¿Bombines de seguridad baratos? Lo barato sale caro",
     date: "2025-10-08",
-    category: "Mantenimiento",
-    image: "/images/blog-llaves-bombin.webp",
-    content: `El bombín es el corazón de tu cerradura. ¿Cuándo debes cambiarlo?
+    category: "Consejos",
+    image: "/blog-bombines-comparativa.png",
+    content: `En ferreterías de barrio a veces vemos bombines de "seguridad" por 20€. Como profesionales de la cerrajería en Leganés, nuestra obligación es avisarte: esos bombines no son seguros.
 
-## Situaciones que requieren cambio de bombín:
+## El metal importa
 
-1. **Has perdido las llaves**: Alguien podría encontrarlas y acceder a tu vivienda
-2. **Tras una mudanza**: No sabes quién más puede tener llaves
-3. **Después de un robo o intento**: El bombín puede estar dañado
-4. **Tiene más de 10 años**: La tecnología ha avanzado significativamente
+Los bombines baratos suelen estar fabricados en latón de baja calidad que se corta como mantequilla con una sierra de corona o un extractor. Un bombín de seguridad real está fabricado en acero endurecido y tiene refuerzos antitaladro y antipánico.
 
-## Bombines modernos
-
-En Majadahonda, muchas viviendas antiguas conservan bombines originales sin seguridad moderna. Un bombín de seguridad actual incluye:
-
-- Protección antibumping
-- Protección antitaladro
-- Protección antiganzúa
-- Certificación europea
-
-## Instalación rápida
-
-En Cerrajería Aguado instalamos bombines de alta seguridad en 15 minutos. Trabajamos con marcas líderes como Tesa, Kaba y Mul-T-Lock.
-
-## Ventajas del cambio de bombín
-
-El cambio de bombín es más económico que cambiar toda la cerradura y ofrece el mismo nivel de seguridad. Servicio disponible en todo Majadahonda.
-
-Presupuesto sin compromiso. Asesoramiento profesional sobre el mejor sistema para tu puerta.`
-  },
-  "cerraduras-inteligentes-futuro": {
-    title: "Cerraduras Inteligentes: El Futuro de la Seguridad en tu Hogar",
-    date: "2025-10-05",
-    category: "Tecnología",
-    image: "/images/servicio-cerraduras.webp",
-    content: `Las cerraduras inteligentes están revolucionando la seguridad doméstica en Majadahonda. Olvídate de las llaves: abre tu puerta con huella dactilar, código PIN o desde tu móvil.
-
-## ¿Para quién son ideales?
-
-Perfectas para:
-- Familias con niños que pierden las llaves
-- Personas mayores con problemas de movilidad
-- Propiedades vacacionales
-- Viviendas de alquiler turístico
-
-## Ventajas de las cerraduras inteligentes
-
-En Cerrajería Aguado instalamos y configuramos cerraduras inteligentes de última generación:
-
-- **Control de accesos temporal**: Para empleados o invitados
-- **Notificaciones en tiempo real**: Sabrás quién entra y cuándo
-- **Historial de entradas y salidas**: Control total de accesos
-- **Compatible con sistemas domóticos**: Integración con Alexa, Google Home
-
-## Instalación sin obras
-
-Instalación profesional sin obras, adaptable a tu puerta actual. Asesoramiento personalizado sobre el modelo más adecuado para ti.
-
-## Servicio completo
-
-Servicio técnico y mantenimiento incluido. Moderniza tu hogar con tecnología de seguridad avanzada.
-
-Disponibles en Majadahonda y alrededores. Solicita demostración gratuita.`
-  },
-  "seguridad-comunidades-vecinos": {
-    title: "Seguridad para Comunidades de Vecinos en Majadahonda",
-    date: "2025-10-03",
-    category: "Seguridad",
-    image: "/images/blog-seguridad-hogar.webp",
-    content: `Las comunidades de vecinos en Majadahonda necesitan sistemas de seguridad específicos. Portales, garajes, trasteros y zonas comunes son puntos vulnerables.
-
-## Soluciones integrales
-
-En Cerrajería Aguado ofrecemos soluciones completas:
-
-### Sistemas de amaestramiento
-Una llave maestra para el presidente y llaves individuales para vecinos. Permite acceso controlado a zonas comunes manteniendo la privacidad de cada vivienda.
-
-### Control de accesos
-Con tarjeta o código para portales y garajes. Elimina la necesidad de llaves físicas y permite revocar accesos fácilmente.
-
-### Cerraduras de alta seguridad
-Para trasteros y zonas comunes. Los trasteros son objetivos frecuentes de robos, protégelos adecuadamente.
-
-## Experiencia en Majadahonda
-
-Hemos trabajado en comunidades de:
-- El Carralero
-- Montepríncipe
-- Centro de Majadahonda
-- Las Lomas
-
-## Presupuestos especiales
-
-Presupuestos especiales para comunidades. Instalación coordinada para no molestar a los vecinos. Garantía en todos nuestros trabajos.
-
-Asesoramiento sobre las mejores opciones según el presupuesto de la comunidad. Mejora la seguridad colectiva con profesionales de confianza.`
-  },
-  "puertas-acorazadas-vs-blindadas": {
-    title: "Puertas Acorazadas vs Blindadas: ¿Cuál Elegir?",
-    date: "2025-10-01",
-    category: "Seguridad",
-    image: "/images/servicio-cerraduras.webp",
-    content: `Existe confusión entre puertas blindadas y acorazadas. Te explicamos las diferencias para que tomes la mejor decisión.
-
-## Puertas Blindadas
-
-Las blindadas tienen refuerzo metálico sobre madera. Son una mejora respecto a puertas convencionales pero tienen limitaciones:
-- Menor resistencia a ataques prolongados
-- Vulnerable a técnicas de palanca
-- Grado de seguridad limitado
-
-## Puertas Acorazadas
-
-Las acorazadas son completamente metálicas con mayor resistencia:
-- Estructura totalmente metálica
-- Múltiples puntos de anclaje
-- Resistencia certificada
-- Mayor durabilidad
-
-## Recomendaciones para Majadahonda
-
-Para viviendas en Majadahonda, especialmente chalets y bajos, recomendamos puertas acorazadas de grado 3 o superior.
-
-Ofrecen protección contra intentos de robo durante más de 10 minutos, tiempo suficiente para que actúe la alarma o llegue seguridad.
-
-## Asesoramiento profesional
-
-En Cerrajería Aguado asesoramos sobre la mejor opción según tu vivienda y presupuesto. Trabajamos con fabricantes certificados. Instalación profesional con garantía.
-
-## Estética y seguridad
-
-Las puertas acorazadas modernas también son estéticamente atractivas, con acabados en madera y diversos diseños. Inversión en seguridad y tranquilidad.
-
-Visita a domicilio gratuita en Majadahonda. Presupuesto sin compromiso.`
-  },
-  "perder-llaves-casa-que-hacer": {
-    title: "Qué Hacer si Pierdes las Llaves de Casa en Majadahonda",
-    date: "2025-09-28",
-    category: "Emergencias",
-    image: "/images/blog-emergencia-cerrajero.webp",
-    content: `Perder las llaves es una situación estresante pero tiene solución. Sigue esta guía de actuación.
-
-## Paso 1: Mantén la calma
-
-El estrés no ayuda. Respira y piensa con claridad. ¿Tienes copia en casa de familiares? Si es así, problema resuelto.
-
-## Paso 2: Llama a profesionales
-
-Si no tienes copia disponible, llama a Cerrajería Aguado: ${APP_PHONE_DISPLAY}. Abrimos tu puerta sin romper la cerradura en 20-30 minutos.
-
-## Paso 3: Considera la seguridad
-
-Importante: tras perder las llaves, recomendamos cambiar el bombín por seguridad, ya que alguien podría encontrarlas y saber tu dirección (si llevas algún identificador).
-
-## Servicio completo
-
-Ofrecemos servicio completo: apertura + cambio de bombín en una sola visita. Precio transparente desde el primer momento.
-
-## Disponibilidad total
-
-Servicio disponible 24/7 en todo Majadahonda. Nuestros profesionales llevan bombines de seguridad en el vehículo para solución inmediata.
-
-## No dejes tu seguridad al azar
-
-Después de perder llaves, actúa rápido. Atención inmediata y profesional garantizada. Confía en expertos locales con años de experiencia.`
-  },
-  "cerraduras-locales-comerciales": {
-    title: "Cerraduras para Locales Comerciales en Majadahonda",
-    date: "2025-09-25",
-    category: "Comercial",
-    image: "/images/blog-seguridad-hogar.webp",
-    content: `Los locales comerciales en Majadahonda requieren sistemas de seguridad específicos. La protección de tu negocio es fundamental.
-
-## Sistemas de seguridad comercial
-
-Cerraduras de alta resistencia, cierres multipunto, rejas y persianas motorizadas. En Cerrajería Aguado somos especialistas en seguridad comercial.
-
-## Experiencia en Majadahonda
-
-Trabajamos con negocios en:
-- Centro comercial de Majadahonda
-- Polígonos industriales
-- Locales en el casco urbano
-- Zonas comerciales
-
-## Servicios para comercios
-
-Ofrecemos:
-- Instalación de cerraduras de seguridad grado 4 y 5
-- Sistemas de cierre centralizado
-- Control de accesos para empleados
-- Cerraduras para cajas fuertes
-
-## Servicio de urgencias
-
-Servicio de urgencias 24/7 para comercios. Si sufres un robo o intento, respuesta inmediata para asegurar el local.
-
-## Presupuestos especiales
-
-Presupuestos especiales para empresas. Mantenimiento preventivo con contrato anual. Protege tu negocio con profesionales certificados.
-
-Asesoramiento sobre seguros y certificaciones de seguridad.`
-  },
-  "consejos-seguridad-vacaciones": {
-    title: "Consejos de Seguridad para Vacaciones en Majadahonda",
-    date: "2025-09-22",
-    category: "Seguridad",
-    image: "/images/servicio-cerraduras.webp",
-    content: `Antes de irte de vacaciones, asegura tu vivienda en Majadahonda. Sigue estos consejos prácticos.
-
-## Consejos básicos de seguridad
-
-1. **Instala cerraduras de seguridad** en todas las puertas
-2. **Refuerza ventanas accesibles**, especialmente en bajos y primeros pisos
-3. **No publiques en redes sociales** que estás fuera
-4. **Deja luces programadas** para simular presencia
-5. **Pide a vecinos** que recojan el correo
-
-## Servicio pre-vacacional
-
-En Cerrajería Aguado ofrecemos revisión de seguridad pre-vacacional. Verificamos el estado de cerraduras, bombines y puntos de acceso.
-
-## Instalación rápida
-
-Instalamos cerraduras adicionales o refuerzos si es necesario. Servicio rápido para que te vayas tranquilo.
-
-## Época de mayor riesgo
-
-Las vacaciones de verano son época de mayor actividad para ladrones en urbanizaciones. No dejes tu hogar vulnerable.
-
-## Inversión mínima
-
-Inversión mínima en seguridad te ahorra disgustos mayores. Atendemos en todo Majadahonda.
-
-Cita previa o urgencias en el ${APP_PHONE_DISPLAY}. Profesionales de confianza con años de experiencia en la zona.
-
-Disfruta tus vacaciones con total tranquilidad.`
-  },
-  "amaestramiento-cerraduras-llave-maestra": {
-    title: "Amaestramiento de Cerraduras: Una Llave para Todo",
-    date: "2025-09-20",
-    category: "Tecnología",
-    image: "/images/blog-llaves-bombin.webp",
-    content: `El amaestramiento es un sistema que permite abrir múltiples cerraduras con una llave maestra, mientras cada cerradura tiene su propia llave individual.
-
-## ¿Para qué sirve?
-
-Ideal para:
-- Comunidades de vecinos
-- Oficinas con múltiples despachos
-- Viviendas con múltiples accesos
-- Hoteles y residencias
-
-## Ventajas del sistema
-
-En Majadahonda, muchas comunidades ya utilizan este sistema:
-
-- El presidente o administrador tiene acceso a zonas comunes
-- Cada vecino solo abre su espacio
-- Se puede revocar acceso sin cambiar todo el sistema
-- Mayor control y seguridad
-
-## Diseño personalizado
-
-En Cerrajería Aguado diseñamos sistemas de amaestramiento personalizados. Estudiamos tu caso y proponemos la mejor solución.
-
-## Instalación profesional
-
-Instalación profesional con planificación previa. Compatible con cerraduras de alta seguridad. Perfecto para empresas con diferentes niveles de acceso.
-
-## Asesoramiento incluido
-
-Asesoramiento técnico incluido. Presupuesto detallado sin compromiso. Servicio en Majadahonda y alrededores.`
-  },
-  "cerraduras-antipalanca-proteccion": {
-    title: "Cerraduras Antipalanca: Protección Contra el Método Más Común",
-    date: "2025-09-18",
-    category: "Seguridad",
-    image: "/images/servicio-cerraduras.webp",
-    content: `El 60% de los robos en viviendas se realizan con palanca o destornillador, forzando la puerta. Las cerraduras antipalanca tienen refuerzos que impiden esta técnica.
-
-## ¿Qué es la técnica de palanca?
-
-Los ladrones introducen una palanca o destornillador entre la puerta y el marco, forzando la apertura. Es rápido, silencioso y efectivo contra cerraduras convencionales.
-
-## Protección antipalanca
-
-Especialmente recomendadas para:
-- Puertas de entrada en chalets
-- Bajos de Majadahonda
-- Viviendas unifamiliares
-- Zonas con acceso directo desde la calle
-
-## Características técnicas
-
-En Cerrajería Aguado instalamos cerraduras con protección antipalanca certificada. Estas cerraduras incluyen:
-
-- Escudos protectores reforzados
-- Bulones antitaladro
-- Sistemas de anclaje reforzado
-- Certificación europea
-
-## Instalación sencilla
-
-La instalación es rápida y no requiere cambiar la puerta completa. Mejora significativa de seguridad con inversión moderada.
-
-## Marcas certificadas
-
-Trabajamos con marcas certificadas por asociaciones de seguridad europeas. Garantía de 5 años en instalación y materiales.
-
-Asesoramiento gratuito sobre el nivel de seguridad de tu puerta actual. Servicio en todo Majadahonda. Disponibilidad inmediata.
-
-Protege tu hogar con tecnología probada.`
-  },
-  "emergencias-cerrajeria-que-hacer": {
-    title: "Emergencias de Cerrajería: Qué Hacer y A Quién Llamar",
-    date: "2025-09-15",
-    category: "Emergencias",
-    image: "/images/blog-seguridad-hogar.webp",
-    content: `Una emergencia de cerrajería puede ocurrir en cualquier momento: puerta cerrada con llave dentro, cerradura rota, robo, llave partida. En estos casos, mantén la calma y llama a profesionales certificados.
-
-## Servicio de urgencias 24/7
-
-En Cerrajería Aguado ofrecemos servicio de urgencias 24/7 en Majadahonda. Llegamos en 20-30 minutos con todas las herramientas necesarias.
-
-## Cómo identificar profesionales
-
-Importante: desconfía de servicios con precios demasiado bajos o sin identificación clara.
-
-Un cerrajero profesional debe:
-1. Identificarse correctamente
-2. Dar presupuesto antes de trabajar
-3. Usar técnicas no destructivas cuando sea posible
-4. Entregar factura con garantía
-
-## Nuestro compromiso
-
-- Transparencia total
-- Precio cerrado desde el inicio
-- Profesionales certificados
-- Solución rápida y eficaz
-
-## Tipos de emergencias
-
-Atendemos todo tipo de emergencias:
-- Viviendas
-- Locales comerciales
-- Vehículos
-- Cajas fuertes
-
-Disponibles festivos y madrugadas. Contacto inmediato: ${APP_PHONE_DISPLAY}.
-
-Tu cerrajero de confianza en Majadahonda.`
+Invierte una vez, duerme mil noches. En Cerrajería Aguado te asesoramos sobre qué modelo se adapta mejor a tu presupuesto sin sacrificar tu seguridad.`
   }
 };
 
@@ -525,11 +124,11 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      
+
       {/* Imagen destacada */}
       <div className="w-full h-[400px] overflow-hidden">
-        <img 
-          src={post.image} 
+        <img
+          src={post.image}
           alt={post.title}
           className="w-full h-full object-cover"
         />
@@ -597,7 +196,7 @@ export default function BlogPost() {
           <div className="mt-12 bg-gradient-to-r from-[#A52A2A] to-[#8B0000] text-white rounded-lg p-8">
             <h3 className="text-2xl font-bold mb-4">¿Necesitas ayuda con tu cerradura?</h3>
             <p className="text-lg mb-6">
-              Estamos disponibles 24/7 en Majadahonda. Llegamos en 20-30 minutos.
+              Estamos disponibles 24/7 en Leganés. Llegamos en 20-30 minutos.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" variant="secondary" className="text-lg">

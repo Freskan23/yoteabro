@@ -203,6 +203,24 @@ export default function CambioCerraduras() {
             </div>
 
             <div className="max-w-4xl mx-auto">
+              {/* Imágenes del proceso */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+                <div className="rounded-xl overflow-hidden h-64">
+                  <img
+                    src="/proceso-llegada.png"
+                    alt="Cerrajero Aguado llegando en furgoneta a Leganés"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="rounded-xl overflow-hidden h-64">
+                  <img
+                    src="/proceso-herramientas.png"
+                    alt="Herramientas profesionales de cerrajería"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="text-center">
                   <div className="bg-[#A52A2A] text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">

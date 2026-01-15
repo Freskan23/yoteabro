@@ -24,29 +24,41 @@ export default function Testimonios() {
   return (
     <>
       <SEOHead
-        title="Opiniones de Clientes - 97 Reseñas Reales | Cerrajería Aguado Majadahonda"
-        description="Lee las 97 opiniones reales de nuestros clientes en Majadahonda. Valoración 5.0 estrellas en apertura de puertas, cambio de cerraduras, bombines y amaestramiento."
-        canonicalUrl="https://cerrajeromajadahonda.madrid/testimonios"
+        title="Opiniones de Clientes - 97 Reseñas Reales | Cerrajería Aguado Leganés"
+        description="Lee las 97 opiniones reales de nuestros clientes en Leganés. Valoración 5.0 estrellas en apertura de puertas, cambio de cerraduras, bombines y amaestramiento."
+        canonicalUrl="https://cerrajerosdeleganes.madrid/testimonios"
       />
 
-      <main className="min-h-screen bg-gray-50 py-12">
-        <div className="container mx-auto px-4 max-w-7xl">
-          {/* Header */}
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Opiniones de Nuestros Clientes
-            </h1>
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
-                ))}
+      <main className="min-h-screen bg-gray-50 pb-12">
+        {/* Hero Section con Imagen */}
+        <div className="relative h-[300px] md:h-[400px] mb-12">
+          <img
+            src="/testimonios-hero.png"
+            alt="Cerrajero profesional con cliente satisfecho en Leganés"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40 flex items-center justify-center text-center p-4">
+            <div className="text-white">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                Opiniones de Nuestros Clientes
+              </h1>
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <div className="flex">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <span className="text-2xl font-bold">5.0</span>
+                <span className="opacity-90">({testimonials.length} reseñas)</span>
               </div>
-              <span className="text-2xl font-bold text-gray-900">5.0</span>
-              <span className="text-gray-600">({testimonials.length} reseñas)</span>
             </div>
+          </div>
+        </div>
+
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-12">
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Lee las experiencias reales de nuestros clientes en Majadahonda y alrededores. 
+              Lee las experiencias reales de nuestros clientes en Leganés y alrededores.
               Más de 97 familias y empresas confían en nosotros para sus servicios de cerrajería.
             </p>
           </div>

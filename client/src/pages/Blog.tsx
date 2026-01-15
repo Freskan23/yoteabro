@@ -15,7 +15,7 @@ const blogPosts = [
     date: "2025-10-20",
     category: "Seguridad",
     icon: <Shield className="h-6 w-6 text-[#FF6B35]" />,
-    image: "/servicio-cerraduras-3d.jpg"
+    image: "/blog-robos-trasteros.png"
   },
   {
     id: "cerraduras-antibumping-zarzaquemada",
@@ -24,7 +24,7 @@ const blogPosts = [
     date: "2025-10-18",
     category: "Prevención",
     icon: <Lock className="h-6 w-6 text-[#FF6B35]" />,
-    image: "/servicio-apertura-puertas-3d.jpg"
+    image: "/blog-cerradura-antibumping.png"
   },
   {
     id: "seguridad-chalets-arroyo-culebro",
@@ -33,7 +33,7 @@ const blogPosts = [
     date: "2025-10-15",
     category: "Hogar",
     icon: <Key className="h-6 w-6 text-[#FF6B35]" />,
-    image: "/servicio-domicilio-3d.jpg"
+    image: "/blog-seguridad-chalets.png"
   },
   {
     id: "llaves-coche-parquesur",
@@ -42,7 +42,7 @@ const blogPosts = [
     date: "2025-10-12",
     category: "Emergencias",
     icon: <AlertTriangle className="h-6 w-6 text-[#FF6B35]" />,
-    image: "/servicio-llaves-3d.jpg"
+    image: "/blog-llaves-coche.png"
   },
   {
     id: "puertas-okupas-leganes",
@@ -51,7 +51,7 @@ const blogPosts = [
     date: "2025-10-10",
     category: "Seguridad",
     icon: <Shield className="h-6 w-6 text-[#FF6B35]" />,
-    image: "/servicio-cerraduras-3d.jpg"
+    image: "/blog-puerta-antiokupa.png"
   },
   {
     id: "bombines-seguridad-baratos",
@@ -60,7 +60,7 @@ const blogPosts = [
     date: "2025-10-08",
     category: "Consejos",
     icon: <Lock className="h-6 w-6 text-[#FF6B35]" />,
-    image: "/servicio-apertura-puertas-3d.jpg"
+    image: "/blog-bombines-comparativa.png"
   }
 ];
 
