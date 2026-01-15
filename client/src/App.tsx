@@ -2,38 +2,48 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch, useLocation } from "wouter";
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { HelmetProvider } from "react-helmet-async";
 import SchemaMarkup from "./components/SchemaMarkup";
 import Home from "./pages/Home";
-import Zarzaquemada from "./pages/Zarzaquemada";
-import SanNicasio from "./pages/SanNicasio";
-import ElCarrascal from "./pages/ElCarrascal";
-import LaFortuna from "./pages/LaFortuna";
-import LeganesNorte from "./pages/LeganesNorte";
-import ArroyoCulebro from "./pages/ArroyoCulebro";
-import Valdepelayo from "./pages/Valdepelayo";
-import VeredaEstudiantes from "./pages/VeredaEstudiantes";
-import LosSantos from "./pages/LosSantos";
-import Solagua from "./pages/Solagua";
-import PozaDelAgua from "./pages/PozaDelAgua";
-import Centro from "./pages/Centro";
-import Urgencias24h from "./pages/Urgencias24h";
-import AperturaPuertas from "./pages/AperturaPuertas";
-import CambioCerraduras from "./pages/CambioCerraduras";
-import CambioBombin from "./pages/CambioBombin";
-import Amaestramiento from "./pages/Amaestramiento";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
-import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
-import PoliticaCookies from "./pages/PoliticaCookies";
-import AvisoLegal from "./pages/AvisoLegal";
-import Contacto from "./pages/Contacto";
-import Testimonios from "./pages/Testimonios";
+
+// Lazy loading for other pages to reduce initial JS bundle
+const Zarzaquemada = lazy(() => import("./pages/Zarzaquemada"));
+const SanNicasio = lazy(() => import("./pages/SanNicasio"));
+const ElCarrascal = lazy(() => import("./pages/ElCarrascal"));
+const LaFortuna = lazy(() => import("./pages/LaFortuna"));
+const LeganesNorte = lazy(() => import("./pages/LeganesNorte"));
+const ArroyoCulebro = lazy(() => import("./pages/ArroyoCulebro"));
+const Valdepelayo = lazy(() => import("./pages/Valdepelayo"));
+const VeredaEstudiantes = lazy(() => import("./pages/VeredaEstudiantes"));
+const LosSantos = lazy(() => import("./pages/LosSantos"));
+const Solagua = lazy(() => import("./pages/Solagua"));
+const PozaDelAgua = lazy(() => import("./pages/PozaDelAgua"));
+const Centro = lazy(() => import("./pages/Centro"));
+const Urgencias24h = lazy(() => import("./pages/Urgencias24h"));
+const AperturaPuertas = lazy(() => import("./pages/AperturaPuertas"));
+const CambioCerraduras = lazy(() => import("./pages/CambioCerraduras"));
+const CambioBombin = lazy(() => import("./pages/CambioBombin"));
+const Amaestramiento = lazy(() => import("./pages/Amaestramiento"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
+const PoliticaPrivacidad = lazy(() => import("./pages/PoliticaPrivacidad"));
+const PoliticaCookies = lazy(() => import("./pages/PoliticaCookies"));
+const AvisoLegal = lazy(() => import("./pages/AvisoLegal"));
+const Contacto = lazy(() => import("./pages/Contacto"));
+const Testimonios = lazy(() => import("./pages/Testimonios"));
+
 import CookieBanner from "./components/CookieBanner";
 import FloatingActionButtons from "./components/FloatingActionButtons";
+
+// Fallback component while loading a lazy route
+const PageLoader = () => (
+  <div className="min-h-screen flex items-center justify-center bg-[#001529]">
+    <div className="h-12 w-12 border-4 border-[#FF6B35] border-t-transparent rounded-full animate-spin"></div>
+  </div>
+);
 
 function Router() {
   const [location] = useLocation();
