@@ -55,8 +55,8 @@ export default function Urgencias24h() {
     return (
         <div className="min-h-screen flex flex-col">
             <SEOHead
-                title={`Cerrajeros Urgencias 24h Leganés | Llegamos en 20 min | ${APP_BUSINESS_NAME}`}
-                description={`⚡ ¿Necesitas un cerrajero urgente en Leganés? Servicio 24 horas para aperturas, cerraduras y persianas. Llegamos en menos de 20 minutos. ¡Llama ya!`}
+                title={`Cerrajero Urgente Leganés ⚡ 20 Min | Aguado 24h ⭐ 5.0`}
+                description={`🚨 ¿Te has quedado fuera? Cerrajero Urgente en Leganés. Llegamos en 20 min reales. Apertura de puertas y cerraduras sin daños. Precio cerrado ☎️ ¡Llama ya!`}
                 canonicalUrl="https://cerrajerosdeleganes.madrid/urgencias-24h"
             />
             <Header />

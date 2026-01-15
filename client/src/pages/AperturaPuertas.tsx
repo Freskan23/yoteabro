@@ -77,8 +77,8 @@ export default function AperturaPuertas() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead
-        title={`Apertura de Puertas en ${APP_LOCATION} 24h | ${APP_BUSINESS_NAME}`}
-        description={`🔓 Apertura de puertas urgente en ${APP_LOCATION}. Llegamos en 20-30 min. Servicio profesional sin daños las 24 horas. Precios desde 90€ cerrados por teléfono.`}
+        title={`Apertura de Puertas Leganés 🔓 Sin Romper | Aguado 24h ⭐ 5.0`}
+        description={`🔑 ¿Llaves dentro? Abrimos tu puerta en Leganés en 20-30 min. Sin romper, sin daños y con precio cerrado desde 90€. ☎️ Llama ahora y recupera el acceso.`}
         canonicalUrl="https://cerrajerosdeleganes.madrid/apertura-puertas"
       />
       <Header />

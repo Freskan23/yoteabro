@@ -81,8 +81,8 @@ export default function Amaestramiento() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead
-        title={`Amaestramiento de Llaves y Cerraduras en ${APP_LOCATION} | ${APP_BUSINESS_NAME}`}
-        description={`🔑 Especialistas en amaestramiento de llaves y cerraduras en ${APP_LOCATION}. Sistema de llave maestra para comunidades, empresas y particulares. Comodidad y seguridad total.`}
+        title={`Amaestramiento de Llaves Leganés 🔑 Una Llave para Todo | Aguado`}
+        description={`🏢 Comodidad total para comunidades y oficinas en Leganés. Diseñamos sistemas de llave maestra a medida. Simplifica tu vida y gana en seguridad.`}
         canonicalUrl="https://cerrajerosdeleganes.madrid/amaestramiento"
       />
       <Header />

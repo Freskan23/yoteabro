@@ -10,8 +10,8 @@ interface SEOHeadProps {
 }
 
 export default function SEOHead({
-  title = `Cerrajeros en ${APP_LOCATION} 24h ⚡ Urgencias | ${APP_BUSINESS_NAME}`,
-  description = `🔑 Cerrajeros en ${APP_LOCATION} 24 horas. Apertura de puertas desde 90€, cambio de cerraduras y bombines de seguridad. ⚡ Llegamos en 20-30 min. ☎️ ${APP_PHONE_DISPLAY}. Servicio profesional y garantizado en todo Leganés y Zona Sur de Madrid.`,
+  title = `Cerrajeros Leganés 24h ⚡ Llegamos en 20 min | Aguado ⭐ 5.0`,
+  description = `🔑 Cerrajeros en Leganés 24h. ¿Puerta cerrada? ¡No esperes fuera! Llegamos en 20 min. Apertura desde 90€ (Precio Cerrado). ☎️ ${APP_PHONE_DISPLAY}. ¡97 Reseñas Reales!`,
   keywords = "cerrajeros leganés, cerrajería 24 horas leganés, apertura puertas leganés, cambio cerraduras leganés, cerrajero urgente leganés, bombín seguridad leganés, zarzaquemada, san nicasio, el carrascal",
   ogImage = "https://cerrajerosdeleganes.madrid/images/og-image.webp",
   canonicalUrl = "https://cerrajerosdeleganes.madrid/"

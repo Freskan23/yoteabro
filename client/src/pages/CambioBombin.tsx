@@ -77,8 +77,8 @@ export default function CambioBombin() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead
-        title={`Cambio de Bombín en ${APP_LOCATION} 24h | ${APP_BUSINESS_NAME}`}
-        description={`🔑 Cambio de bombín de seguridad en ${APP_LOCATION}. Instalación de bombines antibumping, antiganzúa y antitaladro en 20 min. Máxima protección para tu hogar o negocio.`}
+        title={`Cambio de Bombín Leganés 🔑 Antibumping desde 70€ | Aguado`}
+        description={`🛡️ La forma más barata de asegurar tu puerta. Cambiamos tu bombín en 20 min en Leganés. Protección real contra robos. ☎️ ¡Llama y evita el bumping!`}
         canonicalUrl="https://cerrajerosdeleganes.madrid/cambio-bombin"
       />
       <Header />

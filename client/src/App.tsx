@@ -35,8 +35,8 @@ const AvisoLegal = lazy(() => import("./pages/AvisoLegal"));
 const Contacto = lazy(() => import("./pages/Contacto"));
 const Testimonios = lazy(() => import("./pages/Testimonios"));
 
-import CookieBanner from "./components/CookieBanner";
-import FloatingActionButtons from "./components/FloatingActionButtons";
+const CookieBanner = lazy(() => import("./components/CookieBanner"));
+const FloatingActionButtons = lazy(() => import("./components/FloatingActionButtons"));
 
 // Fallback component while loading a lazy route
 const PageLoader = () => (
@@ -55,8 +55,10 @@ function Router() {
 
   return (
     <>
-      <CookieBanner />
-      <FloatingActionButtons />
+      <Suspense fallback={null}>
+        <CookieBanner />
+        <FloatingActionButtons />
+      </Suspense>
       <Suspense fallback={<PageLoader />}>
         <Switch>
           <Route path={"/"} component={Home} />

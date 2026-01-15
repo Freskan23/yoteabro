@@ -78,8 +78,8 @@ export default function CambioCerraduras() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead
-        title={`Cambio de Cerraduras en ${APP_LOCATION} 24h | ${APP_BUSINESS_NAME}`}
-        description={`🔧 Instalación y cambio de cerraduras de seguridad en ${APP_LOCATION}. Trabajamos con las mejores marcas: Mottura, Tesa, Ezcurra. Servicio urgente las 24 horas.`}
+        title={`Cambio de Cerraduras Leganés 🔧 Máxima Seguridad | Aguado 24h`}
+        description={`🔒 Protege tu hogar hoy. Instalamos cerraduras antibumping en Leganés con garantía total. Marcas: Mottura, Tesa, Ezcurra. Presupuesto sin compromiso.`}
         canonicalUrl="https://cerrajerosdeleganes.madrid/cambio-cerraduras"
       />
       <Header />
