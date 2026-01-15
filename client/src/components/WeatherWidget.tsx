@@ -22,7 +22,7 @@ export default function WeatherWidget() {
       <span className="text-2xl">{weatherIcon}</span>
       <div>
         <p className="text-sm font-semibold">
-          {temperature}°C en Majadahonda
+          {temperature}°C en Leganés
         </p>
         <p className="text-xs text-gray-400">{weatherDescription}</p>
       </div>
