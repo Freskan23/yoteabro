@@ -139,7 +139,7 @@ export default function Home() {
 
           <div className="container relative z-10 py-20">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-              
+
               {/* Columna Izquierda: Copy Persuasivo + CTA Masivo */}
               <div className="lg:col-span-7 space-y-8">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FF6B35]/10 border border-[#FF6B35]/30 backdrop-blur-sm">
@@ -151,7 +151,7 @@ export default function Home() {
                 </div>
 
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight">
-                  Tu seguridad, <br/>
+                  Tu seguridad, <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B35] to-[#FF9F1C]">
                     nuestra prioridad
                   </span>
@@ -175,7 +175,7 @@ export default function Home() {
                       </div>
                     </a>
                   </Button>
-                  
+
                   <div className="flex items-center gap-6 px-6 text-gray-400 text-sm font-medium">
                     <div className="flex items-center gap-2">
                       <Clock className="h-5 w-5 text-[#FF6B35]" />
@@ -260,8 +260,8 @@ export default function Home() {
                 >
                   <div className="h-48 overflow-hidden relative">
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
-                    <img 
-                      src={service.image} 
+                    <img
+                      src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
@@ -317,8 +317,8 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute -inset-4 bg-[#FF6B35]/20 rounded-3xl transform rotate-3"></div>
                 <img
-                  src="/images/cerrajero-trabajando.jpg"
-                  alt="Cerrajero profesional trabajando"
+                  src="/hero-cerrajero.png"
+                  alt="Cerrajero profesional de Cerrajería Aguado trabajando en Leganés"
                   className="relative rounded-2xl shadow-2xl w-full object-cover h-[600px]"
                 />
                 <div className="absolute bottom-8 left-8 bg-white p-6 rounded-xl shadow-lg max-w-xs">

@@ -35,7 +35,7 @@ export default function SEOHead({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:type" content="image/webp" />
-      <meta property="og:image:alt" content="Cerrajero profesional de Cerrajería Aguado en Majadahonda" />
+      <meta property="og:image:alt" content="Cerrajero profesional de Cerrajería Aguado en Leganés" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />

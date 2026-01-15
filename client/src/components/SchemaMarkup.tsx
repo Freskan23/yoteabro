@@ -12,8 +12,8 @@ export default function SchemaMarkup() {
     "name": APP_BUSINESS_NAME,
     "legalName": "CERRAJERIA AGUADO, S.L.",
     "url": "https://cerrajerosdeleganes.madrid",
-    "logo": "https://cerrajerosdeleganes.madrid/images/logo-aguado.jpg",
-    "image": "https://cerrajerosdeleganes.madrid/images/cerrajero-aguado.png",
+    "logo": "https://cerrajerosdeleganes.madrid/logo-aguado.jpg",
+    "image": "https://cerrajerosdeleganes.madrid/hero-cerrajero.png",
     "description": "Cerrajeros profesionales en Leganés disponibles 24/7 para cualquier urgencia. Apertura de puertas desde 90€, cambio de cerraduras, bombines de seguridad y amaestramiento.",
     "telephone": APP_PHONE,
     "email": APP_EMAIL,
@@ -178,7 +178,7 @@ export default function SchemaMarkup() {
     "url": "https://cerrajerosdeleganes.madrid",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://cerrajerosdeleganes.madrid/logo-aguado.png",
+      "url": "https://cerrajerosdeleganes.madrid/logo-aguado.jpg",
       "width": "250",
       "height": "60"
     },
