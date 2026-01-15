@@ -47,36 +47,38 @@ function Router() {
     <>
       <CookieBanner />
       <FloatingActionButtons />
-      <Switch>
-        <Route path={"/"} component={Home} />
-        <Route path="/cerrajeros-zarzaquemada" component={Zarzaquemada} />
-        <Route path="/cerrajeros-san-nicasio" component={SanNicasio} />
-        <Route path="/cerrajeros-el-carrascal" component={ElCarrascal} />
-        <Route path="/cerrajeros-la-fortuna" component={LaFortuna} />
-        <Route path="/cerrajeros-leganes-norte" component={LeganesNorte} />
-        <Route path="/cerrajeros-arroyo-culebro" component={ArroyoCulebro} />
-        <Route path="/cerrajeros-valdepelayo" component={Valdepelayo} />
-        <Route path="/cerrajeros-vereda-estudiantes" component={VeredaEstudiantes} />
-        <Route path="/cerrajeros-los-santos" component={LosSantos} />
-        <Route path="/cerrajeros-solagua" component={Solagua} />
-        <Route path="/cerrajeros-poza-del-agua" component={PozaDelAgua} />
-        <Route path="/cerrajeros-centro" component={Centro} />
-        <Route path="/urgencias-24h" component={Urgencias24h} />
-        <Route path="/apertura-puertas" component={AperturaPuertas} />
-        <Route path="/cambio-cerraduras" component={CambioCerraduras} />
-        <Route path="/cambio-bombin" component={CambioBombin} />
-        <Route path="/amaestramiento" component={Amaestramiento} />
-        <Route path="/blog" component={Blog} />
-        <Route path="/blog/:id" component={BlogPost} />
-        <Route path="/testimonios" component={Testimonios} />
-        <Route path="/politica-privacidad" component={PoliticaPrivacidad} />
-        <Route path="/politica-cookies" component={PoliticaCookies} />
-        <Route path="/aviso-legal" component={AvisoLegal} />
-        <Route path="/contacto" component={Contacto} />
-        <Route path={"/404"} component={NotFound} />
-        {/* Final fallback route */}
-        <Route component={NotFound} />
-      </Switch>
+      <Suspense fallback={<PageLoader />}>
+        <Switch>
+          <Route path={"/"} component={Home} />
+          <Route path="/cerrajeros-zarzaquemada" component={Zarzaquemada} />
+          <Route path="/cerrajeros-san-nicasio" component={SanNicasio} />
+          <Route path="/cerrajeros-el-carrascal" component={ElCarrascal} />
+          <Route path="/cerrajeros-la-fortuna" component={LaFortuna} />
+          <Route path="/cerrajeros-leganes-norte" component={LeganesNorte} />
+          <Route path="/cerrajeros-arroyo-culebro" component={ArroyoCulebro} />
+          <Route path="/cerrajeros-valdepelayo" component={Valdepelayo} />
+          <Route path="/cerrajeros-vereda-estudiantes" component={VeredaEstudiantes} />
+          <Route path="/cerrajeros-los-santos" component={LosSantos} />
+          <Route path="/cerrajeros-solagua" component={Solagua} />
+          <Route path="/cerrajeros-poza-del-agua" component={PozaDelAgua} />
+          <Route path="/cerrajeros-centro" component={Centro} />
+          <Route path="/urgencias-24h" component={Urgencias24h} />
+          <Route path="/apertura-puertas" component={AperturaPuertas} />
+          <Route path="/cambio-cerraduras" component={CambioCerraduras} />
+          <Route path="/cambio-bombin" component={CambioBombin} />
+          <Route path="/amaestramiento" component={Amaestramiento} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/blog/:id" component={BlogPost} />
+          <Route path="/testimonios" component={Testimonios} />
+          <Route path="/politica-privacidad" component={PoliticaPrivacidad} />
+          <Route path="/politica-cookies" component={PoliticaCookies} />
+          <Route path="/aviso-legal" component={AvisoLegal} />
+          <Route path="/contacto" component={Contacto} />
+          <Route path={"/404"} component={NotFound} />
+          {/* Final fallback route */}
+          <Route component={NotFound} />
+        </Switch>
+      </Suspense>
     </>
   );
 }
