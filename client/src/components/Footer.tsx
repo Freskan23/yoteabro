@@ -79,7 +79,8 @@ export default function Footer() {
                 <Link
                   key={zone}
                   href={`/cerrajeros-${zone.toLowerCase().replace(/ /g, '-')}`}
-                  className="text-[13px] text-gray-500 hover:text-[#FF9F1C] transition-colors whitespace-nowrap"
+                  className="text-[13px] text-gray-300 hover:text-[#FF9F1C] transition-colors whitespace-nowrap"
+                  aria-label={`Cerrajeros en el barrio de ${zone}`}
                 >
                   • {zone}
                 </Link>

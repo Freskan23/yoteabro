@@ -236,8 +236,8 @@ export default function Home() {
                         <HomeIcon className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-white font-bold text-lg">Apertura de Puertas</h3>
-                        <p className="text-gray-400 text-sm">Sin daños • Llegada en 20 min</p>
+                        <h2 className="text-white font-bold text-lg">Apertura de Puertas</h2>
+                        <p className="text-gray-200 text-sm">Sin daños • Llegada en 20 min</p>
                       </div>
                       <ArrowRight className="ml-auto h-5 w-5 text-gray-500 group-hover:text-white transition-colors" />
                     </div>
@@ -253,8 +253,8 @@ export default function Home() {
                         <Lock className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-white font-bold text-lg">Cambio de Cerraduras</h3>
-                        <p className="text-gray-400 text-sm">Alta seguridad • Antibumping</p>
+                        <h2 className="text-white font-bold text-lg">Cambio de Cerraduras</h2>
+                        <p className="text-gray-200 text-sm">Alta seguridad • Antibumping</p>
                       </div>
                       <ArrowRight className="ml-auto h-5 w-5 text-gray-500 group-hover:text-white transition-colors" />
                     </div>
@@ -270,8 +270,8 @@ export default function Home() {
                         <Clock className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-white font-bold text-lg">Urgencias 24 Horas</h3>
-                        <p className="text-gray-400 text-sm">Noches • Festivos • Fines de semana</p>
+                        <h2 className="text-white font-bold text-lg">Urgencias 24 Horas</h2>
+                        <p className="text-gray-200 text-sm">Noches • Festivos • Fines de semana</p>
                       </div>
                       <ArrowRight className="ml-auto h-5 w-5 text-gray-500 group-hover:text-white transition-colors" />
                     </div>

@@ -113,7 +113,7 @@ export default function Header() {
                 asChild
                 className="bg-[#FF6B35] hover:bg-[#E55A2B] text-white font-bold h-11 px-6 rounded-xl shadow-lg shadow-orange-500/20 active:scale-95 transition-all text-sm md:text-base"
               >
-                <a href={`tel:${APP_PHONE}`} className="flex items-center gap-2">
+                <a href={`tel:${APP_PHONE}`} className="flex items-center gap-2" aria-label={`Llamar a Cerrajeros Aguado al ${APP_PHONE_DISPLAY}`}>
                   <Phone className="h-4 w-4 md:h-5 md:w-5 animate-pulse" />
                   <span className="whitespace-nowrap">{APP_PHONE_DISPLAY}</span>
                 </a>
@@ -121,8 +121,10 @@ export default function Header() {
 
               {/* Mobile Toggle */}
               <button
-                className="lg:hidden p-2 text-gray-600 hover:text-[#001529]"
+                className="lg:hidden p-2 text-gray-800 hover:text-[#FF6B35] transition-colors"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                aria-label={mobileMenuOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
+                aria-expanded={mobileMenuOpen}
               >
                 {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-7 w-7" />}
               </button>
