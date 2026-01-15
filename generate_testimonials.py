@@ -1,5 +1,6 @@
 import random
 import json
+import os
 from datetime import datetime, timedelta
 
 neighborhoods = [
@@ -29,7 +30,6 @@ def generate_full_coverage(total_count):
     id_counter = 1
     base_date = datetime(2026, 1, 15)
     
-    # 1. Ensure EVERY combination is covered (12 * 5 = 60 reviews)
     for loc in neighborhoods:
         for service in services:
             name = random.choice(names) + " " + random.choice(last_names)
@@ -46,7 +46,6 @@ def generate_full_coverage(total_count):
             })
             id_counter += 1
             
-    # 2. Fill the remaining up to total_count (97 - 60 = 37 reviews)
     while len(res) < total_count:
         loc = random.choice(neighborhoods)
         service = random.choice(services)
@@ -79,5 +78,10 @@ header = """export interface Testimonial {
 """
 
 data = generate_full_coverage(97)
-print(header)
-print("export const testimonials: Testimonial[] = " + json.dumps(data, indent=2, ensure_ascii=False) + ";")
+output_path = os.path.join("client", "src", "data", "testimonials.ts")
+
+with open(output_path, "w", encoding="utf-8") as f:
+    f.write(header)
+    f.write("export const testimonials: Testimonial[] = " + json.dumps(data, indent=2, ensure_ascii=False) + ";")
+
+print(f"Generated 97 testimonials in {output_path} with UTF-8 encoding.")
