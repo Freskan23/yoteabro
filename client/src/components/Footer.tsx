@@ -32,7 +32,13 @@ export default function Footer() {
           {/* Columna Branding & Bio (4 slots) */}
           <div className="lg:col-span-4 space-y-6">
             <div className="inline-flex items-center gap-3 p-2 bg-white rounded-2xl shadow-xl">
-              <img src="/logo-aguado.jpg" alt={APP_BUSINESS_NAME} className="h-12 w-auto" />
+              <img
+                src="/logo-aguado.jpg"
+                alt={`Logo de ${APP_BUSINESS_NAME}`}
+                width="150"
+                height="40"
+                className="h-12 w-auto"
+              />
             </div>
             <h3 className="text-2xl font-black tracking-tight text-white italic">
               Cerrajeros <span className="text-[#FF6B35]">Aguado</span>
@@ -41,10 +47,10 @@ export default function Footer() {
               Tu seguridad es nuestra obsesión. Líderes en {APP_LOCATION} con servicio técnico especializado y atención inmediata las 24 horas.
             </p>
             <div className="flex gap-4 pt-2">
-              <a href={`tel:${APP_PHONE}`} className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#FF6B35] transition-all group">
+              <a href={`tel:${APP_PHONE}`} className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#FF6B35] transition-all group" aria-label="Llamar por teléfono a Cerrajeros Aguado">
                 <Phone className="h-5 w-5 text-gray-400 group-hover:text-white" />
               </a>
-              <a href={`mailto:${APP_EMAIL}`} className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#FF6B35] transition-all group">
+              <a href={`mailto:${APP_EMAIL}`} className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#FF6B35] transition-all group" aria-label="Enviar correo electrónico">
                 <Mail className="h-5 w-5 text-gray-400 group-hover:text-white" />
               </a>
             </div>

@@ -57,6 +57,8 @@ export default function Header() {
                 <img
                   src="/logo-aguado.jpg"
                   alt={APP_BUSINESS_NAME}
+                  width="180"
+                  height="45"
                   className="relative h-10 md:h-12 w-auto"
                 />
               </div>

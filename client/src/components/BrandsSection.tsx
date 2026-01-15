@@ -17,8 +17,10 @@ export default function BrandsSection() {
 
                     <div className="relative bg-gray-50/50 border border-gray-100 rounded-[32px] p-8 md:p-12">
                         <img
-                            src="/images/marcas-cerrajeria.png"
+                            src="/images/marcas-cerrajeria.webp"
                             alt="Logos de marcas de cerrajería de confianza"
+                            width="1200"
+                            height="300"
                             className="w-full h-auto object-contain mix-blend-multiply opacity-80 hover:opacity-100 transition-opacity duration-500"
                         />
                     </div>

@@ -161,8 +161,10 @@ export default function Home() {
           {/* Imagen de fondo cinematográfica */}
           <div className="absolute inset-0 z-0">
             <img
-              src="/images/hero-nano-banana.jpg"
+              src="/images/hero-nano-banana.webp"
               alt="Seguridad avanzada y cerrajería profesional"
+              width="1920"
+              height="1080"
               className="w-full h-full object-cover opacity-60"
             />
             {/* Gradiente dramático para integrar imagen y contenido */}
@@ -199,7 +201,7 @@ export default function Home() {
                     size="lg"
                     className="bg-[#FF6B35] hover:bg-[#E55A2B] text-white text-xl px-10 py-8 rounded-2xl shadow-[0_0_40px_-10px_rgba(255,107,53,0.5)] hover:shadow-[0_0_60px_-15px_rgba(255,107,53,0.6)] transition-all duration-300 transform hover:-translate-y-1"
                   >
-                    <a href={`tel:${APP_PHONE}`} className="flex items-center gap-3">
+                    <a href={`tel:${APP_PHONE}`} className="flex items-center gap-3" aria-label={`Llamar a Cerrajeros Aguado al ${APP_PHONE_DISPLAY}`}>
                       <Phone className="h-8 w-8 animate-pulse" />
                       <div className="flex flex-col items-start text-left">
                         <span className="text-xs font-medium opacity-90 uppercase tracking-wider">Llamar ahora</span>
@@ -309,6 +311,8 @@ export default function Home() {
                           <img
                             src={service.image}
                             alt={service.title}
+                            width="400"
+                            height="300"
                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                           />
                           <div className="absolute bottom-4 left-4 z-20">

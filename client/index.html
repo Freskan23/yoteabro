@@ -12,8 +12,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#A52A2A" />
-  <!-- Preload critical resources -->
-  <link rel="preload" href="/images/hero-nano-banana.jpg" as="image" type="image/jpeg" fetchpriority="high" />
+  <!-- Performance: Preconnect to external APIs -->
+  <link rel="preconnect" href="https://api.open-meteo.com">
+  <!-- Preload critical resources (LCP) -->
+  <link rel="preload" href="/images/hero-nano-banana.webp" as="image" type="image/webp" fetchpriority="high" />
   <link rel="preload" href="/logo-aguado.jpg" as="image" type="image/jpeg" />
   <title>Cerrajeros en Leganés 24h ⚡ Cerrajeros Leganés Aguado</title>
 </head>
