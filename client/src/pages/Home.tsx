@@ -33,8 +33,10 @@ import {
 } from "@/components/ui/carousel";
 import BrandsSection from "@/components/BrandsSection";
 import { Link } from "wouter";
+import { useDynamicPricing } from "@/hooks/useDynamicPricing";
 
 export default function Home() {
+  const { currentPrice, isNormalHours } = useDynamicPricing();
   const services = [
     {
       icon: <HomeIcon className="h-12 w-12 text-[#FF6B35]" />,
@@ -555,6 +557,20 @@ export default function Home() {
                 <h2 className="text-5xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tight italic">
                   ¿Necesitas un <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B35] to-[#FF9F1C]">cerrajero</span> urgente?
                 </h2>
+
+                <div className="flex flex-wrap justify-center gap-4 mb-10">
+                  <div className="bg-white/5 border border-white/10 px-6 py-3 rounded-2xl backdrop-blur-md">
+                    <p className="text-[10px] uppercase tracking-widest text-[#FF6B35] font-black mb-1">Tarifa Actual</p>
+                    <p className="text-3xl font-black italic">Desde {currentPrice}€</p>
+                  </div>
+                  <div className="bg-white/5 border border-white/10 px-6 py-3 rounded-2xl backdrop-blur-md">
+                    <p className="text-[10px] uppercase tracking-widest text-[#FF6B35] font-black mb-1">Tipo de Servicio</p>
+                    <p className="text-sm font-bold uppercase tracking-tighter">
+                      {isNormalHours ? "Horario Comercial" : "Urgencia 24 Horas"}
+                    </p>
+                  </div>
+                </div>
+
                 <p className="text-xl md:text-2xl mb-12 text-gray-400 font-medium leading-relaxed max-w-2xl mx-auto">
                   No pierdas tiempo con intermediarios. Llama directamente a <span className="text-white font-bold">Aguado</span> y estaremos en tu puerta en menos de 20 minutos.
                 </p>
