@@ -19,7 +19,7 @@ jobs:
 
     - name: 🔨 Instalar y Construir
       run: |
-        npm install
+        npm install --legacy-peer-deps
         npm run build
 
     - name: 📂 Subir a FTP
