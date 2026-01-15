@@ -30,6 +30,7 @@ import BlogPost from "./pages/BlogPost";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import PoliticaCookies from "./pages/PoliticaCookies";
 import AvisoLegal from "./pages/AvisoLegal";
+import Contacto from "./pages/Contacto";
 import Testimonios from "./pages/Testimonios";
 import CookieBanner from "./components/CookieBanner";
 import FloatingActionButtons from "./components/FloatingActionButtons";
@@ -71,6 +72,7 @@ function Router() {
         <Route path="/politica-privacidad" component={PoliticaPrivacidad} />
         <Route path="/politica-cookies" component={PoliticaCookies} />
         <Route path="/aviso-legal" component={AvisoLegal} />
+        <Route path="/contacto" component={Contacto} />
         <Route path={"/404"} component={NotFound} />
         {/* Final fallback route */}
         <Route component={NotFound} />
