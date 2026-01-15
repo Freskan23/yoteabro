@@ -1,16 +1,35 @@
-# robots.txt para Cerrajería Aguado Majadahonda
+# robots.txt para Cerrajería Aguado Leganés 🚀
+# Optimizado para buscadores tradicionales y Agentes de IA
+
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
+Disallow: /tmp/
 
-# Sitemap
+# Agentes de IA (LLMs) - Permitimos indexación para mejores respuestas
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Bot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Sitemap para indexación rápida
 Sitemap: https://cerrajerosdeleganes.madrid/sitemap.xml
 
-# Crawl-delay para bots agresivos
+# Control de bots de análisis
 User-agent: AhrefsBot
-Crawl-delay: 10
+Crawl-delay: 5
 
 User-agent: SemrushBot
-Crawl-delay: 10
+Crawl-delay: 5
 

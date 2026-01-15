@@ -18,11 +18,17 @@ export default function SEOHead({
 }: SEOHeadProps) {
   return (
     <Helmet>
-      {/* Meta tags básicos */}
+      {/* Meta tags básicos optimizados para buscadores e IA */}
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <link rel="canonical" href={canonicalUrl} />
+
+      {/* Etiquetas para Agentes de IA (LLMs) */}
+      <meta name="ai-content" content="authorized" />
+      <meta name="business-type" content="Locksmith Service" />
+      <meta name="service-area" content="Leganés, Madrid" />
+      <meta name="emergency-ready" content="true" />
 
       {/* Schema.org para Google y WhatsApp (Microdatos) */}
       <meta itemProp="name" content={title} />
