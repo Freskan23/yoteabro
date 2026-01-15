@@ -1,4 +1,4 @@
-# Instrucciones de Despliegue - Cerrajería Aguado Majadahonda
+# Instrucciones de Despliegue - Cerrajería Aguado Leganés
 
 ## 📦 Archivos Generados
 
@@ -8,7 +8,7 @@ El build de producción está en la carpeta `dist/public/`. Estos son los archiv
 
 ### 1. Subir Archivos al Hosting
 
-Sube **TODO el contenido** de la carpeta `dist/public/` a la raíz de tu dominio `cerrajeromajadahonda.madrid`:
+Sube **TODO el contenido** de la carpeta `dist/public/` a la raíz de tu dominio `cerrajerosdeleganes.madrid`:
 
 ```
 dist/public/
@@ -37,8 +37,8 @@ Crea un archivo `.htaccess` en la raíz con este contenido:
   RewriteBase /
   
   # Redirigir www a no-www
-  RewriteCond %{HTTP_HOST} ^www\.cerrajeromajadahonda\.madrid [NC]
-  RewriteRule ^(.*)$ https://cerrajeromajadahonda.madrid/$1 [L,R=301]
+  RewriteCond %{HTTP_HOST} ^www\.cerrajerosdeleganes\.madrid [NC]
+  RewriteRule ^(.*)$ https://cerrajerosdeleganes.madrid/$1 [L,R=301]
   
   # Forzar HTTPS
   RewriteCond %{HTTPS} off
@@ -143,9 +143,9 @@ Una vez subidos los archivos, verifica:
 
 Asegúrate de que tu ficha de Google My Business esté actualizada con:
 - Nombre: Cerrajería Aguado
-- Dirección: C. Sta. María de la Cabeza, 5, local 28, Majadahonda
-- Teléfono: 614 040 443
-- Sitio web: https://cerrajeromajadahonda.madrid
+- Dirección: Av. de Fuenlabrada, 37, local 34 (Galería Sanabria), 28912 Leganés, Madrid
+- Teléfono: 624 940 941
+- Sitio web: https://cerrajerosdeleganes.madrid
 - Horario: 24 horas
 
 ## 📊 Características Implementadas
@@ -172,9 +172,9 @@ Asegúrate de que tu ficha de Google My Business esté actualizada con:
 - ✅ Botón flotante de WhatsApp
 
 ### Contacto
-- Teléfono: 614 040 443
-- Email: aguado@cerrajeriamajadahonda.com
-- WhatsApp: 614 040 443
+- Teléfono: 624 940 941
+- Email: aguado@cerrajerosleganes.madrid
+- WhatsApp: 624 940 941
 
 ## 🔧 Soporte Técnico
 
@@ -194,5 +194,5 @@ Si tienes algún problema durante el despliegue, verifica:
 
 ---
 
-**¡Tu web está lista para dominar las búsquedas locales de cerrajeros en Majadahonda! 🔐⚡**
+**¡Tu web está lista para dominar las búsquedas locales de cerrajeros en Leganés! 🔐⚡**
 

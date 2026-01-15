@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Star, MapPin, Calendar, Filter } from "lucide-react";
 import { testimonials, type Testimonial } from "@/data/testimonials";
+import { APP_PHONE, APP_PHONE_DISPLAY, APP_BUSINESS_NAME } from "@/const";
 import SEOHead from "@/components/SEOHead";
 
 export default function Testimonios() {
@@ -33,7 +34,7 @@ export default function Testimonios() {
         {/* Hero Section con Imagen */}
         <div className="relative h-[300px] md:h-[400px] mb-12">
           <img
-            src="/testimonios-hero.png"
+            src="/testimonios-hero.webp"
             alt="Cerrajero profesional con cliente satisfecho en Leganés"
             className="w-full h-full object-cover"
           />
@@ -122,10 +123,10 @@ export default function Testimonios() {
               Únete a las 97 familias que ya confían en nosotros
             </p>
             <a
-              href="tel:614040443"
+              href={`tel:${APP_PHONE}`}
               className="inline-block bg-white text-red-700 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors"
             >
-              Llamar ahora: 614 040 443
+              Llamar ahora: {APP_PHONE_DISPLAY}
             </a>
           </div>
         </div>

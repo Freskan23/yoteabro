@@ -6,8 +6,8 @@ export const APP_DESCRIPTION = "Cerrajeros en Leganés 24 horas. Llegamos en 20 
 export const APP_LOGO = "/logo-aguado.jpg";
 
 // Cerrajería Aguado - Business Information
-export const APP_PHONE = "+34 614 040 443";
-export const APP_PHONE_DISPLAY = "614 040 443";
+export const APP_PHONE = "+34 624 940 941";
+export const APP_PHONE_DISPLAY = "624 940 941";
 export const APP_EMAIL = "aguado@cerrajerosleganes.madrid";
 export const APP_BUSINESS_NAME = "Cerrajeros Leganés Aguado";
 export const APP_BUSINESS_LEGAL_NAME = "CERRAJERIA AGUADO, S.L.";
