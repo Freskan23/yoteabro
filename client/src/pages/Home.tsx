@@ -165,6 +165,8 @@ export default function Home() {
               alt="Seguridad avanzada y cerrajería profesional"
               width="1920"
               height="1080"
+              loading="eager"
+              fetchPriority="high"
               className="w-full h-full object-cover opacity-60"
             />
             {/* Gradiente dramático para integrar imagen y contenido */}

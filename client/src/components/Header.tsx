@@ -55,7 +55,7 @@ export default function Header() {
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-[#FF6B35] to-[#FF9F1C] rounded-full blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
                 <img
-                  src="/logo-aguado.jpg"
+                  src="/logo-aguado.webp"
                   alt={APP_BUSINESS_NAME}
                   width="180"
                   height="45"
