@@ -8,13 +8,13 @@ export default function SchemaMarkup() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "Locksmith",
-    "@id": "https://cerrajeromajadahonda.madrid/#organization",
+    "@id": "https://cerrajerosdeleganes.madrid/#organization",
     "name": APP_BUSINESS_NAME,
     "legalName": "CERRAJERIA AGUADO, S.L.",
-    "url": "https://cerrajeromajadahonda.madrid",
-    "logo": "https://cerrajeromajadahonda.madrid/images/logo-aguado.jpg",
-    "image": "https://cerrajeromajadahonda.madrid/images/cerrajero-aguado.png",
-    "description": "Cerrajeros profesionales en Majadahonda disponibles 24/7 para cualquier urgencia. Apertura de puertas, cambio de cerraduras, bombines de seguridad y amaestramiento.",
+    "url": "https://cerrajerosdeleganes.madrid",
+    "logo": "https://cerrajerosdeleganes.madrid/images/logo-aguado.jpg",
+    "image": "https://cerrajerosdeleganes.madrid/images/cerrajero-aguado.png",
+    "description": "Cerrajeros profesionales en Leganés disponibles 24/7 para cualquier urgencia. Apertura de puertas desde 90€, cambio de cerraduras, bombines de seguridad y amaestramiento.",
     "telephone": APP_PHONE,
     "email": APP_EMAIL,
     "priceRange": "€€",
@@ -27,16 +27,16 @@ export default function SchemaMarkup() {
     },
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "C. Sta. María de la Cabeza, 5, local 28",
-      "addressLocality": "Majadahonda",
+      "streetAddress": "Av. de Fuenlabrada, 37, local 34 (Galería Sanabria)",
+      "addressLocality": "Leganés",
       "addressRegion": "Madrid",
-      "postalCode": "28220",
+      "postalCode": "28912",
       "addressCountry": "ES"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "40.4739",
-      "longitude": "-3.8722"
+      "latitude": "40.3283",
+      "longitude": "-3.7667"
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -55,26 +55,26 @@ export default function SchemaMarkup() {
     "areaServed": [
       {
         "@type": "City",
-        "name": "Majadahonda"
+        "name": "Leganés"
       },
       {
         "@type": "City",
-        "name": "Boadilla del Monte"
+        "name": "Zarzaquemada"
       },
       {
         "@type": "City",
-        "name": "Pozuelo de Alarcón"
+        "name": "San Nicasio"
       },
       {
         "@type": "City",
-        "name": "Las Rozas"
+        "name": "Arroyo Culebro"
       }
     ],
     "sameAs": [
       "https://www.facebook.com/cerrajeriaaguado",
       "https://www.instagram.com/cerrajeriaaguado",
       "https://twitter.com/cerrajeriaaguado",
-      "https://cerrajeromajadahonda.madrid"
+      "https://cerrajerosdeleganes.madrid"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -87,9 +87,9 @@ export default function SchemaMarkup() {
             "name": "Apertura de Puertas",
             "description": "Servicio urgente de apertura de puertas sin daños, disponible 24/7",
             "provider": {
-              "@id": "https://cerrajeromajadahonda.madrid/#organization"
+              "@id": "https://cerrajerosdeleganes.madrid/#organization"
             },
-            "areaServed": "Majadahonda",
+            "areaServed": "Leganés",
             "priceSpecification": {
               "@type": "PriceSpecification",
               "price": "90",
@@ -105,9 +105,9 @@ export default function SchemaMarkup() {
             "name": "Cambio de Cerraduras",
             "description": "Instalación y sustitución de cerraduras de alta seguridad",
             "provider": {
-              "@id": "https://cerrajeromajadahonda.madrid/#organization"
+              "@id": "https://cerrajerosdeleganes.madrid/#organization"
             },
-            "areaServed": "Majadahonda"
+            "areaServed": "Leganés"
           }
         },
         {
@@ -117,9 +117,9 @@ export default function SchemaMarkup() {
             "name": "Cambio de Bombín",
             "description": "Bombines de seguridad antibumping, antiganzúa y antitaladro",
             "provider": {
-              "@id": "https://cerrajeromajadahonda.madrid/#organization"
+              "@id": "https://cerrajerosdeleganes.madrid/#organization"
             },
-            "areaServed": "Majadahonda"
+            "areaServed": "Leganés"
           }
         },
         {
@@ -129,9 +129,9 @@ export default function SchemaMarkup() {
             "name": "Amaestramiento",
             "description": "Sistema de llaves maestras para múltiples accesos",
             "provider": {
-              "@id": "https://cerrajeromajadahonda.madrid/#organization"
+              "@id": "https://cerrajerosdeleganes.madrid/#organization"
             },
-            "areaServed": "Majadahonda"
+            "areaServed": "Leganés"
           }
         }
       ]
@@ -147,7 +147,7 @@ export default function SchemaMarkup() {
         "name": "¿Cuánto cobra un cerrajero por abrir una puerta?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "En Cerrajería Aguado, el servicio de apertura de puertas cuesta 90€ en horario normal (lunes a viernes de 08:00 a 19:00h) y 120€ fuera de este horario (noches, fines de semana y festivos). No cobramos desplazamiento."
+          "text": `En Cerrajería Aguado, el servicio de apertura de puertas cuesta 90€ en horario normal (lunes a viernes de 08:00 a 19:00h) y 120€ fuera de este horario (noches, fines de semana y festivos). No cobramos desplazamiento.`
         }
       },
       {
@@ -169,30 +169,29 @@ export default function SchemaMarkup() {
     ]
   };
 
-  // Schema de Organización (complementa LocalBusiness)
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://cerrajeromajadahonda.madrid/#organization",
+    "@id": "https://cerrajerosdeleganes.madrid/#organization",
     "name": APP_BUSINESS_NAME,
     "legalName": "CERRAJERIA AGUADO, S.L.",
-    "url": "https://cerrajeromajadahonda.madrid",
+    "url": "https://cerrajerosdeleganes.madrid",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://cerrajeromajadahonda.madrid/logo-aguado.png",
+      "url": "https://cerrajerosdeleganes.madrid/logo-aguado.png",
       "width": "250",
       "height": "60"
     },
-    "image": "https://cerrajeromajadahonda.madrid/images/og-image.webp",
-    "description": "Cerrajería profesional en Majadahonda con más de 20 años de experiencia. Especialistas en apertura de puertas, cerraduras de seguridad y sistemas de amaestramiento.",
+    "image": "https://cerrajerosdeleganes.madrid/images/og-image.webp",
+    "description": "Cerrajería profesional en Leganés con más de 20 años de experiencia. Especialistas en apertura de puertas, cerraduras de seguridad y sistemas de amaestramiento.",
     "telephone": APP_PHONE,
     "email": APP_EMAIL,
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "C. Sta. María de la Cabeza, 5, local 28",
-      "addressLocality": "Majadahonda",
+      "streetAddress": "Av. de Fuenlabrada, 37, local 34 (Galería Sanabria)",
+      "addressLocality": "Leganés",
       "addressRegion": "Madrid",
-      "postalCode": "28220",
+      "postalCode": "28912",
       "addressCountry": "ES"
     },
     "founder": {
@@ -205,7 +204,7 @@ export default function SchemaMarkup() {
       "@type": "QuantitativeValue",
       "value": "5"
     },
-    "slogan": "Tu cerrajero de confianza en Majadahonda 24 horas",
+    "slogan": "Tu cerrajero de confianza en Leganés 24 horas",
     "knowsAbout": [
       "Cerrajería",
       "Seguridad",
@@ -216,15 +215,14 @@ export default function SchemaMarkup() {
     ]
   };
 
-  // Schema de Autor/Experto
   const authorSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://cerrajeromajadahonda.madrid/#author",
+    "@id": "https://cerrajerosdeleganes.madrid/#author",
     "name": "Cerrajería Aguado",
     "jobTitle": "Maestro Cerrajero Profesional",
     "worksFor": {
-      "@id": "https://cerrajeromajadahonda.madrid/#organization"
+      "@id": "https://cerrajerosdeleganes.madrid/#organization"
     },
     "knowsAbout": [
       "Cerrajería profesional",
@@ -242,13 +240,12 @@ export default function SchemaMarkup() {
     },
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Majadahonda",
+      "addressLocality": "Leganés",
       "addressRegion": "Madrid",
       "addressCountry": "ES"
     }
   };
 
-  // Schema de Menú de Servicios
   const menuSchema = {
     "@context": "https://schema.org",
     "@type": "SiteNavigationElement",
@@ -257,64 +254,51 @@ export default function SchemaMarkup() {
       {
         "@type": "WebPage",
         "name": "Apertura de Puertas",
-        "url": "https://cerrajeromajadahonda.madrid/apertura-puertas",
+        "url": "https://cerrajerosdeleganes.madrid/apertura-puertas",
         "description": "Servicio urgente de apertura de puertas 24/7 desde 90€"
       },
       {
         "@type": "WebPage",
         "name": "Cambio de Cerraduras",
-        "url": "https://cerrajeromajadahonda.madrid/cambio-cerraduras",
+        "url": "https://cerrajerosdeleganes.madrid/cambio-cerraduras",
         "description": "Instalación de cerraduras de alta seguridad"
       },
       {
         "@type": "WebPage",
         "name": "Cambio de Bombín",
-        "url": "https://cerrajeromajadahonda.madrid/cambio-bombin",
+        "url": "https://cerrajerosdeleganes.madrid/cambio-bombin",
         "description": "Bombines antibumping y antiganzúa"
       },
       {
         "@type": "WebPage",
         "name": "Amaestramiento",
-        "url": "https://cerrajeromajadahonda.madrid/amaestramiento",
+        "url": "https://cerrajerosdeleganes.madrid/amaestramiento",
         "description": "Sistema de llaves maestras para comunidades"
       },
       {
         "@type": "WebPage",
         "name": "Blog",
-        "url": "https://cerrajeromajadahonda.madrid/blog",
+        "url": "https://cerrajerosdeleganes.madrid/blog",
         "description": "Consejos y guías sobre seguridad y cerrajería"
       }
     ]
   };
 
-  // Schemas individuales de Servicios
   const aperturaService = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://cerrajeromajadahonda.madrid/apertura-puertas#service",
+    "@id": "https://cerrajerosdeleganes.madrid/apertura-puertas#service",
     "serviceType": "Apertura de Puertas",
     "name": "Apertura de Puertas Urgente 24h",
-    "description": "Servicio profesional de apertura de puertas sin daños. Atendemos emergencias 24 horas en Majadahonda y alrededores. Llegamos en 20-30 minutos.",
+    "description": "Servicio profesional de apertura de puertas sin daños. Atendemos emergencias 24 horas en Leganés y alrededores. Llegamos en 20 minutos.",
     "provider": {
-      "@id": "https://cerrajeromajadahonda.madrid/#organization"
+      "@id": "https://cerrajerosdeleganes.madrid/#organization"
     },
     "areaServed": [
-      {
-        "@type": "City",
-        "name": "Majadahonda"
-      },
-      {
-        "@type": "City",
-        "name": "Boadilla del Monte"
-      },
-      {
-        "@type": "City",
-        "name": "Pozuelo de Alarcón"
-      },
-      {
-        "@type": "City",
-        "name": "Las Rozas"
-      }
+      { "@type": "City", "name": "Leganés" },
+      { "@type": "City", "name": "Fuenlabrada" },
+      { "@type": "City", "name": "Getafe" },
+      { "@type": "City", "name": "Alcorcón" }
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -364,65 +348,62 @@ export default function SchemaMarkup() {
   const cerradurasService = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://cerrajeromajadahonda.madrid/cambio-cerraduras#service",
+    "@id": "https://cerrajerosdeleganes.madrid/cambio-cerraduras#service",
     "serviceType": "Cambio de Cerraduras",
     "name": "Instalación y Cambio de Cerraduras de Seguridad",
     "description": "Instalación profesional de cerraduras de alta seguridad. Trabajamos con las mejores marcas: Mottura, Ezcurra, Tesa. Cerraduras multipunto, antibumping y antiganzúa.",
     "provider": {
-      "@id": "https://cerrajeromajadahonda.madrid/#organization"
+      "@id": "https://cerrajerosdeleganes.madrid/#organization"
     },
     "areaServed": [
-      {"@type": "City", "name": "Majadahonda"},
-      {"@type": "City", "name": "Boadilla del Monte"},
-      {"@type": "City", "name": "Pozuelo de Alarcón"},
-      {"@type": "City", "name": "Las Rozas"}
+      { "@type": "City", "name": "Leganés" },
+      { "@type": "City", "name": "Fuenlabrada" },
+      { "@type": "City", "name": "Getafe" }
     ],
     "brand": [
-      {"@type": "Brand", "name": "Mottura"},
-      {"@type": "Brand", "name": "Ezcurra"},
-      {"@type": "Brand", "name": "Tesa"},
-      {"@type": "Brand", "name": "Mul-T-Lock"}
+      { "@type": "Brand", "name": "Mottura" },
+      { "@type": "Brand", "name": "Ezcurra" },
+      { "@type": "Brand", "name": "Tesa" },
+      { "@type": "Brand", "name": "Mul-T-Lock" }
     ]
   };
 
   const bombinService = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://cerrajeromajadahonda.madrid/cambio-bombin#service",
+    "@id": "https://cerrajerosdeleganes.madrid/cambio-bombin#service",
     "serviceType": "Cambio de Bombín",
     "name": "Cambio de Bombín de Seguridad",
     "description": "Instalación de bombines de alta seguridad con protección antibumping, antiganzúa y antitaladro. Bombines con certificación europea y llaves incopiables.",
     "provider": {
-      "@id": "https://cerrajeromajadahonda.madrid/#organization"
+      "@id": "https://cerrajerosdeleganes.madrid/#organization"
     },
     "areaServed": [
-      {"@type": "City", "name": "Majadahonda"},
-      {"@type": "City", "name": "Boadilla del Monte"},
-      {"@type": "City", "name": "Pozuelo de Alarcón"},
-      {"@type": "City", "name": "Las Rozas"}
+      { "@type": "City", "name": "Leganés" },
+      { "@type": "City", "name": "Fuenlabrada" },
+      { "@type": "City", "name": "Getafe" }
     ]
   };
 
   const amaestramientoService = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://cerrajeromajadahonda.madrid/amaestramiento#service",
+    "@id": "https://cerrajerosdeleganes.madrid/amaestramiento#service",
     "serviceType": "Amaestramiento de Llaves",
     "name": "Sistema de Amaestramiento y Llaves Maestras",
     "description": "Diseño e instalación de sistemas de amaestramiento para comunidades de vecinos, empresas y edificios. Una llave maestra para múltiples accesos con control de seguridad.",
     "provider": {
-      "@id": "https://cerrajeromajadahonda.madrid/#organization"
+      "@id": "https://cerrajerosdeleganes.madrid/#organization"
     },
     "areaServed": [
-      {"@type": "City", "name": "Majadahonda"},
-      {"@type": "City", "name": "Boadilla del Monte"},
-      {"@type": "City", "name": "Pozuelo de Alarcón"},
-      {"@type": "City", "name": "Las Rozas"}
+      { "@type": "City", "name": "Leganés" },
+      { "@type": "City", "name": "Fuenlabrada" },
+      { "@type": "City", "name": "Getafe" }
     ],
     "audience": [
-      {"@type": "Audience", "audienceType": "Comunidades de vecinos"},
-      {"@type": "Audience", "audienceType": "Empresas"},
-      {"@type": "Audience", "audienceType": "Edificios comerciales"}
+      { "@type": "Audience", "audienceType": "Comunidades de vecinos" },
+      { "@type": "Audience", "audienceType": "Empresas" },
+      { "@type": "Audience", "audienceType": "Edificios comerciales" }
     ]
   };
 
@@ -434,19 +415,19 @@ export default function SchemaMarkup() {
         "@type": "ListItem",
         "position": 1,
         "name": "Inicio",
-        "item": "https://cerrajeromajadahonda.madrid/"
+        "item": "https://cerrajerosdeleganes.madrid/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Servicios",
-        "item": "https://cerrajeromajadahonda.madrid/#servicios"
+        "item": "https://cerrajerosdeleganes.madrid/#servicios"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Blog",
-        "item": "https://cerrajeromajadahonda.madrid/blog"
+        "item": "https://cerrajerosdeleganes.madrid/blog"
       }
     ]
   };

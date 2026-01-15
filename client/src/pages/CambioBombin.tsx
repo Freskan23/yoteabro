@@ -17,6 +17,7 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RelatedServices from "@/components/RelatedServices";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "wouter";
 
 export default function CambioBombin() {
@@ -54,6 +55,11 @@ export default function CambioBombin() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title={`Cambio de Bombín en ${APP_LOCATION} 24h | ${APP_BUSINESS_NAME}`}
+        description={`🔑 Cambio de bombín de seguridad en ${APP_LOCATION}. Instalación de bombines antibumping, antiganzúa y antitaladro en 20 min. Máxima protección para tu hogar o negocio.`}
+        canonicalUrl="https://cerrajerosdeleganes.madrid/cambio-bombin"
+      />
       <Header />
 
       <main>

@@ -17,6 +17,7 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RelatedServices from "@/components/RelatedServices";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "wouter";
 
 export default function AperturaPuertas() {
@@ -54,6 +55,11 @@ export default function AperturaPuertas() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title={`Apertura de Puertas en ${APP_LOCATION} 24h | ${APP_BUSINESS_NAME}`}
+        description={`🔓 Apertura de puertas urgente en ${APP_LOCATION}. Llegamos en 20-30 min. Servicio profesional sin daños las 24 horas. Precios desde 90€ cerrados por teléfono.`}
+        canonicalUrl="https://cerrajerosdeleganes.madrid/apertura-puertas"
+      />
       <Header />
 
       <main>

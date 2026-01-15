@@ -11,10 +11,10 @@ interface SEOHeadProps {
 
 export default function SEOHead({
   title = `Cerrajeros en ${APP_LOCATION} 24h ⚡ Urgencias | ${APP_BUSINESS_NAME}`,
-  description = `🔑 Cerrajeros en ${APP_LOCATION} 24 horas. Apertura de puertas desde 90€, cambio de cerraduras y bombines de seguridad. ⚡ Llegamos en 20-30 min. ☎️ ${APP_PHONE_DISPLAY}. Servicio profesional y garantizado en toda la zona de Majadahonda, Boadilla, Pozuelo y Las Rozas.`,
-  keywords = "cerrajeros majadahonda, cerrajería 24 horas majadahonda, apertura puertas majadahonda, cambio cerraduras majadahonda, cerrajero urgente majadahonda, bombín seguridad majadahonda",
-  ogImage = "https://cerrajeromajadahonda.madrid/images/og-image.webp",
-  canonicalUrl = "https://cerrajeromajadahonda.madrid/"
+  description = `🔑 Cerrajeros en ${APP_LOCATION} 24 horas. Apertura de puertas desde 90€, cambio de cerraduras y bombines de seguridad. ⚡ Llegamos en 20-30 min. ☎️ ${APP_PHONE_DISPLAY}. Servicio profesional y garantizado en todo Leganés y Zona Sur de Madrid.`,
+  keywords = "cerrajeros leganés, cerrajería 24 horas leganés, apertura puertas leganés, cambio cerraduras leganés, cerrajero urgente leganés, bombín seguridad leganés, zarzaquemada, san nicasio, el carrascal",
+  ogImage = "https://cerrajerosdeleganes.madrid/images/og-image.webp",
+  canonicalUrl = "https://cerrajerosdeleganes.madrid/"
 }: SEOHeadProps) {
   return (
     <Helmet>
@@ -46,9 +46,9 @@ export default function SEOHead({
 
       {/* Geo tags para SEO local */}
       <meta name="geo.region" content="ES-M" />
-      <meta name="geo.placename" content="Majadahonda" />
-      <meta name="geo.position" content="40.4739;-3.8722" />
-      <meta name="ICBM" content="40.4739, -3.8722" />
+      <meta name="geo.placename" content="Leganés" />
+      <meta name="geo.position" content="40.3283;-3.7667" />
+      <meta name="ICBM" content="40.3283, -3.7667" />
 
       {/* Información de negocio */}
       <meta name="author" content={APP_BUSINESS_NAME} />

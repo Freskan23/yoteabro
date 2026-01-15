@@ -17,6 +17,7 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RelatedServices from "@/components/RelatedServices";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "wouter";
 
 export default function Amaestramiento() {
@@ -58,6 +59,11 @@ export default function Amaestramiento() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title={`Amaestramiento de Llaves y Cerraduras en ${APP_LOCATION} | ${APP_BUSINESS_NAME}`}
+        description={`🔑 Especialistas en amaestramiento de llaves y cerraduras en ${APP_LOCATION}. Sistema de llave maestra para comunidades, empresas y particulares. Comodidad y seguridad total.`}
+        canonicalUrl="https://cerrajerosdeleganes.madrid/amaestramiento"
+      />
       <Header />
 
       <main>

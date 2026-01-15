@@ -19,7 +19,7 @@ export default function ZoneLanding({
   zoneMapUrl,
   commonProblems,
 }: ZoneLandingProps) {
-  
+
   // Scroll to top al montar
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -33,7 +33,7 @@ export default function ZoneLanding({
           name="description"
           content={`Cerrajeros urgentes en ${zoneName}, Leganés. Llegamos en 20 minutos. Apertura de puertas, cambio de cerraduras y urgencias 24h en ${zoneName}. Precio cerrado.`}
         />
-        <link rel="canonical" href={`https://cerrajeriaaguado.com/zonas/${zoneName.toLowerCase().replace(/\s+/g, '-')}`} />
+        <link rel="canonical" href={`https://cerrajerosdeleganes.madrid/cerrajeros-${zoneName.toLowerCase().replace(/\s+/g, '-')}`} />
       </Helmet>
 
       <Header />
@@ -42,10 +42,10 @@ export default function ZoneLanding({
         {/* Hero Local */}
         <section className="relative bg-[#001529] text-white py-20 overflow-hidden">
           <div className="absolute inset-0 z-0 opacity-20">
-             {/* Usamos un patrón o imagen genérica de fondo oscurecida */}
-             <div className="w-full h-full bg-[url('/images/hero-nano-banana.jpg')] bg-cover bg-center"></div>
+            {/* Usamos un patrón o imagen genérica de fondo oscurecida */}
+            <div className="w-full h-full bg-[url('/images/hero-nano-banana.jpg')] bg-cover bg-center"></div>
           </div>
-          
+
           <div className="container relative z-10">
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FF6B35]/20 border border-[#FF6B35]/50 text-[#FF6B35] text-sm font-bold mb-6">
@@ -58,7 +58,7 @@ export default function ZoneLanding({
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
                 {zoneDescription} Llegamos a cualquier calle de {zoneName} en menos de 20 minutos.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   asChild
@@ -84,10 +84,10 @@ export default function ZoneLanding({
                   Servicio especializado para vecinos de {zoneName}
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Conocemos perfectamente las cerraduras y puertas más comunes en {zoneName}. 
+                  Conocemos perfectamente las cerraduras y puertas más comunes en {zoneName}.
                   Llevamos años trabajando en el barrio y sabemos cómo solucionar tus problemas de forma rápida y económica.
                 </p>
-                
+
                 <ul className="space-y-4">
                   {commonProblems.map((problem, index) => (
                     <li key={index} className="flex items-start gap-3">
@@ -97,7 +97,7 @@ export default function ZoneLanding({
                   ))}
                 </ul>
               </div>
-              
+
               {/* Mapa Local */}
               <div className="h-[400px] rounded-2xl overflow-hidden shadow-xl border-4 border-gray-100">
                 <iframe

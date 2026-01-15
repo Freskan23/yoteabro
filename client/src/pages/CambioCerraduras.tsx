@@ -18,6 +18,7 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RelatedServices from "@/components/RelatedServices";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "wouter";
 
 export default function CambioCerraduras() {
@@ -55,6 +56,11 @@ export default function CambioCerraduras() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title={`Cambio de Cerraduras en ${APP_LOCATION} 24h | ${APP_BUSINESS_NAME}`}
+        description={`🔧 Instalación y cambio de cerraduras de seguridad en ${APP_LOCATION}. Trabajamos con las mejores marcas: Mottura, Tesa, Ezcurra. Servicio urgente las 24 horas.`}
+        canonicalUrl="https://cerrajerosdeleganes.madrid/cambio-cerraduras"
+      />
       <Header />
 
       <main>

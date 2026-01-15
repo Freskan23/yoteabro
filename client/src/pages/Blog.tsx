@@ -1,10 +1,11 @@
-import { APP_BUSINESS_NAME, APP_PHONE, APP_PHONE_DISPLAY } from "@/const";
+import { APP_BUSINESS_NAME, APP_PHONE, APP_PHONE_DISPLAY, APP_LOCATION } from "@/const";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar, ArrowRight, Shield, Lock, Key, AlertTriangle } from "lucide-react";
 import { Link } from "wouter";
+import SEOHead from "@/components/SEOHead";
 
 const blogPosts = [
   {
@@ -66,8 +67,13 @@ const blogPosts = [
 export default function Blog() {
   return (
     <div className="min-h-screen flex flex-col bg-[#001529]">
+      <SEOHead
+        title={`Blog de Seguridad y Cerrajería en ${APP_LOCATION} | ${APP_BUSINESS_NAME}`}
+        description={`📰 Consejos de seguridad, avisos de robos y guías de cerrajería para los vecinos de ${APP_LOCATION}. Protege tu hogar con los mejores trucos profesionales.`}
+        canonicalUrl="https://cerrajerosdeleganes.madrid/blog"
+      />
       <Header />
-      
+
       {/* Hero del Blog */}
       <section className="relative py-24 overflow-hidden">
         {/* Fondo con efectos de luz */}
@@ -97,8 +103,8 @@ export default function Blog() {
               <Card key={post.id} className="bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group overflow-hidden backdrop-blur-sm">
                 <div className="aspect-video overflow-hidden relative">
                   <div className="absolute inset-0 bg-gradient-to-t from-[#001529] to-transparent opacity-60 z-10"></div>
-                  <img 
-                    src={post.image} 
+                  <img
+                    src={post.image}
                     alt={post.title}
                     width="400"
                     height="250"

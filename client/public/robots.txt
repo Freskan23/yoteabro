@@ -5,7 +5,7 @@ Disallow: /admin/
 Disallow: /private/
 
 # Sitemap
-Sitemap: https://cerrajeromajadahonda.madrid/sitemap.xml
+Sitemap: https://cerrajerosdeleganes.madrid/sitemap.xml
 
 # Crawl-delay para bots agresivos
 User-agent: AhrefsBot
