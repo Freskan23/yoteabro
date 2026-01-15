@@ -6,183 +6,125 @@ import WeatherWidget from "@/components/WeatherWidget";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
+  const serviceLinks = [
+    { href: "/apertura-puertas", label: "Apertura de puertas" },
+    { href: "/cambio-cerraduras", label: "Cambio de cerraduras" },
+    { href: "/cambio-bombin", label: "Cambio de bombín" },
+    { href: "/amaestramiento", label: "Amaestramiento" },
+    { href: "/blog", label: "Blog Cerrajero" },
+    { href: "/testimonios", label: "Opiniones Reales" },
+  ];
+
+  const zones = [
+    "Zarzaquemada", "San Nicasio", "El Carrascal", "La Fortuna",
+    "Poza del Agua", "Solagua", "Arroyo Culebro", "Valdepelayo",
+    "Vereda Estudiantes", "Los Santos", "Leganés Norte", "Centro"
+  ];
+
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Información de contacto */}
-          <div>
-            <img src="/logo-aguado.jpg" alt={APP_BUSINESS_NAME} className="h-16 w-auto mb-4" />
-            <h3 className="text-xl font-bold mb-4">{APP_BUSINESS_NAME}</h3>
-            <p className="text-gray-300 mb-4">
-              Cerrajeros profesionales en {APP_LOCATION} disponibles 24/7 para cualquier urgencia.
+    <footer className="bg-[#001529] text-white overflow-hidden">
+      {/* Línea de acento superior con gradiente marca */}
+      <div className="h-1 w-full bg-gradient-to-r from-[#FF6B35] via-[#FF9F1C] to-[#FF6B35] opacity-80"></div>
+
+      <div className="container pt-16 pb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
+
+          {/* Columna Branding & Bio (4 slots) */}
+          <div className="lg:col-span-4 space-y-6">
+            <div className="inline-flex items-center gap-3 p-2 bg-white rounded-2xl shadow-xl">
+              <img src="/logo-aguado.jpg" alt={APP_BUSINESS_NAME} className="h-12 w-auto" />
+            </div>
+            <h3 className="text-2xl font-black tracking-tight text-white italic">
+              Cerrajeros <span className="text-[#FF6B35]">Aguado</span>
+            </h3>
+            <p className="text-gray-400 leading-relaxed text-sm md:text-base max-w-sm">
+              Tu seguridad es nuestra obsesión. Líderes en {APP_LOCATION} con servicio técnico especializado y atención inmediata las 24 horas.
             </p>
-            <div className="flex items-start gap-3 mb-3">
-              <Phone className="h-5 w-5 text-[#A52A2A] flex-shrink-0 mt-1" />
-              <div>
-                <a
-                  href={`tel:${APP_PHONE}`}
-                  className="hover:text-[#A52A2A] transition-colors font-semibold"
-                >
-                  {APP_PHONE_DISPLAY}
-                </a>
-                <p className="text-sm text-gray-400">Disponible 24/7</p>
-              </div>
+            <div className="flex gap-4 pt-2">
+              <a href={`tel:${APP_PHONE}`} className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#FF6B35] transition-all group">
+                <Phone className="h-5 w-5 text-gray-400 group-hover:text-white" />
+              </a>
+              <a href={`mailto:${APP_EMAIL}`} className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#FF6B35] transition-all group">
+                <Mail className="h-5 w-5 text-gray-400 group-hover:text-white" />
+              </a>
             </div>
           </div>
 
-          {/* Servicios */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">Servicios</h3>
-            <ul className="space-y-2 text-gray-300">
-              <li>
-                <Link to="/apertura-puertas" className="hover:text-[#A52A2A] transition-colors">
-                  Apertura de puertas
-                </Link>
-              </li>
-              <li>
-                <Link to="/cambio-cerraduras" className="hover:text-[#A52A2A] transition-colors">
-                  Cambio de cerraduras
-                </Link>
-              </li>
-              <li>
-                <Link to="/cambio-bombin" className="hover:text-[#A52A2A] transition-colors">
-                  Cambio de bombín
-                </Link>
-              </li>
-              <li>
-                <Link to="/amaestramiento" className="hover:text-[#A52A2A] transition-colors">
-                  Amaestramiento
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog" className="hover:text-[#A52A2A] transition-colors">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link to="/testimonios" className="hover:text-[#A52A2A] transition-colors">
-                  Opiniones de clientes
-                </Link>
-              </li>
+          {/* Columna Servicios (2 slots) */}
+          <div className="lg:col-span-2">
+            <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-[#FF6B35] mb-6">Servicios</h4>
+            <ul className="space-y-4">
+              {serviceLinks.map((link) => (
+                <li key={link.href}>
+                  <Link to={link.href} className="text-gray-400 hover:text-white transition-colors text-sm font-medium flex items-center gap-2 group">
+                    <span className="h-0.5 w-0 bg-[#FF6B35] transition-all group-hover:w-3"></span>
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Horario y ubicación */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">Horario</h3>
-            <div className="space-y-3 text-gray-300">
-              <div className="flex items-start gap-3">
-                <Clock className="h-5 w-5 text-[#A52A2A] flex-shrink-0 mt-1" />
-                <div>
-                  <p className="font-semibold">Abierto 24 horas</p>
-                  <p className="text-sm">Todos los días del año</p>
-                  <p className="text-xs text-gray-400 mt-1">
-                    Lun-Vie 08:00-19:00: 90€<br />
-                    Fuera de horario: 120€
-                  </p>
+          {/* Columna Zonas (3 slots) */}
+          <div className="lg:col-span-3">
+            <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-[#FF6B35] mb-6">Cobertura en Leganés</h4>
+            <div className="grid grid-cols-2 gap-y-3 gap-x-4">
+              {zones.map((zone) => (
+                <Link
+                  key={zone}
+                  href={`/cerrajeros-${zone.toLowerCase().replace(/ /g, '-')}`}
+                  className="text-[13px] text-gray-500 hover:text-[#FF9F1C] transition-colors whitespace-nowrap"
+                >
+                  • {zone}
+                </Link>
+              ))}
+            </div>
+            <p className="mt-6 text-xs font-bold text-gray-400 bg-white/5 p-3 rounded-xl border border-white/5 inline-block">
+              📍 Desplazamiento GRATIS en todo {APP_LOCATION}
+            </p>
+          </div>
+
+          {/* Columna Contacto/Horario (3 slots) */}
+          <div className="lg:col-span-3 space-y-6">
+            <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-[#FF6B35] mb-6">Atención al Cliente</h4>
+            <div className="space-y-4">
+              <div className="bg-white/5 p-4 rounded-2xl border border-white/10 hover:border-[#FF6B35]/30 transition-all group">
+                <div className="flex items-center gap-3 mb-1">
+                  <Clock className="h-4 w-4 text-[#FF6B35]" />
+                  <span className="text-sm font-bold">24 Horas / 365 Días</span>
                 </div>
+                <p className="text-[11px] text-gray-500 pl-7 uppercase tracking-wider font-semibold">Urgencias e Instalaciones</p>
               </div>
-              <div className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-[#A52A2A] flex-shrink-0 mt-1" />
-                <div>
-                  <p className="text-sm">{APP_ADDRESS}</p>
-                </div>
+
+              <div className="bg-gradient-to-br from-[#FF6B35] to-[#FF9F1C] p-4 rounded-2xl shadow-lg shadow-orange-500/10">
+                <p className="text-[10px] text-white/80 uppercase font-black tracking-widest mb-1">Central de Avisos</p>
+                <a href={`tel:${APP_PHONE}`} className="text-xl font-black text-white block hover:scale-105 transition-transform">
+                  {APP_PHONE_DISPLAY}
+                </a>
               </div>
-              <div className="pt-2 border-t border-gray-700">
+
+              <div className="pt-2">
                 <WeatherWidget />
               </div>
             </div>
           </div>
-
-          {/* Zonas de servicio */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">Zonas de Servicio</h3>
-            <ul className="space-y-2 text-gray-300 text-sm">
-              <li>
-                <Link href="/cerrajeros-zarzaquemada" className="hover:text-[#FF6B35] transition-colors">
-                  • Cerrajeros Zarzaquemada
-                </Link>
-              </li>
-              <li>
-                <Link href="/cerrajeros-san-nicasio" className="hover:text-[#FF6B35] transition-colors">
-                  • Cerrajeros San Nicasio
-                </Link>
-              </li>
-              <li>
-                <Link href="/cerrajeros-el-carrascal" className="hover:text-[#FF6B35] transition-colors">
-                  • Cerrajeros El Carrascal
-                </Link>
-              </li>
-              <li>
-                <Link href="/cerrajeros-la-fortuna" className="hover:text-[#FF6B35] transition-colors">
-                  • Cerrajeros La Fortuna
-                </Link>
-              </li>
-              <li>
-                <Link href="/cerrajeros-leganes-norte" className="hover:text-[#FF6B35] transition-colors">
-                  • Cerrajeros Leganés Norte
-                </Link>
-              </li>
-              <li>
-                <Link href="/cerrajeros-arroyo-culebro" className="hover:text-[#FF6B35] transition-colors">
-                  • Cerrajeros Arroyo Culebro
-                </Link>
-              </li>
-              <li>
-                <Link href="/cerrajeros-valdepelayo" className="hover:text-[#FF6B35] transition-colors">
-                  • Cerrajeros Valdepelayo
-                </Link>
-              </li>
-              <li>
-                <Link href="/cerrajeros-vereda-estudiantes" className="hover:text-[#FF6B35] transition-colors">
-                  • Cerrajeros Vereda Estudiantes
-                </Link>
-              </li>
-              <li>
-                <Link href="/cerrajeros-los-santos" className="hover:text-[#FF6B35] transition-colors">
-                  • Cerrajeros Los Santos
-                </Link>
-              </li>
-              <li>
-                <Link href="/cerrajeros-solagua" className="hover:text-[#FF6B35] transition-colors">
-                  • Cerrajeros Solagua
-                </Link>
-              </li>
-              <li>
-                <Link href="/cerrajeros-poza-del-agua" className="hover:text-[#FF6B35] transition-colors">
-                  • Cerrajeros Poza del Agua
-                </Link>
-              </li>
-              <li>
-                <Link href="/cerrajeros-centro" className="hover:text-[#FF6B35] transition-colors">
-                  • Cerrajeros Centro
-                </Link>
-              </li>
-              <li className="text-[#FF6B35] font-semibold mt-3">
-                Y todo {APP_LOCATION}
-              </li>
-            </ul>
-          </div>
         </div>
 
-        {/* Separador */}
-        <div className="border-t border-gray-700 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-            <p>
-              © {currentYear} {APP_BUSINESS_NAME}. Todos los derechos reservados.
-            </p>
-            <div className="flex gap-6">
-              <Link href="/politica-privacidad" className="hover:text-white transition-colors">
-                Política de Privacidad
+        {/* Footer Bottom / Legales */}
+        <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+          <p className="text-[13px] text-gray-600 font-medium">
+            © {currentYear} <span className="text-gray-400">{APP_BUSINESS_NAME}</span>. Artesanos de la seguridad.
+          </p>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2">
+            {["Privacidad", "Cookies", "Legal"].map((item) => (
+              <Link
+                key={item}
+                href={`/${item.toLowerCase().replace(' ', '-')}`}
+                className="text-[11px] uppercase tracking-widest font-bold text-gray-600 hover:text-white transition-colors"
+              >
+                {item}
               </Link>
-              <Link href="/politica-cookies" className="hover:text-white transition-colors">
-                Política de Cookies
-              </Link>
-              <Link href="/aviso-legal" className="hover:text-white transition-colors">
-                Aviso Legal
-              </Link>
-            </div>
+            ))}
           </div>
         </div>
       </div>
