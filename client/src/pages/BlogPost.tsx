@@ -31,7 +31,7 @@ Para mejorar la seguridad de tu trastero, te damos unos consejos profesionales q
 2.  **Cerraduras de superficie o de tres puntos**: Añadir un segundo punto de cierre refuerza enormemente la estructura de la puerta, dificultando el apalancamiento.
 3.  **Bombines antibumping de alta gama**: Si el ladrón no puede usar la fuerza, intentará el bumping. Un bombín certificado impide esta técnica silenciosa.
 
-> **[CTA]** ¿Te preocupa la seguridad de tu trastero? **Llámanos al ${APP_PHONE_DISPLAY}** y te daremos un presupuesto sin compromiso para reforzar tu puerta hoy mismo.
+> ¿Te preocupa la seguridad de tu trastero? **Llámanos al ${APP_PHONE_DISPLAY}** y te daremos un presupuesto sin compromiso para reforzar tu puerta hoy mismo.
 
 ## Cerrajeros Leganés 24h: Especialistas en seguridad de comunidades
 
@@ -71,7 +71,7 @@ La única forma de dormir realmente tranquilo es instalando un **bombín antibum
 
 En **Leganés**, recomendamos encarecidamente marcas como **Tesa (modelo TK100)** o **Mottura**, que ofrecen una relación calidad-precio excelente para hogares familiares y son resistentes a las técnicas más modernas de apertura.
 
-> **[CTA]** ¡No te la juegues! Actualiza tu seguridad por mucho menos de lo que imaginas. **Contacta ahora con Cerrajería Aguado al ${APP_PHONE_DISPLAY}** y pide tu presupuesto gratuito.
+> ¡No te la juegues! Actualiza tu seguridad por mucho menos de lo que imaginas. **Contacta ahora con Cerrajería Aguado al ${APP_PHONE_DISPLAY}** y pide tu presupuesto gratuito.
 
 ## Servicio de Cerrajería en Leganés con Precio Cerrado
 
@@ -103,7 +103,7 @@ Como expertos en **cerrajería técnica en Leganés**, hemos diseñado esta guí
 2.  **La Puerta del Garaje**: Es el punto más débil y olvidado. Un simple cerrojo interior de seguridad puede evitar que los ladrones entren al garaje y, desde ahí, tengan acceso total al resto de la casa.
 3.  **Ventanas y Puertas Correderas**: Las persianas autoblocantes y los cierres de seguridad para correderas son fundamentales en plantas bajas.
 
-> **[CTA]** ¿Quieres una auditoría de seguridad gratuita para tu chalet? **Escríbenos por WhatsApp o llámanos al ${APP_PHONE_DISPLAY}**. Somos tus cerrajeros de confianza en Leganés.
+> ¿Quieres una auditoría de seguridad gratuita para tu chalet? **Escríbenos por WhatsApp o llámanos al ${APP_PHONE_DISPLAY}**. Somos tus cerrajeros de confianza en Leganés.
 
 ## Soluciones de Alta Seguridad: Amaestramiento e Inteligencia
 
@@ -135,7 +135,7 @@ A diferencia de lo que mucha gente piensa, no es necesario romper un cristal o f
 2.  **Ten la documentación a mano**: Por seguridad, una vez abramos el vehículo, necesitaremos verificar que eres el propietario legal.
 3.  **Contacta con profesionales**: Un cerrajero generalista puede no tener las herramientas adecuadas para cerraduras de coches modernas.
 
-> **[CTA]** ¿Servicio urgente ahora? **Llama ya al ${APP_PHONE_DISPLAY}**. Estamos en Leganés y te atenderemos en minutos con un precio cerrado garantizado.
+> ¿Servicio urgente ahora? **Llama ya al ${APP_PHONE_DISPLAY}**. Estamos en Leganés y te atenderemos en minutos con un precio cerrado garantizado.
 
 ## Copia de llaves y mandos en el acto
 Si has perdido tu única llave, no solo abrimos el coche, sino que en muchos casos podemos gestionar la recuperación de la llave mediante el código mecánico. En Cerrajería Aguado somos referentes por nuestra rapidez y eficacia en **aperturas de emergencia en Leganés**.
@@ -163,7 +163,7 @@ No es una puerta convencional. Se trata de una estructura de acero macizo que se
 - **Instalación no destructiva**: Una vez que alquiles o vendas el piso, retiramos la puerta y tu puerta original estará intacta.
 - **Disuasión inmediata**: Los okupas buscan objetivos fáciles. Al ver una puerta de acero, pasan de largo directamente.
 
-> **[CTA]** Protege tu inversión hoy mismo. **Llama al ${APP_PHONE_DISPLAY}** y pide presupuesto para tu puerta anti-okupa en Leganés. Instalación en 24h.
+> Protege tu inversión hoy mismo. **Llama al ${APP_PHONE_DISPLAY}** y pide presupuesto para tu puerta anti-okupa en Leganés. Instalación en 24h.
 
 ## Cerrajeros Leganés Económicos: Seguridad al alcance de todos
 
@@ -193,7 +193,7 @@ Los bombines baratos suelen estar fabricados en latón de baja calidad. Para un 
 - **Llave incopiable**: Solo puedes pedir copias presentando una tarjeta de propiedad única, evitando que cualquiera haga una copia de tu llave sin que lo sepas.
 - **Protección Antibumping y Antiganzúa**: Mecanismos internos complejos que bloquean ataques técnicos.
 
-> **[CTA]** ¿No sabes qué bombín tienes instalado? **Mándanos una foto por WhatsApp al ${APP_PHONE_DISPLAY}** y te haremos una evaluación de seguridad gratuita.
+> ¿No sabes qué bombín tienes instalado? **Mándanos una foto por WhatsApp al ${APP_PHONE_DISPLAY}** y te haremos una evaluación de seguridad gratuita.
 
 ## Inversión Inteligente en Cerrajería Leganés
 
@@ -268,30 +268,68 @@ export default function BlogPost() {
           {/* Contenido */}
           <div className="prose prose-lg max-w-none">
             {post.content.split('\n\n').map((paragraph: string, index: number) => {
-              if (paragraph.startsWith('## ')) {
-                return <h2 key={index} className="text-2xl font-bold mt-8 mb-4">{paragraph.replace('## ', '')}</h2>;
+              const parseBold = (text: string) => {
+                const parts = text.split(/(\*\*.*?\*\*)/g);
+                return parts.map((part, i) => {
+                  if (part.startsWith('**') && part.endsWith('**')) {
+                    return <strong key={i} className="font-bold text-gray-900">{part.slice(2, -2)}</strong>;
+                  }
+                  return part;
+                });
+              };
+
+              if (paragraph.startsWith('# ')) {
+                return null; // El H1 ya se renderiza arriba
+              } else if (paragraph.startsWith('## ')) {
+                return <h2 key={index} className="text-2xl font-bold mt-8 mb-4 text-gray-900">{paragraph.replace('## ', '')}</h2>;
               } else if (paragraph.startsWith('### ')) {
-                return <h3 key={index} className="text-xl font-bold mt-6 mb-3">{paragraph.replace('### ', '')}</h3>;
-              } else if (paragraph.startsWith('- ')) {
-                const items = paragraph.split('\n').filter(item => item.startsWith('- '));
+                return <h3 key={index} className="text-xl font-bold mt-6 mb-3 text-gray-900">{paragraph.replace('### ', '')}</h3>;
+              } else if (paragraph.startsWith('> ')) {
                 return (
-                  <ul key={index} className="list-disc pl-6 mb-4 space-y-2">
+                  <div key={index} className="my-10 bg-gradient-to-br from-[#A52A2A]/10 to-[#A52A2A]/5 border-l-8 border-[#A52A2A] rounded-r-2xl p-8 shadow-sm relative overflow-hidden group">
+                    <div className="absolute right-[-20px] top-[-20px] opacity-10 group-hover:scale-110 transition-transform duration-500">
+                      <Phone className="w-32 h-32 text-[#A52A2A]" />
+                    </div>
+                    <div className="relative z-10">
+                      <div className="flex items-center gap-3 mb-4 text-[#A52A2A]">
+                        <div className="bg-[#A52A2A] p-2 rounded-lg">
+                          <Phone className="w-5 h-5 text-white" />
+                        </div>
+                        <span className="font-bold uppercase tracking-wider text-sm">Atención Inmediata</span>
+                      </div>
+                      <div className="text-xl md:text-2xl text-gray-900 leading-relaxed font-medium">
+                        {parseBold(paragraph.replace('> ', ''))}
+                      </div>
+                      <div className="mt-6">
+                        <Button asChild className="bg-[#A52A2A] hover:bg-[#8B0000] text-white px-8 py-6 rounded-xl text-lg shadow-lg shadow-[#A52A2A]/20">
+                          <a href={`tel:${APP_PHONE}`} className="flex items-center gap-3">
+                            Llamar ahora a {APP_PHONE_DISPLAY}
+                          </a>
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                );
+              } else if (paragraph.startsWith('- ')) {
+                const items = paragraph.split('\n').filter(item => item.trim().startsWith('- '));
+                return (
+                  <ul key={index} className="list-disc pl-6 mb-6 space-y-3">
                     {items.map((item, i) => (
-                      <li key={i}>{item.replace('- ', '')}</li>
+                      <li key={i} className="text-gray-700">{parseBold(item.replace('- ', ''))}</li>
                     ))}
                   </ul>
                 );
               } else if (paragraph.match(/^\d+\./)) {
                 const items = paragraph.split('\n').filter(item => item.match(/^\d+\./));
                 return (
-                  <ol key={index} className="list-decimal pl-6 mb-4 space-y-2">
+                  <ol key={index} className="list-decimal pl-6 mb-6 space-y-3">
                     {items.map((item, i) => (
-                      <li key={i}>{item.replace(/^\d+\.\s*/, '').replace(/\*\*/g, '')}</li>
+                      <li key={i} className="text-gray-700">{parseBold(item.replace(/^\d+\.\s*/, ''))}</li>
                     ))}
                   </ol>
                 );
               } else {
-                return <p key={index} className="mb-4 text-gray-700 leading-relaxed">{paragraph}</p>;
+                return <p key={index} className="mb-4 text-gray-700 leading-relaxed">{parseBold(paragraph)}</p>;
               }
             })}
           </div>
