@@ -100,6 +100,8 @@ export default function SchemaMarkup() {
     "telephone": APP_PHONE,
     "email": APP_EMAIL,
     "priceRange": "€€",
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Cash, Credit Card, Debit Card",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
@@ -185,7 +187,12 @@ export default function SchemaMarkup() {
       "https://www.facebook.com/cerrajeriaaguado",
       "https://www.instagram.com/cerrajeriaaguado",
       "https://cerrajerosdeleganes.madrid"
-    ]
+    ],
+    "brand": {
+      "@type": "Brand",
+      "name": "Aguado",
+      "logo": "https://cerrajerosdeleganes.madrid/logo-aguado.jpg"
+    }
   };
 
   const faqSchema = {
