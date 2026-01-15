@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, ArrowLeft, Phone } from "lucide-react";
 import { Link } from "wouter";
 import { APP_PHONE, APP_PHONE_DISPLAY, APP_EMAIL } from "@/const";
+import SEOHead from "@/components/SEOHead";
 
 const blogPostsContent: Record<string, any> = {
   "robos-trasteros-leganes-norte": {
@@ -250,6 +251,12 @@ export default function BlogPost() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SEOHead
+        title={`${post.title} | Blog Cerrajería Aguado`}
+        description={post.content.substring(0, 160).replace(/[#*>\n]/g, '').trim() + "..."}
+        ogImage={`https://cerrajerosdeleganes.madrid${post.image}`}
+        canonicalUrl={`https://cerrajerosdeleganes.madrid/blog/${postId}`}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}

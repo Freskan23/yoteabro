@@ -24,12 +24,18 @@ export default function SEOHead({
       <meta name="keywords" content={keywords} />
       <link rel="canonical" href={canonicalUrl} />
 
+      {/* Schema.org para Google y WhatsApp (Microdatos) */}
+      <meta itemProp="name" content={title} />
+      <meta itemProp="description" content={description} />
+      <meta itemProp="image" content={ogImage} />
+
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:image:secure_url" content={ogImage} />
       <meta property="og:locale" content="es_ES" />
       <meta property="og:site_name" content={APP_BUSINESS_NAME} />
       <meta property="og:image:width" content="1200" />
