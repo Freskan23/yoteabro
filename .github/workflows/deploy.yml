@@ -6,7 +6,7 @@ on:
 
 jobs:
   web-deploy:
-    name: 🎉 Deploy Detective
+    name: 🎉 Deploy Root
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Obtener código
@@ -23,21 +23,17 @@ jobs:
         node-version: '20'
         cache: 'pnpm'
 
-    - name: 🔨 Instalar y Construir (Desde la Raíz)
+    - name: 🔨 Instalar y Construir (EN LA RAÍZ)
       run: |
         pnpm install --no-frozen-lockfile
         pnpm run build
-        
-        echo "================ DONDE ESTA DIST? ================"
-        ls -la
-        ls -la client/
-        echo "=================================================="
+        # No hacemos 'cd client'. Construimos aquí mismo.
 
-    - name: 📂 Subir a FTP (Intento Client)
+    - name: 📂 Subir a FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./client/dist/    # Probamos aquí primero
+        local-dir: ./dist/      # <--- ¡AQUÍ ESTÁ EL CAMBIO! (Sin 'client/')
         server-dir: ./
