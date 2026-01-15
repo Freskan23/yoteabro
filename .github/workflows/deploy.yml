@@ -12,10 +12,10 @@ jobs:
     - name: 🚚 Obtener código
       uses: actions/checkout@v4
 
-    - name: 🟢 Instalar PNPM
+    - name: 🟢 Instalar PNPM (Versión 9)
       uses: pnpm/action-setup@v3
       with:
-        version: 8
+        version: 9                # <--- ¡AQUÍ ESTÁ EL CAMBIO MÁGICO!
 
     - name: 🟢 Instalar Node.js
       uses: actions/setup-node@v4
@@ -25,10 +25,12 @@ jobs:
 
     - name: 🔨 Instalar y Construir
       run: |
-        pnpm install
+        # Instalamos desde la raíz para que funcionen los parches del workspace
+        pnpm install --no-frozen-lockfile
+        
+        # Entramos a la carpeta del cliente para construir la web
         cd client
         pnpm run build
-        ls -la dist  # Esto nos confirmará en el log que la carpeta existe
 
     - name: 📂 Subir a FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
