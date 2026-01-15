@@ -6,7 +6,7 @@ on:
 
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: 🎉 Deploy Client
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Obtener código
@@ -17,8 +17,9 @@ jobs:
       with:
         node-version: '20'
 
-    - name: 🔨 Instalar y Construir
+    - name: 🔨 Instalar y Construir (Dentro de Client)
       run: |
+        cd client
         npm install --legacy-peer-deps
         npm run build
 
@@ -28,5 +29,5 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dist/
+        local-dir: ./client/dist/    # <--- ¡Aquí estaba la clave!
         server-dir: ./
