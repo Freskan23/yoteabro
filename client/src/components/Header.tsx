@@ -114,8 +114,8 @@ export default function Header() {
                 className="bg-[#FF6B35] hover:bg-[#E55A2B] text-white font-bold h-11 px-6 rounded-xl shadow-lg shadow-orange-500/20 active:scale-95 transition-all text-sm md:text-base"
               >
                 <a href={`tel:${APP_PHONE}`} className="flex items-center gap-2" aria-label={`Llamar a Cerrajeros Aguado al ${APP_PHONE_DISPLAY}`}>
-                  <Phone className="h-4 w-4 md:h-5 md:w-5 animate-pulse" />
-                  <span className="whitespace-nowrap">{APP_PHONE_DISPLAY}</span>
+                  <Phone className="h-4 w-4 md:h-5 md:w-5 animate-pulse text-white" />
+                  <span className="whitespace-nowrap text-white">{APP_PHONE_DISPLAY}</span>
                 </a>
               </Button>
 

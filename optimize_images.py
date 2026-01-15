@@ -28,10 +28,10 @@ def run_optimization():
     critical_files = [
         # Hero: 1920px es el estándar para desktop.
         ("client/public/images/hero-nano-banana.jpg", "client/public/images/hero-nano-banana.webp", 1920, 75),
-        # Marcas: Son logos pequeños en strip. 1200px es suficiente para todo el collage.
-        ("client/public/images/marcas-cerrajeria.png", "client/public/images/marcas-cerrajeria.webp", 1200, 70),
-        # Logo Aguado: Se muestra a max 200px. 300px es ideal para Retina.
-        ("client/public/logo-aguado.jpg", "client/public/logo-aguado.webp", 300, 85),
+        # Marcas: Son logos pequeños en strip. 800px es suficiente para todo el collage.
+        ("client/public/images/marcas-cerrajeria.png", "client/public/images/marcas-cerrajeria.webp", 800, 70),
+        # Logo Aguado: Se muestra a max 200px. 180px es ideal para Retina/Desktop.
+        ("client/public/logo-aguado.jpg", "client/public/logo-aguado.webp", 180, 85),
         # Imágenes de servicios 3D: Se muestran en grid. 600px es el punto dulce.
         ("client/public/servicio-llaves-3d.webp", "client/public/servicio-llaves-3d.webp", 600, 70),
         ("client/public/servicio-domicilio-3d.webp", "client/public/servicio-domicilio-3d.webp", 600, 70),
