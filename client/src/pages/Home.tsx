@@ -31,6 +31,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import BrandsSection from "@/components/BrandsSection";
 import { Link } from "wouter";
 
 export default function Home() {
@@ -116,19 +117,34 @@ export default function Home() {
 
   const faqs = [
     {
-      question: "¿Cuánto cobra un cerrajero por abrir una puerta?",
+      question: "¿Cuánto cobra un cerrajero por abrir una puerta en Leganés?",
       answer:
-        `En ${APP_BUSINESS_NAME}, el servicio de apertura de puertas cuesta 90€ en horario normal (lunes a viernes de 08:00 a 19:00h) y 120€ fuera de este horario (noches, fines de semana y festivos). No cobramos desplazamiento. El precio se actualiza automáticamente según la hora.`,
+        `En ${APP_BUSINESS_NAME}, el servicio de apertura de puertas cuesta 90€ en horario normal (lunes a viernes de 08:00 a 19:00h) y 120€ fuera de este horario (noches, fines de semana y festivos). No cobramos desplazamiento.`,
     },
     {
-      question: "¿Cuánto vale cambiar un bombín de una puerta?",
+      question: "¿Qué marcas de cerraduras instaláis?",
       answer:
-        "El precio del cambio de bombín depende del tipo de seguridad que necesites. Ofrecemos bombines desde modelos básicos hasta sistemas de alta seguridad con tecnología antibumping y llaves incopiables. Contacta con nosotros para un presupuesto personalizado.",
+        "Trabajamos con todas las marcas típicas y de confianza: Tesa, Mottura, Ezcurra, FAC, Mul-T-Lock, Cisa, Fichet, Corbin, Lince y Mauer. Tenemos repuestos originales para darte la mayor seguridad.",
     },
     {
-      question: "¿Cómo saber si un cerrajero es de confianza?",
+      question: "¿Cuánto tardáis en llegar a mi barrio?",
       answer:
-        `Un cerrajero de confianza debe ofrecer presupuestos claros antes de comenzar, tener experiencia demostrable, trabajar con herramientas profesionales y ofrecer garantías en sus servicios. En ${APP_BUSINESS_NAME} cumplimos con todos estos requisitos y contamos con excelentes valoraciones de nuestros clientes.`,
+        "Garantizamos una llegada en 20 minutos a cualquier zona de Leganés, desde Zarzaquemada hasta Arroyo Culebro o San Nicasio. Nuestras unidades móviles están siempre operativas.",
+    },
+    {
+      question: "¿Hacéis cambios de bombín antibumping?",
+      answer:
+        "Sí, es uno de nuestros servicios más demandados. Instalamos cilindros de alta seguridad que protegen contra el bumping, el ganzuado y la extracción técnica.",
+    },
+    {
+      question: "¿Se puede pagar con tarjeta?",
+      answer:
+        "Sí, todos nuestros cerrajeros llevan datáfono móvil para que puedas pagar con tarjeta de crédito o débito sin problemas una vez terminado el trabajo.",
+    },
+    {
+      question: "¿Abrís puertas sin romper la cerradura?",
+      answer:
+        "Nuestra prioridad es la apertura limpia. Gracias a herramientas profesionales y 20 años de experiencia, abrimos la mayoría de puertas sin causar daños ni al marco ni a la cerradura original.",
     },
   ];
 
@@ -489,6 +505,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Marcas */}
+        <BrandsSection />
 
         {/* FAQ Section */}
         <section id="faq" className="py-20 bg-gray-50">

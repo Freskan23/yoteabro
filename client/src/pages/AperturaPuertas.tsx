@@ -18,6 +18,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RelatedServices from "@/components/RelatedServices";
 import SEOHead from "@/components/SEOHead";
+import FAQSection from "@/components/FAQSection";
+import BrandsSection from "@/components/BrandsSection";
 import { Link } from "wouter";
 
 export default function AperturaPuertas() {
@@ -28,6 +30,25 @@ export default function AperturaPuertas() {
     "✅ Precio cerrado desde 90€",
     "✅ Técnicos profesionales certificados",
     "✅ Sin cobro por desplazamiento",
+  ];
+
+  const faqItems = [
+    {
+      question: "¿Cuánto tardáis en llegar a mi ubicación en Leganés?",
+      answer: `Nuestro tiempo medio de respuesta para aperturas urgentes en barrios como Zarzaquemada, San Nicasio o Leganés Norte es de 20 a 30 minutos. Estamos distribuidos estratégicamente para llegar lo antes posible.`
+    },
+    {
+      question: "¿Se romperá la cerradura o la puerta al abrir?",
+      answer: "En el 95% de los casos realizamos una apertura limpia sin causar ningún daño a la puerta ni a la cerradura actual, utilizando técnicas de ganzuado o herramientas de precisión profesionales."
+    },
+    {
+      question: "¿Cuánto cuesta abrir una puerta de urgencia?",
+      answer: "Nuestras tarifas son transparentes: 90€ en horario comercial (L-V 08:00 a 19:00) y 120€ en horario de urgencia. Siempre te damos el precio cerrado por teléfono antes de ir."
+    },
+    {
+      question: "¿Abrís puertas acorazadas o de alta seguridad?",
+      answer: "Sí, somos especialistas en la apertura de todo tipo de puertas, incluyendo acorazadas, blindadas y cierres metálicos de locales comerciales, trabajando con marcas como Fichet, Mottura o Tesa."
+    }
   ];
 
   const situations = [
@@ -308,6 +329,12 @@ export default function AperturaPuertas() {
             </div>
           </div>
         </section>
+
+        {/* Marcas */}
+        <BrandsSection />
+
+        {/* FAQ Personalizada */}
+        <FAQSection items={faqItems} title="Dudas sobre Apertura de Puertas" />
 
         {/* Servicios Relacionados */}
         <RelatedServices currentService="Apertura de Puertas" />

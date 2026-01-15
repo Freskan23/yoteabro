@@ -194,18 +194,82 @@ export default function SchemaMarkup() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "¿Cuánto cobra un cerrajero por abrir una puerta en Leganés?",
+        "name": "¿Cuánto tarda un cerrajero en llegar a mi ubicación en Leganés?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `En Cerrajería Aguado, el servicio de apertura de puertas cuesta 90€ en horario normal y 120€ en horario de urgencia. Somos los cerrajeros más baratos de Leganés con factura oficial.`
+          "text": "Nuestro tiempo medio de respuesta en Leganés es de 20 a 30 minutos, ya que contamos con técnicos distribuidos estratégicamente por barrios como Zarzaquemada, San Nicasio y El Carrascal."
         }
       },
       {
         "@type": "Question",
-        "name": "¿Llegáis rápido a Zarzaquemada o San Nicasio?",
+        "name": "¿Qué precio tiene abrir una puerta en Leganés?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí, al estar ubicados en la Av. de Fuenlabrada, llegamos a cualquier barrio de Leganés en menos de 20 minutos para urgencias 24h."
+          "text": "Nuestras tarifas son transparentes: desde 90€ en horario comercial y 120€ en horario de urgencia 24h. Siempre ofrecemos precio cerrado telefónicamente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Trabajáis las 24 horas del día?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, Cerrajería Aguado ofrece servicio de cerrajeros de guardia las 24 horas del día, los 365 días del año, incluyendo festivos y fines de semana por toda la zona de Leganés."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué marcas de cerraduras y bombines instaláis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Trabajamos con las marcas líderes del mercado para garantizar la máxima seguridad: Tesa, Mottura, Ezcurra, FAC, Mul-T-Lock, Cisa, Fichet, Corbin, Lince y Mauer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Es mejor cambiar la cerradura entera o solo el bombín?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende del estado de la cerradura. Si la estructura interna funciona bien, cambiar solo el bombín por uno antibumping es la opción más económica y suficiente para elevar la seguridad."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Se rompe la puerta al abrir con un cerrajero de urgencia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Somos especialistas en apertura técnica sin daños. Utilizamos herramientas de precisión para abrir tu puerta de forma limpia en la gran mayoría de casos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Aceptáis pago con tarjeta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, todos nuestros cerrajeros llevan datáfono móvil para facilitar el pago con tarjeta de crédito o débito a nuestros clientes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dáis garantía por los trabajos de cerrajería?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, todos nuestros servicios cuentan con garantía oficial por escrito, asegurando un trabajo de calidad y repuestos originales de marcas certificadas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿En qué barrios de Leganés prestáis servicio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Damos cobertura total a todo Leganés: Zarzaquemada, San Nicasio, El Carrascal, La Fortuna, Leganés Norte, Arroyo Culebro, Valdepelayo y Solagua."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Realizáis amaestramiento de llaves?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, diseñamos sistemas de amaestramiento personalizados para comunidades de vecinos y empresas, permitiendo usar una sola llave maestra para todos los accesos."
         }
       }
     ]

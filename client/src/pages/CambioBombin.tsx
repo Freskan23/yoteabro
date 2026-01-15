@@ -18,6 +18,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RelatedServices from "@/components/RelatedServices";
 import SEOHead from "@/components/SEOHead";
+import FAQSection from "@/components/FAQSection";
+import BrandsSection from "@/components/BrandsSection";
 import { Link } from "wouter";
 
 export default function CambioBombin() {
@@ -28,6 +30,25 @@ export default function CambioBombin() {
     "✅ Tecnología antibumping",
     "✅ Garantía en todos los bombines",
     "✅ Servicio 24h para urgencias",
+  ];
+
+  const faqItems = [
+    {
+      question: "¿Qué es el bumping y cómo me protege un bombín nuevo?",
+      answer: "El bumping es una técnica para abrir cerraduras sin forzarlas. Nuestros bombines de alta seguridad (marcas como Tesa o Mauer) tienen pines internos especiales que bloquean este ataque, haciendo tu puerta prácticamente inexpugnable."
+    },
+    {
+      question: "¿Puedo tener la misma llave para todas las cerraduras?",
+      answer: "Sí, mediante el proceso de igualamiento o amaestramiento, podemos configurar varios bombines nuevos para que funcionen con una única llave maestra, ganando en comodidad sin perder seguridad."
+    },
+    {
+      question: "¿Qué significa que la llave sea incopiable?",
+      answer: "Significa que las llaves vienen con una tarjeta de propiedad única. Solo el dueño de esa tarjeta puede solicitar copias en centros autorizados, evitando que personas no autorizadas dupliquen tu llave."
+    },
+    {
+      question: "¿Instaláis bombines en cualquier barrio de Leganés?",
+      answer: "Sí, realizamos instalaciones en todos los barrios: desde Arroyo Culebro hasta La Fortuna, San Nicasio y el Centro de Leganés. Llegamos rápido para que no tengas que esperar."
+    }
   ];
 
   const situations = [
@@ -318,6 +339,12 @@ export default function CambioBombin() {
             </div>
           </div>
         </section>
+
+        {/* Marcas */}
+        <BrandsSection />
+
+        {/* FAQ Personalizada */}
+        <FAQSection items={faqItems} title="Preguntas sobre Cambio de Bombín de Seguridad" />
 
         {/* Servicios Relacionados */}
         <RelatedServices currentService="Cambio de Bombín" />

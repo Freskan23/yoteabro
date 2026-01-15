@@ -18,6 +18,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RelatedServices from "@/components/RelatedServices";
 import SEOHead from "@/components/SEOHead";
+import FAQSection from "@/components/FAQSection";
+import BrandsSection from "@/components/BrandsSection";
 import { Link } from "wouter";
 
 export default function Amaestramiento() {
@@ -28,6 +30,25 @@ export default function Amaestramiento() {
     "✅ Ideal para comunidades y empresas",
     "✅ Sistema personalizado a medida",
     "✅ Instalación profesional garantizada",
+  ];
+
+  const faqItems = [
+    {
+      question: "¿Qué es exactamente un sistema de amaestramiento?",
+      answer: "Es un sistema donde cada cerradura tiene su propia llave, pero existe una 'llave maestra' capaz de abrirlas todas. Es ideal para presidentes de comunidad o dueños de empresas que no quieren cargar con manojos pesados de llaves."
+    },
+    {
+      question: "¿Es seguro tener una llave que lo abre todo?",
+      answer: "Sí, siempre que se utilicen marcas de alta seguridad como Tesa o Mul-T-Lock con llaves incopiables. El sistema se diseña bajo un plan de cierre estricto y solo el propietario autorizado puede solicitar copias."
+    },
+    {
+      question: "¿Se puede amaestrar cualquier cerradura existente?",
+      answer: "Normalmente es necesario que los bombines sean de la misma marca y modelo (o compatibles). En muchos casos, recomendamos instalar un conjunto nuevo de bombines amaestrados de fábrica para garantizar la durabilidad."
+    },
+    {
+      question: "¿Cuánto tarda en diseñarse e instalarse el sistema?",
+      answer: "Para una comunidad pequeña o un chalet, el proceso de diseño y entrega suele tardar entre 3 y 7 días hábiles, dependiendo de la complejidad del plan de cierre solicitado."
+    }
   ];
 
   const applications = [
@@ -363,6 +384,12 @@ export default function Amaestramiento() {
             </div>
           </div>
         </section>
+
+        {/* Marcas */}
+        <BrandsSection />
+
+        {/* FAQ Personalizada */}
+        <FAQSection items={faqItems} title="Dudas frecuentes sobre Amaestramiento" />
 
         {/* Servicios Relacionados */}
         <RelatedServices currentService="Amaestramiento" />

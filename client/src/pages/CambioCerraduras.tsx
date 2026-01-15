@@ -19,6 +19,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RelatedServices from "@/components/RelatedServices";
 import SEOHead from "@/components/SEOHead";
+import FAQSection from "@/components/FAQSection";
+import BrandsSection from "@/components/BrandsSection";
 import { Link } from "wouter";
 
 export default function CambioCerraduras() {
@@ -29,6 +31,25 @@ export default function CambioCerraduras() {
     "✅ Garantía en todos los trabajos",
     "✅ Asesoramiento personalizado",
     "✅ Disponible 24/7 para urgencias",
+  ];
+
+  const faqItems = [
+    {
+      question: "¿Cuándo es recomendable cambiar una cerradura?",
+      answer: "Es vital cambiarla si has perdido las llaves, si acabas de mudarte a una nueva vivienda, si la cerradura tiene más de 10 años (por obsolescencia de seguridad) o si ha sido forzada o intentado manipular."
+    },
+    {
+      question: "¿Qué marcas de cerraduras recomendáis para Leganés?",
+      answer: "Recomendamos marcas de primera línea como Tesa, Mottura, Ezcurra o FAC. Estas marcas ofrecen los más altos estándares de protección contra el robo técnico y fuerza bruta."
+    },
+    {
+      question: "¿Puedo cambiar solo el bombín o necesito cambiar toda la cerradura?",
+      answer: "Si la estructura de la cerradura está en buen estado, cambiar solo el bombín (cilindro) suele ser suficiente para actualizar la seguridad a sistemas antibumping, siendo una opción más económica y rápida."
+    },
+    {
+      question: "¿Cuánto tiempo se tarda en realizar el cambio?",
+      answer: "Un cambio de cerradura estándar suele llevar entre 30 y 60 minutos. Nuestros técnicos llevan todo el material necesario en sus unidades móviles para realizar el trabajo en una sola visita."
+    }
   ];
 
   const types = [
@@ -316,6 +337,12 @@ export default function CambioCerraduras() {
             </div>
           </div>
         </section>
+
+        {/* Marcas */}
+        <BrandsSection />
+
+        {/* FAQ Personalizada */}
+        <FAQSection items={faqItems} title="Consultas frecuentes sobre Cambio de Cerraduras" />
 
         {/* Servicios Relacionados */}
         <RelatedServices currentService="Cambio de Cerraduras" />

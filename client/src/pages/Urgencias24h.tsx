@@ -19,6 +19,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RelatedServices from "@/components/RelatedServices";
 import SEOHead from "@/components/SEOHead";
+import FAQSection from "@/components/FAQSection";
+import BrandsSection from "@/components/BrandsSection";
 import { Link } from "wouter";
 
 export default function Urgencias24h() {
@@ -29,6 +31,25 @@ export default function Urgencias24h() {
         "✅ Precios transparentes y sin sorpresas",
         "✅ Cerrajeros homologados y locales de Leganés",
         "✅ Herramientas de última tecnología",
+    ];
+
+    const faqItems = [
+        {
+            question: "¿Cuánto tardáis realmente en llegar para una urgencia?",
+            answer: "Garantizamos una llegada en menos de 20 minutos en el casco urbano de Leganés y barrios periféricos. Tenemos unidades móviles siempre preparadas."
+        },
+        {
+            question: "¿Atendéis en festivos y de madrugada?",
+            answer: "Sí, nuestro servicio es real 24/7. No importa si es Nochebuena, un domingo a las 3 AM o un festivo local de Leganés, siempre habrá un cerrajero disponible."
+        },
+        {
+            question: "¿El precio es cerrado antes de ir?",
+            answer: "Absolutamente. Te damos un presupuesto cerrado por teléfono basado en tu descripción (ej: 'llaves puestas por dentro', 'cerradura rota'). Sin sorpresas al finalizar el trabajo."
+        },
+        {
+            question: "¿Qué pasa si no podéis abrir mi puerta?",
+            answer: "Llevamos más de 20 años abriendo todo tipo de cerraduras, desde las más antiguas hasta las acorazadas digitales. Si hay una solución, la encontraremos sin causar daños innecesarios."
+        }
     ];
 
     return (
@@ -164,6 +185,12 @@ export default function Urgencias24h() {
                         </Button>
                     </div>
                 </section>
+
+                {/* Marcas */}
+                <BrandsSection />
+
+                {/* FAQ Personalizada */}
+                <FAQSection items={faqItems} title="Dudas sobre el Servicio de Urgencias" />
 
                 {/* Servicios Relacionados */}
                 <RelatedServices currentService="Urgencias 24 Horas" />
