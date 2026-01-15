@@ -4,8 +4,8 @@ from PIL import Image
 def optimize_image(input_path, output_path, max_width=1920, quality=80):
     try:
         with Image.open(input_path) as img:
-            # Convertir a RGB si es necesario (para JPG/WebP)
-            if img.mode in ("RGBA", "P"):
+            # Convertir a RGB si no lo es (especialmente para CMYK que se pone verde)
+            if img.mode != "RGB":
                 img = img.convert("RGB")
             
             # Redimensionar si es muy grande
