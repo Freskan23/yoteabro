@@ -225,8 +225,35 @@ export default function BlogPost() {
     );
   }
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "image": `https://cerrajerosdeleganes.madrid${post.image}`,
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "author": {
+      "@type": "Organization",
+      "name": "Cerrajería Aguado",
+      "url": "https://cerrajerosdeleganes.madrid"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Cerrajería Aguado",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cerrajerosdeleganes.madrid/logo-aguado.jpg"
+      }
+    },
+    "description": post.content.substring(0, 160).replace(/[#*>\n]/g, '').trim() + "..."
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <Header />
 
       {/* Imagen destacada */}
