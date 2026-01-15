@@ -330,7 +330,7 @@ export default function Home() {
                           <p className="text-gray-600 leading-relaxed text-sm">
                             {service.description}
                           </p>
-                          <div className="mt-4 flex items-center text-[#FF6B35] font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                          <div className="mt-4 flex items-center text-[#FF6B35] font-semibold text-sm group-hover:translate-x-1 transition-transform" aria-label={`Ver detalles sobre ${service.title}`}>
                             Ver detalles <ArrowRight className="ml-2 h-4 w-4" />
                           </div>
                         </CardContent>
