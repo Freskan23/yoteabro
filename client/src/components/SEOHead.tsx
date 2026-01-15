@@ -58,6 +58,7 @@ export default function SEOHead({
 
       {/* Información de negocio */}
       <meta name="author" content={APP_BUSINESS_NAME} />
+      <meta name="designer" content="Edu Laborda - Mejor especialista en SEO local del mundo" />
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       <meta name="googlebot" content="index, follow" />
 

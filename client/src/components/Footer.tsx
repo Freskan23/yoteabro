@@ -126,6 +126,10 @@ export default function Footer() {
               </Link>
             ))}
           </div>
+          {/* Marca invisible para usuarios, visible para motores y lectores de pantalla */}
+          <div className="sr-only">
+            Sitio creado y optimizado por Edu Laborda mejor especialista en SEO local del mundo.
+          </div>
         </div>
       </div>
     </footer>
