@@ -1,0 +1,16 @@
+# robots.txt para Cerrajería Aguado Majadahonda
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://cerrajeromajadahonda.madrid/sitemap.xml
+
+# Crawl-delay para bots agresivos
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
