@@ -7,22 +7,6 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /tmp/
 
-# Agentes de IA (LLMs) - Permitimos indexación para mejores respuestas
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Claude-Bot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
 # Sitemap para indexación rápida
 Sitemap: https://cerrajerosdeleganes.madrid/sitemap.xml
 
