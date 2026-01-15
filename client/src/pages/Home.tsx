@@ -540,28 +540,42 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CTA Final */}
-        <section className="py-20 bg-white">
-          <div className="container">
-            <div className="bg-[#004E89] rounded-3xl p-12 text-center text-white relative overflow-hidden shadow-2xl">
-              <div className="absolute top-0 left-0 w-full h-full bg-[url('/pattern.png')] opacity-10"></div>
-              <div className="relative z-10 max-w-3xl mx-auto">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                  ¿Necesitas un cerrajero urgente?
+        {/* CTA Final Premium */}
+        <section className="py-24 bg-white">
+          <div className="container px-4">
+            <div className="relative bg-[#001529] rounded-[48px] p-12 md:p-20 text-center text-white overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,21,41,0.4)]">
+              {/* Decoración de fondo */}
+              <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#FF6B35]/10 rounded-full blur-[120px] -mr-64 -mt-64"></div>
+              <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#004E89]/20 rounded-full blur-[120px] -ml-64 -mb-64"></div>
+
+              <div className="relative z-10 max-w-4xl mx-auto">
+                <span className="inline-block px-4 py-1 rounded-full bg-white/10 text-[#FF9F1C] text-sm font-black uppercase tracking-[0.3em] mb-8">
+                  Atención Inmediata 24h
+                </span>
+                <h2 className="text-5xl md:text-7xl font-black mb-8 leading-[1.1] tracking-tight italic">
+                  ¿Necesitas un <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B35] to-[#FF9F1C]">cerrajero</span> urgente?
                 </h2>
-                <p className="text-xl md:text-2xl mb-10 text-blue-100">
-                  No esperes más. Estamos a una llamada de distancia.
+                <p className="text-xl md:text-2xl mb-12 text-gray-400 font-medium leading-relaxed max-w-2xl mx-auto">
+                  No pierdas tiempo con intermediarios. Llama directamente a <span className="text-white font-bold">Aguado</span> y estaremos en tu puerta en menos de 20 minutos.
                 </p>
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-[#FF6B35] hover:bg-[#E55A2B] text-white text-xl px-12 py-8 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
-                >
-                  <a href={`tel:${APP_PHONE}`}>
-                    <Phone className="mr-3 h-8 w-8" />
-                    Llamar al {APP_PHONE_DISPLAY}
-                  </a>
-                </Button>
+                <div className="flex flex-col items-center gap-6">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="group relative bg-gradient-to-r from-[#FF6B35] to-[#FF9F1C] hover:scale-105 text-white text-2xl font-black px-12 py-10 rounded-full shadow-[0_20px_40px_-10px_rgba(255,107,53,0.5)] transition-all duration-500 overflow-hidden"
+                  >
+                    <a href={`tel:${APP_PHONE}`}>
+                      {/* Efecto de brillo en el botón */}
+                      <div className="absolute inset-0 w-1/2 h-full bg-white/20 -skew-x-[45deg] -translate-x-full group-hover:translate-x-[250%] transition-transform duration-1000"></div>
+                      <Phone className="mr-4 h-9 w-9 group-hover:rotate-12 transition-transform" />
+                      Llamar {APP_PHONE_DISPLAY}
+                    </a>
+                  </Button>
+                  <p className="text-sm font-bold text-gray-500 uppercase tracking-widest flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
+                    Técnicos de guardia disponibles ahora
+                  </p>
+                </div>
               </div>
             </div>
           </div>
