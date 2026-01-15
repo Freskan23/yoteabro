@@ -24,6 +24,13 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { Link } from "wouter";
 
 export default function Home() {
@@ -265,40 +272,61 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {services.map((service, index) => (
-                <Link key={index} href={service.link}>
-                  <Card
-                    className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group cursor-pointer"
-                  >
-                    <div className="h-48 overflow-hidden relative">
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
-                      <img
-                        src={service.image}
-                        alt={service.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      />
-                      <div className="absolute bottom-4 left-4 z-20">
-                        <div className="bg-white/90 p-2 rounded-lg shadow-sm backdrop-blur-sm">
-                          {service.icon}
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-4">
+                {services.map((service, index) => (
+                  <CarouselItem key={index} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                    <Link href={service.link}>
+                      <Card
+                        className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group cursor-pointer h-full"
+                      >
+                        <div className="h-48 overflow-hidden relative">
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+                          <img
+                            src={service.image}
+                            alt={service.title}
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                          />
+                          <div className="absolute bottom-4 left-4 z-20">
+                            <div className="bg-white/90 p-2 rounded-lg shadow-sm backdrop-blur-sm">
+                              {service.icon}
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <CardContent className="p-6">
-                      <h3 className="text-xl font-bold mb-3 text-[#001529] group-hover:text-[#FF6B35] transition-colors">
-                        {service.title}
-                      </h3>
-                      <p className="text-gray-600 leading-relaxed">
-                        {service.description}
-                      </p>
-                      <div className="mt-4 flex items-center text-[#FF6B35] font-semibold text-sm group-hover:translate-x-1 transition-transform">
-                        Ver detalles <ArrowRight className="ml-2 h-4 w-4" />
-                      </div>
-                    </CardContent>
-                  </Card>
-                </Link>
-              ))}
-            </div>
+                        <CardContent className="p-6">
+                          <h3 className="text-xl font-bold mb-3 text-[#001529] group-hover:text-[#FF6B35] transition-colors">
+                            {service.title}
+                          </h3>
+                          <p className="text-gray-600 leading-relaxed text-sm">
+                            {service.description}
+                          </p>
+                          <div className="mt-4 flex items-center text-[#FF6B35] font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                            Ver detalles <ArrowRight className="ml-2 h-4 w-4" />
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </Link>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <div className="hidden md:flex justify-end gap-2 mt-8">
+                <CarouselPrevious className="relative translate-y-0 left-0 hover:bg-[#FF6B35] hover:text-white border-gray-200" />
+                <CarouselNext className="relative translate-y-0 right-0 hover:bg-[#FF6B35] hover:text-white border-gray-200" />
+              </div>
+              <div className="flex md:hidden justify-center gap-2 mt-6">
+                <div className="flex gap-1">
+                  {services.map((_, i) => (
+                    <div key={i} className="h-1.5 w-1.5 rounded-full bg-gray-300"></div>
+                  ))}
+                </div>
+              </div>
+            </Carousel>
           </div>
         </section>
 
