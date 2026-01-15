@@ -6,21 +6,27 @@ on:
 
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: 🎉 Deploy Final
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Obtener código
       uses: actions/checkout@v4
 
+    - name: 🟢 Instalar PNPM 9
+      uses: pnpm/action-setup@v3
+      with:
+        version: 9
+
     - name: 🟢 Instalar Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '20'
+        cache: 'pnpm'
 
-    - name: 🔨 Instalar y Construir
+    - name: 🔨 Instalar y Construir (EN LA RAÍZ)
       run: |
-        npm install --legacy-peer-deps
-        npm run build
+        pnpm install --no-frozen-lockfile
+        pnpm run build
 
     - name: 📂 Subir a FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -28,5 +34,7 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dist/
+        # 👇 ¡AQUÍ ESTÁ EL TRUCO! 👇
+        # Añadimos 'public/' para que suba solo el contenido final
+        local-dir: ./dist/public/
         server-dir: ./
