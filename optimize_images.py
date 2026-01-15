@@ -39,6 +39,8 @@ def run_optimization():
         ("client/public/servicio-apertura-puertas-3d.webp", "client/public/servicio-apertura-puertas-3d.webp", 600, 70),
         # Hero cerrajero lateral
         ("client/public/hero-cerrajero.webp", "client/public/hero-cerrajero.webp", 1000, 70),
+        # Nuevo Hero adaptable generado
+        ("client/public/images/hero-moderno-aguado.png", "client/public/images/hero-moderno-aguado.webp", 1920, 75),
     ]
 
     for input_file, output_file, width, quality in critical_files:

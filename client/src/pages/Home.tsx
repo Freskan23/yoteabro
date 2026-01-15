@@ -161,7 +161,7 @@ export default function Home() {
           {/* Imagen de fondo cinematográfica */}
           <div className="absolute inset-0 z-0">
             <img
-              src="/images/hero-nano-banana.webp"
+              src="/images/hero-moderno-aguado.webp"
               alt="Seguridad avanzada y cerrajería profesional"
               width="1920"
               height="1080"
