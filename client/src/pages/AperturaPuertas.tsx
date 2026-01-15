@@ -83,18 +83,17 @@ export default function AperturaPuertas() {
           <div className="absolute inset-0 opacity-20">
             <img
               src="/apertura-puerta.jpg"
-              alt="Apertura de puertas profesional"
+              alt="Apertura de puertas profesional en Leganés"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="container relative z-10">
             <div className="max-w-4xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                🔓 Apertura de Puertas en {APP_LOCATION} 24h - Desde 90€
+                🔓 ¿Te has dejado las llaves en casa? Abrimos puertas en todo Leganés desde 90€
               </h1>
               <p className="text-xl mb-8 text-gray-200">
-                Servicio urgente de apertura de puertas sin daños. Atendemos en
-                menos de 30 minutos, disponibles 24/7 incluidos festivos.
+                Apertura de puertas sin daños, rápido y barato. Llegamos en menos de 20-30 minutos a cualquier barrio de Leganés, las 24 horas del día.
               </p>
               <Button
                 asChild

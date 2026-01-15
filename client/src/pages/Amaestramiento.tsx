@@ -85,19 +85,17 @@ export default function Amaestramiento() {
           <div className="absolute inset-0 opacity-20">
             <img
               src="/cilindro-seguridad.jpg"
-              alt="Sistema de amaestramiento profesional"
+              alt="Sistema de amaestramiento de llaves en Leganés"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="container relative z-10">
             <div className="max-w-4xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                🔑 Amaestramiento de Cerraduras en {APP_LOCATION}
+                🔑 Una sola llave para todo: Amaestramiento en Leganés
               </h1>
               <p className="text-xl mb-8 text-gray-200">
-                Sistema de llaves maestras para comunidades, empresas y
-                propietarios. Una sola llave para múltiples accesos sin
-                renunciar a la seguridad.
+                La solución perfecta para comunidades de vecinos en barrios como Zarzaquemada y empresas de los polígonos de Leganés. Comodidad, control de accesos y máxima seguridad.
               </p>
               <Button
                 asChild

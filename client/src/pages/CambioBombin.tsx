@@ -83,19 +83,17 @@ export default function CambioBombin() {
           <div className="absolute inset-0 opacity-20">
             <img
               src="/cambio-bombin.jpg"
-              alt="Cambio de bombín profesional"
+              alt="Instalación de bombín antibumping en Leganés"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="container relative z-10">
             <div className="max-w-4xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                🔑 Cambio de Bombín en {APP_LOCATION} 24h
+                🔑 Protege tu hogar contra el bumping en Leganés
               </h1>
               <p className="text-xl mb-8 text-gray-200">
-                Servicio rápido y profesional de cambio de bombín. Instalamos
-                bombines de alta seguridad con tecnología antibumping,
-                antiganzúa y llaves incopiables.
+                Instalamos bombines antirrobo e incopiables en el acto. La forma más rápida y económica de subir el nivel de seguridad de tu puerta. ¡Duerme tranquilo hoy mismo!
               </p>
               <Button
                 asChild

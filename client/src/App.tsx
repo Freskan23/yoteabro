@@ -20,6 +20,7 @@ import LosSantos from "./pages/LosSantos";
 import Solagua from "./pages/Solagua";
 import PozaDelAgua from "./pages/PozaDelAgua";
 import Centro from "./pages/Centro";
+import Urgencias24h from "./pages/Urgencias24h";
 import AperturaPuertas from "./pages/AperturaPuertas";
 import CambioCerraduras from "./pages/CambioCerraduras";
 import CambioBombin from "./pages/CambioBombin";
@@ -59,6 +60,7 @@ function Router() {
         <Route path="/cerrajeros-solagua" component={Solagua} />
         <Route path="/cerrajeros-poza-del-agua" component={PozaDelAgua} />
         <Route path="/cerrajeros-centro" component={Centro} />
+        <Route path="/urgencias-24h" component={Urgencias24h} />
         <Route path="/apertura-puertas" component={AperturaPuertas} />
         <Route path="/cambio-cerraduras" component={CambioCerraduras} />
         <Route path="/cambio-bombin" component={CambioBombin} />
@@ -88,7 +90,7 @@ function App() {
       <HelmetProvider>
         <ThemeProvider
           defaultTheme="light"
-          // switchable
+        // switchable
         >
           <TooltipProvider>
             <Toaster />

@@ -30,31 +30,38 @@ export default function Home() {
   const services = [
     {
       icon: <HomeIcon className="h-12 w-12 text-[#FF6B35]" />,
-      title: "Apertura de puertas",
-      description:
-        "¿Te has dejado las llaves en casa? Abrimos puertas en todo Leganés desde 90€. Sin romper, rápido y barato.",
+      title: "Apertura de Puertas",
+      description: "¿Te has dejado las llaves en casa? Abrimos puertas en todo Leganés desde 90€. Sin romper, rápido y barato.",
       image: "/servicio-apertura-puertas-3d.webp",
+      link: "/apertura-puertas",
+    },
+    {
+      icon: <Clock className="h-12 w-12 text-[#FF6B35]" />,
+      title: "Urgencias 24 Horas",
+      description: "Servicio urgente disponible las 24 horas en Leganés. Llegamos en menos de 20 minutos.",
+      image: "/servicio-domicilio-3d.webp",
+      link: "/urgencias-24h",
     },
     {
       icon: <Lock className="h-12 w-12 text-[#FF6B35]" />,
-      title: "Cambio de cerraduras",
-      description:
-        "Cambiamos tu cerradura antigua por una de alta seguridad. Ideal para los pisos de Zarzaquemada y San Nicasio.",
+      title: "Cambio de Cerraduras",
+      description: "Cambiamos tu cerradura antigua por una de alta seguridad. Ideal para Zarzaquemada y San Nicasio.",
       image: "/servicio-cerraduras-3d.webp",
+      link: "/cambio-cerraduras",
     },
     {
       icon: <Key className="h-12 w-12 text-[#FF6B35]" />,
-      title: "Cambio de bombín",
-      description:
-        "Protege tu hogar contra el bumping. Instalamos bombines anti-robo en el acto. Duerme tranquilo hoy mismo.",
+      title: "Cambio de Bombín",
+      description: "Protege tu hogar contra el bumping. Instalamos bombines antirrobo en el acto. Duerme tranquilo.",
       image: "/servicio-llaves-3d.webp",
+      link: "/cambio-bombin",
     },
     {
       icon: <Settings className="h-12 w-12 text-[#FF6B35]" />,
-      title: "Amaestramiento",
-      description:
-        "Una sola llave para todo. La solución perfecta para las comunidades de vecinos de Leganés y empresas del polígono.",
+      title: "Amaestramiento de Llaves",
+      description: "Una sola llave para todo. La solución perfecta para comunidades de vecinos y empresas de Leganés.",
       image: "/servicio-domicilio-3d.webp",
+      link: "/amaestramiento",
     },
   ];
 
@@ -192,49 +199,55 @@ export default function Home() {
               {/* Columna Derecha: Tarjetas Flotantes Glassmorphism (Inspirado en competencia pero mejorado) */}
               <div className="lg:col-span-5 space-y-4 perspective-1000">
                 {/* Tarjeta 1: Apertura */}
-                <div className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 p-6 hover:bg-white/10 transition-all duration-300 transform hover:scale-[1.02] cursor-pointer">
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#FF6B35]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="relative flex items-center gap-4">
-                    <div className="h-12 w-12 rounded-xl bg-[#FF6B35] flex items-center justify-center shadow-lg shadow-orange-500/20">
-                      <HomeIcon className="h-6 w-6 text-white" />
+                <Link href="/apertura-puertas">
+                  <div className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 p-6 hover:bg-white/10 transition-all duration-300 transform hover:scale-[1.02] cursor-pointer">
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#FF6B35]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative flex items-center gap-4">
+                      <div className="h-12 w-12 rounded-xl bg-[#FF6B35] flex items-center justify-center shadow-lg shadow-orange-500/20">
+                        <HomeIcon className="h-6 w-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-white font-bold text-lg">Apertura de Puertas</h3>
+                        <p className="text-gray-400 text-sm">Sin daños • Llegada en 20 min</p>
+                      </div>
+                      <ArrowRight className="ml-auto h-5 w-5 text-gray-500 group-hover:text-white transition-colors" />
                     </div>
-                    <div>
-                      <h3 className="text-white font-bold text-lg">Apertura de Puertas</h3>
-                      <p className="text-gray-400 text-sm">Sin daños • Llegada en 20 min</p>
-                    </div>
-                    <ArrowRight className="ml-auto h-5 w-5 text-gray-500 group-hover:text-white transition-colors" />
                   </div>
-                </div>
+                </Link>
 
                 {/* Tarjeta 2: Cerraduras */}
-                <div className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 p-6 hover:bg-white/10 transition-all duration-300 transform hover:scale-[1.02] cursor-pointer">
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#004E89]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="relative flex items-center gap-4">
-                    <div className="h-12 w-12 rounded-xl bg-[#004E89] flex items-center justify-center shadow-lg shadow-blue-500/20">
-                      <Lock className="h-6 w-6 text-white" />
+                <Link href="/cambio-cerraduras">
+                  <div className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 p-6 hover:bg-white/10 transition-all duration-300 transform hover:scale-[1.02] cursor-pointer">
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#004E89]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative flex items-center gap-4">
+                      <div className="h-12 w-12 rounded-xl bg-[#004E89] flex items-center justify-center shadow-lg shadow-blue-500/20">
+                        <Lock className="h-6 w-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-white font-bold text-lg">Cambio de Cerraduras</h3>
+                        <p className="text-gray-400 text-sm">Alta seguridad • Antibumping</p>
+                      </div>
+                      <ArrowRight className="ml-auto h-5 w-5 text-gray-500 group-hover:text-white transition-colors" />
                     </div>
-                    <div>
-                      <h3 className="text-white font-bold text-lg">Cambio de Cerraduras</h3>
-                      <p className="text-gray-400 text-sm">Alta seguridad • Antibumping</p>
-                    </div>
-                    <ArrowRight className="ml-auto h-5 w-5 text-gray-500 group-hover:text-white transition-colors" />
                   </div>
-                </div>
+                </Link>
 
                 {/* Tarjeta 3: Urgencias */}
-                <div className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 p-6 hover:bg-white/10 transition-all duration-300 transform hover:scale-[1.02] cursor-pointer">
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="relative flex items-center gap-4">
-                    <div className="h-12 w-12 rounded-xl bg-purple-600 flex items-center justify-center shadow-lg shadow-purple-500/20">
-                      <Clock className="h-6 w-6 text-white" />
+                <Link href="/urgencias-24h">
+                  <div className="group relative overflow-hidden rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 p-6 hover:bg-white/10 transition-all duration-300 transform hover:scale-[1.02] cursor-pointer">
+                    <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative flex items-center gap-4">
+                      <div className="h-12 w-12 rounded-xl bg-purple-600 flex items-center justify-center shadow-lg shadow-purple-500/20">
+                        <Clock className="h-6 w-6 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-white font-bold text-lg">Urgencias 24 Horas</h3>
+                        <p className="text-gray-400 text-sm">Noches • Festivos • Fines de semana</p>
+                      </div>
+                      <ArrowRight className="ml-auto h-5 w-5 text-gray-500 group-hover:text-white transition-colors" />
                     </div>
-                    <div>
-                      <h3 className="text-white font-bold text-lg">Urgencias 24 Horas</h3>
-                      <p className="text-gray-400 text-sm">Noches • Festivos • Fines de semana</p>
-                    </div>
-                    <ArrowRight className="ml-auto h-5 w-5 text-gray-500 group-hover:text-white transition-colors" />
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -254,32 +267,36 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {services.map((service, index) => (
-                <Card
-                  key={index}
-                  className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group"
-                >
-                  <div className="h-48 overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute bottom-4 left-4 z-20">
-                      <div className="bg-white/90 p-2 rounded-lg shadow-sm backdrop-blur-sm">
-                        {service.icon}
+                <Link key={index} href={service.link}>
+                  <Card
+                    className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group cursor-pointer"
+                  >
+                    <div className="h-48 overflow-hidden relative">
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute bottom-4 left-4 z-20">
+                        <div className="bg-white/90 p-2 rounded-lg shadow-sm backdrop-blur-sm">
+                          {service.icon}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-3 text-[#001529] group-hover:text-[#FF6B35] transition-colors">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      {service.description}
-                    </p>
-                  </CardContent>
-                </Card>
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-bold mb-3 text-[#001529] group-hover:text-[#FF6B35] transition-colors">
+                        {service.title}
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed">
+                        {service.description}
+                      </p>
+                      <div className="mt-4 flex items-center text-[#FF6B35] font-semibold text-sm group-hover:translate-x-1 transition-transform">
+                        Ver detalles <ArrowRight className="ml-2 h-4 w-4" />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
             </div>
           </div>

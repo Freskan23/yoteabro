@@ -84,19 +84,17 @@ export default function CambioCerraduras() {
           <div className="absolute inset-0 opacity-20">
             <img
               src="/instalacion-cerradura.jpg"
-              alt="Instalación de cerradura profesional"
+              alt="Instalación de cerradura de alta seguridad en Leganés"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="container relative z-10">
             <div className="max-w-4xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                🔧 Cambio de Cerraduras en {APP_LOCATION} 24h
+                🔧 Cambiamos tu cerradura antigua por una de alta seguridad en Leganés
               </h1>
               <p className="text-xl mb-8 text-gray-200">
-                Instalación y sustitución de cerraduras de alta seguridad.
-                Trabajamos con las mejores marcas del mercado y ofrecemos
-                garantía en todos nuestros trabajos.
+                Instalación de cerraduras antibumping y de alta seguridad. La solución ideal para proteger los pisos de barrios como <strong>Zarzaquemada</strong> y <strong>San Nicasio</strong>. No esperes a un robo para actualizar tu seguridad.
               </p>
               <Button
                 asChild
