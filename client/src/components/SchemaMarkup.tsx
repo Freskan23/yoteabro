@@ -112,16 +112,23 @@ export default function SchemaMarkup() {
     "review": [
       {
         "@type": "Review",
+        "author": { "@type": "Person", "name": "María G." },
+        "datePublished": "2026-01-10",
+        "reviewBody": "Me dejé las llaves puestas por dentro en mi piso de Zarzaquemada. Eran las 10 de la noche y llegaron en 15 minutos. El cerrajero fue súper amable y abrió la puerta de un plumazo sin romper nada.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+      },
+      {
+        "@type": "Review",
         "author": { "@type": "Person", "name": "Carlos M." },
-        "datePublished": "2024-01-10",
-        "reviewBody": "Rápidos y muy profesionales. Me abrieron la puerta sin romper nada en Zarzaquemada.",
+        "datePublished": "2026-01-08",
+        "reviewBody": "Increíble servicio en San Nicasio. Quería actualizar la seguridad y me instalaron un bombín antibumping de alta gama. Explicación perfecta de por qué era mejor ese modelo.",
         "reviewRating": { "@type": "Rating", "ratingValue": "5" }
       },
       {
         "@type": "Review",
         "author": { "@type": "Person", "name": "Elena R." },
-        "datePublished": "2023-12-15",
-        "reviewBody": "Cambiaron el bombín por uno antibumping. Ahora duermo mucho más tranquila. Recomendados.",
+        "datePublished": "2026-01-05",
+        "reviewBody": "Llamé a las 3 am porque no podía entrar en casa cerca del CC Parquesur. Llegaron volando, en menos de 20 minutos estaban allí. Me abrieron la puerta y me dieron mucha tranquilidad.",
         "reviewRating": { "@type": "Rating", "ratingValue": "5" }
       }
     ],
