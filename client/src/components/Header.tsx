@@ -10,24 +10,28 @@ import WeatherTopBar from "@/components/WeatherTopBar";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [, setLocation] = useLocation();
+  const [location, setLocation] = useLocation();
   const { currentPrice, isNormalHours } = useDynamicPricing();
 
   const navItems = [
     { href: "/", label: "Inicio" },
-    { href: "#servicios", label: "Servicios" },
-    { href: "#zonas", label: "Zonas" },
-    { href: "#ventajas", label: "Ventajas" },
+    { href: "/#servicios", label: "Servicios" },
+    { href: "/#zonas", label: "Zonas" },
+    { href: "/#ventajas", label: "Ventajas" },
     { href: "/blog", label: "Blog" },
-    { href: "#contacto", label: "Contacto" },
+    { href: "/contacto", label: "Contacto" },
   ];
 
   const scrollToSection = (href: string) => {
-    if (href.startsWith("#")) {
-      const element = document.querySelector(href);
+    const sectionId = href.includes("#") ? href.split("#")[1] : null;
+    if (sectionId) {
+      const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
         setMobileMenuOpen(false);
+      } else if (location !== "/") {
+        // Si no estamos en la home y no encontramos el elemento, navegamos
+        setLocation("/");
       }
     }
   };
@@ -73,9 +77,13 @@ export default function Header() {
                   key={item.href}
                   href={item.href}
                   onClick={(e) => {
-                    if (item.href.startsWith("#")) {
-                      e.preventDefault();
-                      scrollToSection(item.href);
+                    if (item.href.includes("#")) {
+                      const [path, hash] = item.href.split("#");
+                      const isOnTargetPath = location === (path || "/");
+                      if (isOnTargetPath) {
+                        e.preventDefault();
+                        scrollToSection(item.href);
+                      }
                     }
                   }}
                   className="text-sm font-semibold text-gray-600 hover:text-[#FF6B35] transition-all relative group"
@@ -128,9 +136,15 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 onClick={(e) => {
-                  if (item.href.startsWith("#")) {
-                    e.preventDefault();
-                    scrollToSection(item.href);
+                  if (item.href.includes("#")) {
+                    const [path, hash] = item.href.split("#");
+                    const isOnTargetPath = location === (path || "/");
+                    if (isOnTargetPath) {
+                      e.preventDefault();
+                      scrollToSection(item.href);
+                    } else {
+                      setMobileMenuOpen(false);
+                    }
                   } else {
                     setMobileMenuOpen(false);
                   }
