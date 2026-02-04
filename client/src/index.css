@@ -187,13 +187,13 @@ html {
 /* Diagonal marquee animation for zone background text */
 @keyframes marquee-diagonal {
   0% {
-    transform: rotate(-15deg) translate(30%, 50%);
+    transform: translate(20%, 40%);
   }
   100% {
-    transform: rotate(-15deg) translate(-30%, -50%);
+    transform: translate(-20%, -40%);
   }
 }
 
 .animate-marquee-diagonal {
-  animation: marquee-diagonal 40s linear infinite;
+  animation: marquee-diagonal 50s linear infinite;
 }
