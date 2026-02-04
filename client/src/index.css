@@ -184,16 +184,16 @@ html {
   background: #003366;
 }
 
-/* Marquee animation for zone background text */
-@keyframes marquee {
+/* Diagonal marquee animation for zone background text */
+@keyframes marquee-diagonal {
   0% {
-    transform: translateX(-25%);
+    transform: rotate(-15deg) translate(30%, 50%);
   }
   100% {
-    transform: translateX(0%);
+    transform: rotate(-15deg) translate(-30%, -50%);
   }
 }
 
-.animate-marquee {
-  animation: marquee 45s linear infinite;
+.animate-marquee-diagonal {
+  animation: marquee-diagonal 40s linear infinite;
 }

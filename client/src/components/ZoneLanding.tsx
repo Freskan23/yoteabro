@@ -46,11 +46,13 @@ export default function ZoneLanding({
             <div className="absolute inset-0 opacity-[0.05]"
               style={{ backgroundImage: 'radial-gradient(circle, #EE6C4D 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }}>
             </div>
-            {/* Rebel Element - Animated Zone Name */}
-            <div className="absolute top-1/2 -translate-y-1/2 whitespace-nowrap animate-marquee">
-              <span className="text-[15rem] md:text-[20rem] font-black text-white italic opacity-[0.03] leading-none">
-                {zoneName.toUpperCase()} • {zoneName.toUpperCase()} • {zoneName.toUpperCase()} • {zoneName.toUpperCase()} •&nbsp;
-              </span>
+            {/* Rebel Element - Animated Zone Name (diagonal, right half) */}
+            <div className="absolute top-0 right-0 w-1/2 h-full overflow-hidden">
+              <div className="absolute inset-0 flex items-center justify-center rotate-[-15deg] animate-marquee-diagonal">
+                <span className="text-[12rem] md:text-[18rem] font-black text-white italic opacity-[0.04] leading-none whitespace-nowrap">
+                  {zoneName.toUpperCase()}
+                </span>
+              </div>
             </div>
           </div>
 
