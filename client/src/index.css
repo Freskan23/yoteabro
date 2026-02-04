@@ -187,13 +187,13 @@ html {
 /* Scroll up animation for zone background text */
 @keyframes scroll-up {
   0% {
-    transform: rotate(-20deg) translateY(50%);
+    transform: translateY(100%);
   }
   100% {
-    transform: rotate(-20deg) translateY(-50%);
+    transform: translateY(-100%);
   }
 }
 
 .animate-scroll-up {
-  animation: scroll-up 60s linear infinite;
+  animation: scroll-up 30s linear infinite;
 }

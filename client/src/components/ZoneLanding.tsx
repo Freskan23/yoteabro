@@ -47,9 +47,9 @@ export default function ZoneLanding({
               style={{ backgroundImage: 'radial-gradient(circle, #EE6C4D 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }}>
             </div>
             {/* Rebel Element - Animated Zone Name (diagonal, right half, moving up) */}
-            <div className="absolute top-0 right-0 w-[60%] h-full overflow-hidden">
-              <div className="absolute right-0 w-full h-[300%] flex items-center justify-center rotate-[-20deg] animate-scroll-up">
-                <span className="text-[10rem] md:text-[18rem] font-black text-white/[0.08] italic leading-none whitespace-nowrap">
+            <div className="absolute top-0 right-0 w-[55%] h-full overflow-hidden">
+              <div className="absolute inset-0 flex items-center justify-center rotate-[-20deg] animate-scroll-up">
+                <span className="text-[8rem] md:text-[14rem] lg:text-[18rem] font-black text-white/15 italic leading-none whitespace-nowrap tracking-tight">
                   {zoneName.toUpperCase()}
                 </span>
               </div>
