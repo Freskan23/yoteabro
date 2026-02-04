@@ -1,7 +1,7 @@
 {
-  "name": "Cerrajería Aguado Majadahonda",
-  "short_name": "Cerrajería Aguado",
-  "description": "Servicio de cerrajeros en Majadahonda 24 horas. Apertura de puertas, cambio de cerraduras y bombines de seguridad.",
+  "name": "YOTEABRO Cerrajeros Chamartín",
+  "short_name": "YOTEABRO",
+  "description": "Servicio de cerrajeros en Chamartín 24 horas. Apertura de puertas, cambio de cerraduras y bombines de seguridad.",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -20,4 +20,3 @@
   "start_url": "/",
   "scope": "/"
 }
-

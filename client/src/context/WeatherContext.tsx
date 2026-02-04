@@ -88,8 +88,8 @@ export function WeatherProvider({ children }: { children: ReactNode }) {
 
         const fetchWeather = async () => {
             try {
-                const latitude = 40.3280;
-                const longitude = -3.7635;
+                const latitude = 40.4503;
+                const longitude = -3.6775;
                 const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,precipitation,weather_code&timezone=Europe/Madrid`;
 
                 const response = await fetch(url);
@@ -140,13 +140,13 @@ export function getWeatherWarningMessage(weatherDescription: string): string {
     const desc = weatherDescription.toLowerCase();
 
     if (desc.includes('nieve')) {
-        return '❄️ Condiciones de nieve en Leganés. Tiempo de llegada puede extenderse a 40-50 minutos';
+        return '❄️ Condiciones de nieve en Chamartín. Tiempo de llegada puede extenderse a 40-50 minutos';
     } else if (desc.includes('hielo') || desc.includes('helada')) {
         return '🧊 Alerta por hielo en las calles. Tiempo de llegada puede extenderse a 40-50 minutos';
     } else if (desc.includes('tormenta')) {
         return '⛈️ Tormenta en la zona. Tiempo de llegada puede extenderse a 35-45 minutos';
     } else if (desc.includes('lluvia intensa') || desc.includes('chubascos violentos') || desc.includes('chubascos moderados')) {
-        return '🌧️ Lluvia intensa en Leganés. Tiempo de llegada puede extenderse a 30-40 minutos';
+        return '🌧️ Lluvia intensa en Chamartín. Tiempo de llegada puede extenderse a 30-40 minutos';
     } else if (desc.includes('niebla')) {
         return '🌫️ Niebla densa en la zona. Tiempo de llegada puede extenderse a 30-40 minutos';
     }

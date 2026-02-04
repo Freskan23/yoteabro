@@ -34,15 +34,15 @@ export default function AperturaPuertas() {
 
   const faqItems = [
     {
-      question: "¿Cuánto tardáis en llegar a mi ubicación en Leganés?",
-      answer: `Nuestro tiempo medio de respuesta para aperturas urgentes en barrios como Zarzaquemada, San Nicasio o Leganés Norte es de 20 a 30 minutos. Estamos distribuidos estratégicamente para llegar lo antes posible.`
+      question: "¿Cuánto tardáis en llegar a mi ubicación en Chamartín?",
+      answer: `Nuestro tiempo medio de respuesta para aperturas urgentes en barrios como El Viso, Prosperidad o Ciudad Jardín es de 20 a 30 minutos. Estamos distribuidos estratégicamente para llegar lo antes posible.`
     },
     {
       question: "¿Se romperá la cerradura o la puerta al abrir?",
       answer: "En el 95% de los casos realizamos una apertura limpia sin causar ningún daño a la puerta ni a la cerradura actual, utilizando técnicas de ganzuado o herramientas de precisión profesionales."
     },
     {
-      question: "¿Cuánto cuesta abrir una puerta de urgencia?",
+      question: "¿Quanto cuesta abrir una puerta de urgencia?",
       answer: "Nuestras tarifas son transparentes: 90€ en horario comercial (L-V 08:00 a 19:00) y 120€ en horario de urgencia. Siempre te damos el precio cerrado por teléfono antes de ir."
     },
     {
@@ -53,22 +53,22 @@ export default function AperturaPuertas() {
 
   const situations = [
     {
-      icon: <AlertCircle className="h-8 w-8 text-[#A52A2A]" />,
+      icon: <AlertCircle className="h-8 w-8 text-[#EE6C4D]" />,
       title: "Puerta cerrada sin llave",
       description: "Has salido y la puerta se ha cerrado sola sin las llaves",
     },
     {
-      icon: <AlertCircle className="h-8 w-8 text-[#A52A2A]" />,
+      icon: <AlertCircle className="h-8 w-8 text-[#EE6C4D]" />,
       title: "Llave rota en cerradura",
       description: "La llave se ha partido dentro del bombín",
     },
     {
-      icon: <AlertCircle className="h-8 w-8 text-[#A52A2A]" />,
+      icon: <AlertCircle className="h-8 w-8 text-[#EE6C4D]" />,
       title: "Cerradura atascada",
       description: "La cerradura no gira o está bloqueada",
     },
     {
-      icon: <AlertCircle className="h-8 w-8 text-[#A52A2A]" />,
+      icon: <AlertCircle className="h-8 w-8 text-[#EE6C4D]" />,
       title: "Pérdida de llaves",
       description: "Has perdido o te han robado las llaves",
     },
@@ -77,9 +77,9 @@ export default function AperturaPuertas() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead
-        title={`Apertura de Puertas Leganés 🔓 Sin Romper | Aguado 24h ⭐ 5.0`}
-        description={`🔑 ¿Llaves dentro? Abrimos tu puerta en Leganés en 20-30 min. Sin romper, sin daños y con precio cerrado desde 90€. ☎️ Llama ahora y recupera el acceso.`}
-        canonicalUrl="https://cerrajerosdeleganes.madrid/apertura-puertas"
+        title={`Apertura de Puertas Chamartín 🔓 Sin Daños | YOTEABRO 24h ⭐ 5.0`}
+        description={`🔑 ¿Llaves dentro? Abrimos tu puerta en Chamartín en 20-30 min. Sin romper, sin daños y con precio cerrado desde 90€. 📞 Llama ahora y recupera el acceso.`}
+        canonicalUrl="https://cerrajerosdechamartin.madrid/apertura-puertas"
       />
       <Header />
 
@@ -88,7 +88,7 @@ export default function AperturaPuertas() {
         <section className="bg-gray-50 py-4">
           <div className="container">
             <nav className="text-sm text-gray-600">
-              <Link href="/" className="hover:text-[#A52A2A]">
+              <Link href="/" className="hover:text-[#EE6C4D]">
                 Inicio
               </Link>
               <span className="mx-2">/</span>
@@ -104,22 +104,22 @@ export default function AperturaPuertas() {
           <div className="absolute inset-0 opacity-20">
             <img
               src="/apertura-puerta.jpg"
-              alt="Apertura de puertas profesional en Leganés"
+              alt="Apertura de puertas profesional en Chamartín"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="container relative z-10">
             <div className="max-w-4xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                🔓 ¿Te has dejado las llaves en casa? Abrimos puertas en todo Leganés desde 90€
+                🔓 ¿Te has dejado las llaves en casa? Abrimos puertas en todo Chamartín desde 90€
               </h1>
               <p className="text-xl mb-8 text-gray-200">
-                Apertura de puertas sin daños, rápido y barato. Llegamos en menos de 20-30 minutos a cualquier barrio de Leganés, las 24 horas del día.
+                Apertura de puertas sin daños, rápido y barato. Llegamos en menos de 20-30 minutos a cualquier barrio de Chamartín, las 24 horas del día.
               </p>
               <Button
                 asChild
                 size="lg"
-                className="bg-[#A52A2A] hover:bg-[#8B2323] text-white text-lg px-8 py-6"
+                className="bg-[#EE6C4D] hover:bg-[#d62828] text-white text-lg px-8 py-6"
               >
                 <a href={`tel:${APP_PHONE}`}>
                   <Phone className="mr-2 h-6 w-6" />
@@ -142,11 +142,11 @@ export default function AperturaPuertas() {
                 bloqueada o puerta atrancada, resolvemos el problema{" "}
                 <strong>sin causar daños</strong> a la cerradura ni a la puerta.
                 Si además necesitas mejorar la seguridad, también realizamos{" "}
-                <Link href="/cambio-cerraduras" className="text-[#A52A2A] underline hover:text-[#8B2323]">
+                <Link href="/cambio-cerraduras" className="text-[#EE6C4D] underline hover:text-[#d62828]">
                   cambio de cerraduras
                 </Link>{" "}
                 y{" "}
-                <Link href="/cambio-bombin" className="text-[#A52A2A] underline hover:text-[#8B2323]">
+                <Link href="/cambio-bombin" className="text-[#EE6C4D] underline hover:text-[#d62828]">
                   cambio de bombines
                 </Link>
                 .
@@ -227,8 +227,8 @@ export default function AperturaPuertas() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
                 <div className="rounded-xl overflow-hidden h-64">
                   <img
-                    src="/proceso-llegada.webp"
-                    alt="Cerrajero Aguado llegando en furgoneta a Leganés"
+                    src="/yoteabro_technician_working.png"
+                    alt={`Cerrajero ${APP_BUSINESS_NAME} llegando en furgoneta a Chamartín`}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -243,7 +243,7 @@ export default function AperturaPuertas() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="text-center">
-                  <div className="bg-[#A52A2A] text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                  <div className="bg-[#EE6C4D] text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                     1
                   </div>
                   <h3 className="text-xl font-bold mb-3">Llámanos</h3>
@@ -254,7 +254,7 @@ export default function AperturaPuertas() {
                 </div>
 
                 <div className="text-center">
-                  <div className="bg-[#A52A2A] text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                  <div className="bg-[#EE6C4D] text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                     2
                   </div>
                   <h3 className="text-xl font-bold mb-3">Llegamos rápido</h3>
@@ -294,14 +294,14 @@ export default function AperturaPuertas() {
             <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card>
                 <CardContent className="p-8 text-center">
-                  <Clock className="h-12 w-12 text-[#A52A2A] mx-auto mb-4" />
+                  <Clock className="h-12 w-12 text-[#EE6C4D] mx-auto mb-4" />
                   <h3 className="text-2xl font-bold mb-3">Horario Normal</h3>
                   <p className="text-gray-600 mb-4">
                     Lunes a Viernes
                     <br />
                     08:00h - 19:00h
                   </p>
-                  <div className="text-4xl font-bold text-[#A52A2A] mb-2">
+                  <div className="text-4xl font-bold text-[#EE6C4D] mb-2">
                     90€
                   </div>
                   <p className="text-sm text-gray-500">
@@ -312,13 +312,13 @@ export default function AperturaPuertas() {
 
               <Card>
                 <CardContent className="p-8 text-center">
-                  <Clock className="h-12 w-12 text-[#A52A2A] mx-auto mb-4" />
+                  <Clock className="h-12 w-12 text-[#EE6C4D] mx-auto mb-4" />
                   <h3 className="text-2xl font-bold mb-3">Fuera de Horario</h3>
                   <p className="text-gray-600 mb-4">
                     Noches, fines de semana
                     <br />y festivos
                   </p>
-                  <div className="text-4xl font-bold text-[#A52A2A] mb-2">
+                  <div className="text-4xl font-bold text-[#EE6C4D] mb-2">
                     120€
                   </div>
                   <p className="text-sm text-gray-500">
@@ -339,9 +339,12 @@ export default function AperturaPuertas() {
         {/* Servicios Relacionados */}
         <RelatedServices currentService="Apertura de Puertas" />
 
-        {/* CTA Final */}
-        <section className="py-16 bg-[#A52A2A] text-white">
-          <div className="container">
+        {/* CTA Final - Rebel & Zen */}
+        <section className="relative py-16 bg-[#EE6C4D] text-white overflow-hidden">
+          <div className="absolute inset-0 z-0 opacity-[0.1]"
+            style={{ backgroundImage: 'radial-gradient(circle, white 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }}>
+          </div>
+          <div className="container relative z-10">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 ¿Necesitas abrir tu puerta urgentemente?
@@ -352,7 +355,7 @@ export default function AperturaPuertas() {
               <Button
                 asChild
                 size="lg"
-                className="bg-white text-[#A52A2A] hover:bg-gray-100 text-lg px-8 py-6"
+                className="bg-white text-[#EE6C4D] hover:bg-gray-100 text-lg px-8 py-6"
               >
                 <a href={`tel:${APP_PHONE}`}>
                   <Phone className="mr-2 h-6 w-6" />
@@ -383,7 +386,7 @@ export default function AperturaPuertas() {
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
         </svg>
       </a>
-    </div>
+    </div >
   );
 }
 

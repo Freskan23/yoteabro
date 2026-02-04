@@ -11,18 +11,12 @@ import Home from "./pages/Home";
 import { WeatherProvider } from "@/context/WeatherContext";
 
 // Lazy loading for other pages to reduce initial JS bundle
-const Zarzaquemada = lazy(() => import("./pages/Zarzaquemada"));
-const SanNicasio = lazy(() => import("./pages/SanNicasio"));
-const ElCarrascal = lazy(() => import("./pages/ElCarrascal"));
-const LaFortuna = lazy(() => import("./pages/LaFortuna"));
-const LeganesNorte = lazy(() => import("./pages/LeganesNorte"));
-const ArroyoCulebro = lazy(() => import("./pages/ArroyoCulebro"));
-const Valdepelayo = lazy(() => import("./pages/Valdepelayo"));
-const VeredaEstudiantes = lazy(() => import("./pages/VeredaEstudiantes"));
-const LosSantos = lazy(() => import("./pages/LosSantos"));
-const Solagua = lazy(() => import("./pages/Solagua"));
-const PozaDelAgua = lazy(() => import("./pages/PozaDelAgua"));
-const Centro = lazy(() => import("./pages/Centro"));
+const ElViso = lazy(() => import("./pages/ElViso"));
+const Prosperidad = lazy(() => import("./pages/Prosperidad"));
+const CiudadJardin = lazy(() => import("./pages/CiudadJardin"));
+const Hispanoamerica = lazy(() => import("./pages/Hispanoamerica"));
+const NuevaEspana = lazy(() => import("./pages/NuevaEspana"));
+const Castilla = lazy(() => import("./pages/Castilla"));
 const Urgencias24h = lazy(() => import("./pages/Urgencias24h"));
 const AperturaPuertas = lazy(() => import("./pages/AperturaPuertas"));
 const CambioCerraduras = lazy(() => import("./pages/CambioCerraduras"));
@@ -41,8 +35,8 @@ const FloatingActionButtons = lazy(() => import("./components/FloatingActionButt
 
 // Fallback component while loading a lazy route
 const PageLoader = () => (
-  <div className="min-h-screen flex items-center justify-center bg-[#001529]">
-    <div className="h-12 w-12 border-4 border-[#FF6B35] border-t-transparent rounded-full animate-spin"></div>
+  <div className="min-h-screen flex items-center justify-center bg-[#1a1a1a]">
+    <div className="h-12 w-12 border-4 border-[#e63946] border-t-transparent rounded-full animate-spin"></div>
   </div>
 );
 
@@ -63,18 +57,12 @@ function Router() {
       <Suspense fallback={<PageLoader />}>
         <Switch>
           <Route path={"/"} component={Home} />
-          <Route path="/cerrajeros-zarzaquemada" component={Zarzaquemada} />
-          <Route path="/cerrajeros-san-nicasio" component={SanNicasio} />
-          <Route path="/cerrajeros-el-carrascal" component={ElCarrascal} />
-          <Route path="/cerrajeros-la-fortuna" component={LaFortuna} />
-          <Route path="/cerrajeros-leganes-norte" component={LeganesNorte} />
-          <Route path="/cerrajeros-arroyo-culebro" component={ArroyoCulebro} />
-          <Route path="/cerrajeros-valdepelayo" component={Valdepelayo} />
-          <Route path="/cerrajeros-vereda-estudiantes" component={VeredaEstudiantes} />
-          <Route path="/cerrajeros-los-santos" component={LosSantos} />
-          <Route path="/cerrajeros-solagua" component={Solagua} />
-          <Route path="/cerrajeros-poza-del-agua" component={PozaDelAgua} />
-          <Route path="/cerrajeros-centro" component={Centro} />
+          <Route path="/cerrajeros-el-viso" component={ElViso} />
+          <Route path="/cerrajeros-prosperidad" component={Prosperidad} />
+          <Route path="/cerrajeros-ciudad-jardin" component={CiudadJardin} />
+          <Route path="/cerrajeros-hispanoamerica" component={Hispanoamerica} />
+          <Route path="/cerrajeros-nueva-espana" component={NuevaEspana} />
+          <Route path="/cerrajeros-castilla" component={Castilla} />
           <Route path="/urgencias-24h" component={Urgencias24h} />
           <Route path="/apertura-puertas" component={AperturaPuertas} />
           <Route path="/cambio-cerraduras" component={CambioCerraduras} />

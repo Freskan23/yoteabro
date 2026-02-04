@@ -15,7 +15,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-12-18",
     "service": "Cambio de Bombín",
-    "location": "La Fortuna",
+    "location": "El Viso",
     "text": "Material de primera. Se nota que no te ponen cualquier cosa."
   },
   {
@@ -24,7 +24,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-07-28",
     "service": "Cambio de Bombín",
-    "location": "Poza del Agua",
+    "location": "Prosperidad",
     "text": "Cero complicaciones para el cambio de bombín. Súper serios."
   },
   {
@@ -33,8 +33,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-11-30",
     "service": "Amaestramiento",
-    "location": "San Nicasio",
-    "text": "Súper organizados para el tema del amaestramiento en San Nicasio. Profesionales."
+    "location": "Ciudad Jardín",
+    "text": "Súper organizados para el tema del amaestramiento en Chamartín. Profesionales."
   },
   {
     "id": 81,
@@ -42,7 +42,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-02-12",
     "service": "Urgencias 24h",
-    "location": "El Carrascal",
+    "location": "Hispanoamérica",
     "text": "Un domingo por la tarde y vinieron enseguida. Muy agradecido."
   },
   {
@@ -51,8 +51,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-06-12",
     "service": "Apertura de Puertas",
-    "location": "Vereda de los Estudiantes",
-    "text": "Me dejé las llaves puestas por dentro y el chaval llegó en nada a Vereda de los Estudiantes. Super majo y sin romper nada. Mano de santo!"
+    "location": "Nueva España",
+    "text": "Me dejé las llaves puestas por dentro y el chaval llegó en nada a Chamartín. Súper majo y sin romper nada. Mano de santo!"
   },
   {
     "id": 92,
@@ -60,7 +60,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-02-26",
     "service": "Cambio de Cerradura",
-    "location": "Vereda de los Estudiantes",
+    "location": "Nueva España",
     "text": "Cerradura nueva puesta en el día. Sin historias ni líos. Muy bien."
   },
   {
@@ -69,8 +69,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-09-04",
     "service": "Apertura de Puertas",
-    "location": "La Fortuna",
-    "text": "Rápido no, lo siguiente. Me abrieron el piso en La Fortuna en 10 minutos. Ni un rasguño a la puerta."
+    "location": "El Viso",
+    "text": "Rápido no, lo siguiente. Me abrieron el piso en Chamartín en 10 minutos. Ni un rasguño a la puerta."
   },
   {
     "id": 55,
@@ -78,7 +78,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-04-24",
     "service": "Urgencias 24h",
-    "location": "Los Santos",
+    "location": "Hispanoamérica",
     "text": "Se me partió la llave de noche y en media hora estaba resuelto. Eficaces a tope."
   },
   {
@@ -87,7 +87,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-09-16",
     "service": "Cambio de Cerradura",
-    "location": "Zarzaquemada",
+    "location": "Prosperidad",
     "text": "Cerradura nueva puesta en el día. Sin historias ni líos. Muy bien."
   },
   {
@@ -96,8 +96,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-11-02",
     "service": "Apertura de Puertas",
-    "location": "Zarzaquemada",
-    "text": "Me dejé las llaves puestas por dentro y el chaval llegó en nada a Zarzaquemada. Super majo y sin romper nada. Mano de santo!"
+    "location": "Prosperidad",
+    "text": "Me dejé las llaves puestas por dentro y el chaval llegó en nada a Chamartín. Súper majo y sin romper nada. Mano de santo!"
   },
   {
     "id": 22,
@@ -105,8 +105,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-08-15",
     "service": "Cambio de Cerradura",
-    "location": "Arroyo Culebro",
-    "text": "Si buscas un cerrajero en Arroyo Culebro que no te engañe, llama a estos. Buen trabajo."
+    "location": "Castilla",
+    "text": "Si buscas un cerrajero en Chamartín que no te engañe, llama a estos. Buen trabajo."
   },
   {
     "id": 70,
@@ -114,7 +114,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-08-30",
     "service": "Urgencias 24h",
-    "location": "Arroyo Culebro",
+    "location": "Castilla",
     "text": "No sabía a quién llamar y un acierto total. Súper rápidos."
   },
   {
@@ -123,8 +123,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-11-08",
     "service": "Cambio de Cerradura",
-    "location": "Poza del Agua",
-    "text": "Mejoraron mucho la seguridad de mi casa en Poza del Agua. Muy contenta."
+    "location": "Prosperidad",
+    "text": "Mejoraron mucho la seguridad de mi casa en Chamartín. Muy contenta."
   },
   {
     "id": 34,
@@ -132,8 +132,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-05-19",
     "service": "Amaestramiento",
-    "location": "Valdepelayo",
-    "text": "Súper organizados para el tema del amaestramiento en Valdepelayo. Profesionales."
+    "location": "El Viso",
+    "text": "Súper organizados para el tema del amaestramiento en Chamartín. Profesionales."
   },
   {
     "id": 35,
@@ -141,7 +141,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-11-28",
     "service": "Urgencias 24h",
-    "location": "Valdepelayo",
+    "location": "El Viso",
     "text": "Se me partió la llave de noche y en media hora estaba resuelto. Eficaces a tope."
   },
   {
@@ -150,7 +150,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-08-15",
     "service": "Cambio de Bombín",
-    "location": "Los Santos",
+    "location": "Hispanoamérica",
     "text": "Puse el bombín antibumping que me dijeron y va de lujo. Suave, suave."
   },
   {
@@ -159,7 +159,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-07-06",
     "service": "Amaestramiento",
-    "location": "El Carrascal",
+    "location": "Hispanoamérica",
     "text": "Se nota la experiencia. El sistema de llaves va genial."
   },
   {
@@ -168,8 +168,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-10-15",
     "service": "Urgencias 24h",
-    "location": "Arroyo Culebro",
-    "text": "A las 3 de la mañana y vinieron volando a Arroyo Culebro. Gracias de corazón."
+    "location": "Castilla",
+    "text": "A las 3 de la mañana y vinieron volando a Chamartín. Gracias de corazón."
   },
   {
     "id": 12,
@@ -177,7 +177,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-12-27",
     "service": "Cambio de Cerradura",
-    "location": "El Carrascal",
+    "location": "Hispanoamérica",
     "text": "Cerradura nueva puesta en el día. Sin historias ni líos. Muy bien."
   },
   {
@@ -186,8 +186,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-07-11",
     "service": "Amaestramiento",
-    "location": "Poza del Agua",
-    "text": "Súper organizados para el tema del amaestramiento en Poza del Agua. Profesionales."
+    "location": "Prosperidad",
+    "text": "Súper organizados para el tema del amaestramiento en Chamartín. Profesionales."
   },
   {
     "id": 37,
@@ -195,8 +195,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-11-22",
     "service": "Cambio de Cerradura",
-    "location": "Vereda de los Estudiantes",
-    "text": "He cambiado la cerradura del local en Vereda de los Estudiantes y todo perfecto. Limpios y rápidos."
+    "location": "Nueva España",
+    "text": "He cambiado la cerradura del local en Chamartín y todo perfecto. Limpios y rápidos."
   },
   {
     "id": 76,
@@ -204,7 +204,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-02-07",
     "service": "Urgencias 24h",
-    "location": "Leganés Norte",
+    "location": "Nueva España",
     "text": "No sabía a quién llamar y un acierto total. Súper rápidos."
   },
   {
@@ -213,8 +213,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-03-21",
     "service": "Apertura de Puertas",
-    "location": "Valdepelayo",
-    "text": "Rápido no, lo siguiente. Me abrieron el piso en Valdepelayo en 10 minutos. Ni un rasguño a la puerta."
+    "location": "El Viso",
+    "text": "Rápido no, lo siguiente. Me abrieron el piso en Chamartín en 10 minutos. Ni un rasguño a la puerta."
   },
   {
     "id": 63,
@@ -222,7 +222,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-05-10",
     "service": "Amaestramiento",
-    "location": "Arroyo Culebro",
+    "location": "Castilla",
     "text": "Servicio muy pro. Todo quedó perfecto y el trato de 10."
   },
   {
@@ -231,7 +231,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-06-17",
     "service": "Urgencias 24h",
-    "location": "Solagua",
+    "location": "Castilla",
     "text": "No sabía a quién llamar y un acierto total. Súper rápidos."
   },
   {
@@ -240,8 +240,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-06-02",
     "service": "Amaestramiento",
-    "location": "Zarzaquemada",
-    "text": "Súper organizados para el tema del amaestramiento en Zarzaquemada. Profesionales."
+    "location": "Prosperidad",
+    "text": "Súper organizados para el tema del amaestramiento en Chamartín. Profesionales."
   },
   {
     "id": 11,
@@ -249,8 +249,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-06-16",
     "service": "Apertura de Puertas",
-    "location": "El Carrascal",
-    "text": "Estaba desesperada y me ayudaron un montón. Precio justo y trato excelente en El Carrascal."
+    "location": "Hispanoamérica",
+    "text": "Estaba desesperada y me ayudaron un montón. Precio justo y trato excelente en Chamartín."
   },
   {
     "id": 56,
@@ -267,7 +267,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-09-20",
     "service": "Apertura de Puertas",
-    "location": "San Nicasio",
+    "location": "Ciudad Jardín",
     "text": "Servicio técnico impecable!! Abrir la puerta fue un visto y no visto!! Recomendables 100%!!"
   },
   {
@@ -276,7 +276,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-06-12",
     "service": "Amaestramiento",
-    "location": "Los Santos",
+    "location": "Hispanoamérica",
     "text": "Muy útiles los consejos que nos dieron para el amaestramiento."
   },
   {
@@ -285,7 +285,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-10-11",
     "service": "Cambio de Bombín",
-    "location": "San Nicasio",
+    "location": "Ciudad Jardín",
     "text": "Muy recomendables para actualizar la seguridad. Saben lo que hacen."
   },
   {
@@ -294,7 +294,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-08-23",
     "service": "Amaestramiento",
-    "location": "San Nicasio",
+    "location": "Ciudad Jardín",
     "text": "Servicio muy pro. Todo quedó perfecto y el trato de 10. Saludos!"
   },
   {
@@ -303,7 +303,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-12-08",
     "service": "Urgencias 24h",
-    "location": "Solagua",
+    "location": "Castilla",
     "text": "Un domingo por la tarde y vinieron enseguida. Muy agradecido."
   },
   {
@@ -312,7 +312,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-09-05",
     "service": "Urgencias 24h",
-    "location": "Vereda de los Estudiantes",
+    "location": "Nueva España",
     "text": "Atención telefónica de 10 y el cerrajero muy apañado. Rapidez máxima."
   },
   {
@@ -321,7 +321,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-07-07",
     "service": "Amaestramiento",
-    "location": "Los Santos",
+    "location": "Hispanoamérica",
     "text": "Un ahorro de llaves brutal. Funciona todo a la primera. Saludos!"
   },
   {
@@ -330,7 +330,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-01-01",
     "service": "Amaestramiento",
-    "location": "Leganés Norte",
+    "location": "Nueva España",
     "text": "Amaestramos las llaves del chalet y qué comodidad. Muy bien hecho."
   },
   {
@@ -339,7 +339,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-08-21",
     "service": "Cambio de Cerradura",
-    "location": "Poza del Agua",
+    "location": "Prosperidad",
     "text": "Todo según lo previsto. Profesionales de verdad."
   },
   {
@@ -348,8 +348,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-11-20",
     "service": "Apertura de Puertas",
-    "location": "Leganés Norte",
-    "text": "Rápido no, lo siguiente. Me abrieron el piso en Leganés Norte en 10 minutos. Ni un rasguño a la puerta."
+    "location": "Nueva España",
+    "text": "Rápido no, lo siguiente. Me abrieron el piso en Prosperidad en 10 minutos. Ni un rasguño a la puerta."
   },
   {
     "id": 84,
@@ -357,7 +357,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2024-12-11",
     "service": "Urgencias 24h",
-    "location": "San Nicasio",
+    "location": "Ciudad Jardín",
     "text": "Se me partió la llave de noche y en media hora estaba resuelto. Eficaces a tope."
   },
   {
@@ -366,7 +366,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-01-07",
     "service": "Cambio de Cerradura",
-    "location": "La Fortuna",
+    "location": "El Viso",
     "text": "Cerradura nueva puesta en el día. Sin historias ni líos. Muy bien."
   },
   {
@@ -375,8 +375,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-10-30",
     "service": "Apertura de Puertas",
-    "location": "Arroyo Culebro",
-    "text": "Rápido no, lo siguiente. Me abrieron el piso en Arroyo Culebro en 10 minutos. Ni un rasguño a la puerta."
+    "location": "Castilla",
+    "text": "Rápido no, lo siguiente. Me abrieron el piso en Castilla en 10 minutos. Ni un rasguño a la puerta."
   },
   {
     "id": 46,
@@ -384,8 +384,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2026-01-06",
     "service": "Apertura de Puertas",
-    "location": "Poza del Agua",
-    "text": "Rápido no, lo siguiente. Me abrieron el piso en Poza del Agua en 10 minutos. Ni un rasguño a la puerta."
+    "location": "Prosperidad",
+    "text": "Rápido no, lo siguiente. Me abrieron el piso en Prosperidad en 10 minutos. Ni un rasguño a la puerta."
   },
   {
     "id": 71,
@@ -393,8 +393,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-04-27",
     "service": "Cambio de Cerradura",
-    "location": "Arroyo Culebro",
-    "text": "Buen presupuesto y mejor trabajo. Los instaladores de Arroyo Culebro son unos máquinas."
+    "location": "Castilla",
+    "text": "Buen presupuesto y mejor trabajo. Los instaladores de Castilla son unos máquinas."
   },
   {
     "id": 73,
@@ -402,7 +402,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-01-22",
     "service": "Cambio de Bombín",
-    "location": "Arroyo Culebro",
+    "location": "Castilla",
     "text": "Cero complicaciones para el cambio de bombín. Súper serios."
   },
   {
@@ -420,7 +420,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2026-01-10",
     "service": "Cambio de Cerradura",
-    "location": "San Nicasio",
+    "location": "Ciudad Jardín",
     "text": "Me instalaron una cerradura de las buenas, multipunto. Ahora sí que se duerme tranquilo."
   },
   {
@@ -429,7 +429,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2026-01-03",
     "service": "Cambio de Cerradura",
-    "location": "Valdepelayo",
+    "location": "El Viso",
     "text": "Cerradura nueva puesta en el día. Sin historias ni líos. Muy bien."
   },
   {
@@ -438,7 +438,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-04-05",
     "service": "Urgencias 24h",
-    "location": "San Nicasio",
+    "location": "Ciudad Jardín",
     "text": "No sabía a quién llamar y un acierto total. Súper rápidos."
   },
   {
@@ -447,7 +447,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-12-26",
     "service": "Amaestramiento",
-    "location": "Leganés Norte",
+    "location": "Nueva España",
     "text": "Muy útiles los consejos que nos dieron para el amaestramiento."
   },
   {
@@ -456,8 +456,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-06-15",
     "service": "Cambio de Bombín",
-    "location": "Vereda de los Estudiantes",
-    "text": "El técnico me explicó todo súper bien en mi casa de Vereda de los Estudiantes. Da gusto."
+    "location": "Nueva España",
+    "text": "El técnico me explicó todo súper bien en mi casa de Chamartín. Da gusto."
   },
   {
     "id": 23,
@@ -465,7 +465,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-08-14",
     "service": "Cambio de Bombín",
-    "location": "Arroyo Culebro",
+    "location": "Castilla",
     "text": "Cero complicaciones para el cambio de bombín. Súper serios."
   },
   {
@@ -483,7 +483,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-06-17",
     "service": "Urgencias 24h",
-    "location": "Solagua",
+    "location": "Castilla",
     "text": "Atención telefónica de 10 y el cerrajero muy apañado. Rapidez máxima. Saludos!"
   },
   {
@@ -492,8 +492,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-09-10",
     "service": "Apertura de Puertas",
-    "location": "San Nicasio",
-    "text": "Rápido no, lo siguiente. Me abrieron el piso en San Nicasio en 10 minutos. Ni un rasguño a la puerta."
+    "location": "Ciudad Jardín",
+    "text": "Rápido no, lo siguiente. Me abrieron el piso en Chamartín en 10 minutos. Ni un rasguño a la puerta."
   },
   {
     "id": 13,
@@ -501,7 +501,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-06-28",
     "service": "Cambio de Bombín",
-    "location": "El Carrascal",
+    "location": "Hispanoamérica",
     "text": "Muy recomendables para actualizar la seguridad. Saben lo que hacen."
   },
   {
@@ -510,8 +510,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-06-14",
     "service": "Amaestramiento",
-    "location": "La Fortuna",
-    "text": "Súper organizados para el tema del amaestramiento en La Fortuna. Profesionales."
+    "location": "El Viso",
+    "text": "Súper organizados para el tema del amaestramiento en Chamartín. Profesionales."
   },
   {
     "id": 85,
@@ -519,8 +519,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-06-18",
     "service": "Cambio de Cerradura",
-    "location": "Los Santos",
-    "text": "Buen presupuesto y mejor trabajo. Los instaladores de Los Santos son unos máquinas."
+    "location": "Hispanoamérica",
+    "text": "Buen presupuesto y mejor trabajo. Los instaladores de Chamartín son unos máquinas."
   },
   {
     "id": 52,
@@ -528,8 +528,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-12-23",
     "service": "Cambio de Cerradura",
-    "location": "Los Santos",
-    "text": "Mejoraron mucho la seguridad de mi casa en Los Santos. Muy contenta."
+    "location": "Hispanoamérica",
+    "text": "Mejoraron mucho la seguridad de mi casa en Chamartín. Muy contenta."
   },
   {
     "id": 3,
@@ -537,7 +537,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-06-07",
     "service": "Cambio de Bombín",
-    "location": "Zarzaquemada",
+    "location": "Prosperidad",
     "text": "Material de primera. Se nota que no te ponen cualquier cosa."
   },
   {
@@ -546,7 +546,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-10-07",
     "service": "Urgencias 24h",
-    "location": "El Carrascal",
+    "location": "Hispanoamérica",
     "text": "Un domingo por la tarde y vinieron enseguida. Muy agradecido."
   },
   {
@@ -555,8 +555,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-11-19",
     "service": "Cambio de Cerradura",
-    "location": "Leganés Norte",
-    "text": "Mejoraron mucho la seguridad de mi casa en Leganés Norte. Muy contenta."
+    "location": "Nueva España",
+    "text": "Mejoraron mucho la seguridad de mi casa en El Viso. Muy contenta."
   },
   {
     "id": 30,
@@ -564,8 +564,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-09-19",
     "service": "Urgencias 24h",
-    "location": "La Fortuna",
-    "text": "Urgencia real en Leganés. Me salvaron la noche y el precio fue correcto."
+    "location": "El Viso",
+    "text": "Urgencia real en Chamartín. Me salvaron la noche y el precio fue correcto."
   },
   {
     "id": 72,
@@ -573,7 +573,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-05-30",
     "service": "Apertura de Puertas",
-    "location": "Vereda de los Estudiantes",
+    "location": "Nueva España",
     "text": "Servicio técnico impecable!! Abrir la puerta fue un visto y no visto!! Recomendables 100%!!"
   },
   {
@@ -582,7 +582,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-10-30",
     "service": "Amaestramiento",
-    "location": "San Nicasio",
+    "location": "Ciudad Jardín",
     "text": "Se nota la experiencia. El sistema de llaves va genial. Saludos!"
   },
   {
@@ -591,8 +591,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-12-03",
     "service": "Cambio de Bombín",
-    "location": "Leganés Norte",
-    "text": "Me cambiaron el bombín viejo en un momento en Leganés Norte. Calidad y buen precio."
+    "location": "Nueva España",
+    "text": "Me cambiaron el bombín viejo en un momento en Hispanoamérica. Calidad y buen precio."
   },
   {
     "id": 93,
@@ -600,7 +600,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-11-17",
     "service": "Urgencias 24h",
-    "location": "Poza del Agua",
+    "location": "Prosperidad",
     "text": "Un domingo por la tarde y vinieron enseguida. Muy agradecido."
   },
   {
@@ -609,8 +609,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-09-03",
     "service": "Cambio de Bombín",
-    "location": "Leganés Norte",
-    "text": "El técnico me explicó todo súper bien en mi casa de Leganés Norte!! Da gusto!!"
+    "location": "Nueva España",
+    "text": "El técnico me explicó todo súper bien en mi casa de Castilla!! Da gusto!!"
   },
   {
     "id": 44,
@@ -618,8 +618,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-05-26",
     "service": "Amaestramiento",
-    "location": "Solagua",
-    "text": "Súper organizados para el tema del amaestramiento en Solagua. Profesionales."
+    "location": "Castilla",
+    "text": "Súper organizados para el tema del amaestramiento en Chamartín. Profesionales."
   },
   {
     "id": 28,
@@ -627,7 +627,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-10-28",
     "service": "Cambio de Bombín",
-    "location": "La Fortuna",
+    "location": "El Viso",
     "text": "Puse el bombín antibumping que me dijeron y va de lujo. Suave, suave."
   },
   {
@@ -636,7 +636,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-05-25",
     "service": "Amaestramiento",
-    "location": "Arroyo Culebro",
+    "location": "Castilla",
     "text": "Se nota la experiencia. El sistema de llaves va genial."
   },
   {
@@ -645,8 +645,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-06-10",
     "service": "Apertura de Puertas",
-    "location": "Los Santos",
-    "text": "Me dejé las llaves puestas por dentro y el chaval llegó en nada a Los Santos. Super majo y sin romper nada. Mano de santo!"
+    "location": "Hispanoamérica",
+    "text": "Me dejé las llaves puestas por dentro y el chaval llegó en nada a Chamartín. Súper majo y sin romper nada. Mano de santo!"
   },
   {
     "id": 86,
@@ -654,8 +654,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-01-26",
     "service": "Apertura de Puertas",
-    "location": "Vereda de los Estudiantes",
-    "text": "Rápido no, lo siguiente. Me abrieron el piso en Vereda de los Estudiantes en 10 minutos. Ni un rasguño a la puerta."
+    "location": "Nueva España",
+    "text": "Rápido no, lo siguiente. Me abrieron el piso en Chamartín en 10 minutos. Ni un rasguño a la puerta."
   },
   {
     "id": 27,
@@ -663,8 +663,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-10-24",
     "service": "Cambio de Cerradura",
-    "location": "La Fortuna",
-    "text": "He cambiado la cerradura del local en La Fortuna y todo perfecto. Limpios y rápidos."
+    "location": "El Viso",
+    "text": "He cambiado la cerradura del local en Chamartín y todo perfecto. Limpios y rápidos."
   },
   {
     "id": 80,
@@ -672,8 +672,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-09-04",
     "service": "Apertura de Puertas",
-    "location": "Los Santos",
-    "text": "Llegó el cerrajero a Los Santos a los 20 min de llamar. Muy profesional y educado."
+    "location": "Hispanoamérica",
+    "text": "Llegó el cerrajero a Chamartín a los 20 min de llamar. Muy profesional y educado."
   },
   {
     "id": 20,
@@ -681,8 +681,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-07-08",
     "service": "Urgencias 24h",
-    "location": "Leganés Norte",
-    "text": "Urgencia real en Leganés. Me salvaron la noche y el precio fue correcto."
+    "location": "Nueva España",
+    "text": "Urgencia real en Chamartín. Me salvaron la noche y el precio fue correcto."
   },
   {
     "id": 90,
@@ -690,7 +690,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-06-25",
     "service": "Cambio de Bombín",
-    "location": "Zarzaquemada",
+    "location": "Prosperidad",
     "text": "Bombín de alta seguridad instalado hoy mismo. Rapidez total."
   },
   {
@@ -699,7 +699,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-11-12",
     "service": "Urgencias 24h",
-    "location": "La Fortuna",
+    "location": "El Viso",
     "text": "Se me partió la llave de noche y en media hora estaba resuelto. Eficaces a tope."
   },
   {
@@ -708,8 +708,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-06-09",
     "service": "Amaestramiento",
-    "location": "Arroyo Culebro",
-    "text": "Lo de tener una sola llave para todo en la comunidad de Arroyo Culebro es un inventazo. Gran trabajo."
+    "location": "Castilla",
+    "text": "Lo de tener una sola llave para todo en la comunidad de Chamartín es un inventazo. Gran trabajo."
   },
   {
     "id": 91,
@@ -717,7 +717,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-05-31",
     "service": "Amaestramiento",
-    "location": "Zarzaquemada",
+    "location": "Prosperidad",
     "text": "Muy útiles los consejos que nos dieron para el amaestramiento."
   },
   {
@@ -726,8 +726,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-08-09",
     "service": "Urgencias 24h",
-    "location": "Poza del Agua",
-    "text": "Rápidos es poco. En Poza del Agua no hay otros igual de urgencias."
+    "location": "Prosperidad",
+    "text": "Rápidos es poco. En Chamartín no hay otros igual de urgencias."
   },
   {
     "id": 88,
@@ -735,8 +735,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-11-11",
     "service": "Apertura de Puertas",
-    "location": "Los Santos",
-    "text": "Me dejé las llaves puestas por dentro y el chaval llegó en nada a Los Santos. Super majo y sin romper nada. Mano de santo!"
+    "location": "Hispanoamérica",
+    "text": "Me dejé las llaves puestas por dentro y el chaval llegó en nada a Chamartín. Súper majo y sin romper nada. Mano de santo!"
   },
   {
     "id": 66,
@@ -744,8 +744,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-05-07",
     "service": "Cambio de Bombín",
-    "location": "San Nicasio",
-    "text": "Me cambiaron el bombín viejo en un momento en San Nicasio. Calidad y buen precio."
+    "location": "Ciudad Jardín",
+    "text": "Me cambiaron el bombín viejo en un momento en Chamartín. Calidad y buen precio."
   },
   {
     "id": 33,
@@ -753,7 +753,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-04-14",
     "service": "Cambio de Bombín",
-    "location": "Valdepelayo",
+    "location": "El Viso",
     "text": "Puse el bombín antibumping que me dijeron y va de lujo. Suave, suave."
   },
   {
@@ -762,7 +762,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-12-09",
     "service": "Cambio de Cerradura",
-    "location": "Vereda de los Estudiantes",
+    "location": "Nueva España",
     "text": "Cerradura nueva puesta en el día. Sin historias ni líos. Muy bien."
   },
   {
@@ -780,8 +780,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-09-28",
     "service": "Amaestramiento",
-    "location": "Vereda de los Estudiantes",
-    "text": "Súper organizados para el tema del amaestramiento en Vereda de los Estudiantes. Profesionales."
+    "location": "Nueva España",
+    "text": "Súper organizados para el tema del amaestramiento en Chamartín. Profesionales."
   },
   {
     "id": 38,
@@ -789,7 +789,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-10-10",
     "service": "Cambio de Bombín",
-    "location": "Vereda de los Estudiantes",
+    "location": "Nueva España",
     "text": "Muy recomendables para actualizar la seguridad. Saben lo que hacen."
   },
   {
@@ -798,8 +798,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-08-03",
     "service": "Cambio de Cerradura",
-    "location": "Solagua",
-    "text": "Mejoraron mucho la seguridad de mi casa en Solagua. Muy contenta. Saludos!"
+    "location": "Castilla",
+    "text": "Mejoraron mucho la seguridad de mi casa en Chamartín. Muy contenta. Saludos!"
   },
   {
     "id": 5,
@@ -807,8 +807,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-12-26",
     "service": "Urgencias 24h",
-    "location": "Zarzaquemada",
-    "text": "Urgencia real en Leganés. Me salvaron la noche y el precio fue correcto."
+    "location": "Chamartín",
+    "text": "Urgencia real en Chamartín. Me salvaron la noche y el precio fue correcto."
   },
   {
     "id": 41,
@@ -816,7 +816,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-04-30",
     "service": "Apertura de Puertas",
-    "location": "Solagua",
+    "location": "Castilla",
     "text": "Servicio técnico impecable. Abrir la puerta fue un visto y no visto. Recomendables 100%."
   },
   {
@@ -825,7 +825,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-08-01",
     "service": "Cambio de Bombín",
-    "location": "Solagua",
+    "location": "Castilla",
     "text": "Bombín de alta seguridad instalado hoy mismo. Rapidez total."
   },
   {
@@ -834,8 +834,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-08-13",
     "service": "Cambio de Cerradura",
-    "location": "Solagua",
-    "text": "Si buscas un cerrajero en Solagua que no te engañe, llama a estos. Buen trabajo."
+    "location": "Castilla",
+    "text": "Si buscas un cerrajero en Chamartín que no te engañe, llama a estos. Buen trabajo."
   },
   {
     "id": 62,
@@ -852,8 +852,8 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-01-05",
     "service": "Cambio de Cerradura",
-    "location": "San Nicasio",
-    "text": "Mejoraron mucho la seguridad de mi casa en San Nicasio. Muy contenta."
+    "location": "Chamartín",
+    "text": "Mejoraron mucho la seguridad de mi casa en Chamartín. Muy contenta."
   },
   {
     "id": 59,
@@ -870,7 +870,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2025-04-04",
     "service": "Cambio de Cerradura",
-    "location": "Arroyo Culebro",
+    "location": "Chamartín",
     "text": "Me instalaron una cerradura de las buenas, multipunto. Ahora sí que se duerme tranquilo."
   },
   {
@@ -879,7 +879,7 @@ export const testimonials: Testimonial[] = [
     "rating": 5,
     "date": "2026-01-11",
     "service": "Amaestramiento",
-    "location": "Los Santos",
+    "location": "Hispanoamérica",
     "text": "Muy útiles los consejos que nos dieron para el amaestramiento."
   }
 ];

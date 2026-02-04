@@ -1,4 +1,4 @@
-import { APP_BUSINESS_NAME, APP_ADDRESS, APP_PHONE, APP_PHONE_DISPLAY, APP_EMAIL, APP_LOCATION } from "@/const";
+import { APP_BUSINESS_NAME, APP_ADDRESS, APP_PHONE, APP_PHONE_DISPLAY, APP_EMAIL, APP_LOCATION, APP_LOGO } from "@/const";
 import { Facebook, Instagram, Twitter, Phone, Mail, MapPin, Clock } from "lucide-react";
 import { Link } from "wouter";
 import WeatherWidget from "@/components/WeatherWidget";
@@ -16,41 +16,33 @@ export default function Footer() {
   ];
 
   const zones = [
-    "Zarzaquemada", "San Nicasio", "El Carrascal", "La Fortuna",
-    "Poza del Agua", "Solagua", "Arroyo Culebro", "Valdepelayo",
-    "Vereda Estudiantes", "Los Santos", "Leganés Norte", "Centro"
+    "El Viso", "Prosperidad", "Ciudad Jardín", "Hispanoamérica",
+    "Nueva España", "Castilla"
   ];
 
   return (
-    <footer className="bg-[#001529] text-white overflow-hidden">
+    <footer className="bg-[#293241] text-white overflow-hidden">
       {/* Línea de acento superior con gradiente marca */}
-      <div className="h-1 w-full bg-gradient-to-r from-[#FF6B35] via-[#FF9F1C] to-[#FF6B35] opacity-80"></div>
+      <div className="h-1 w-full bg-gradient-to-r from-[#EE6C4D] via-[#293241] to-[#EE6C4D] opacity-80"></div>
 
       <div className="container pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
 
           {/* Columna Branding & Bio (4 slots) */}
-          <div className="lg:col-span-4 space-y-6">
-            <div className="inline-flex items-center gap-3 p-2 bg-white rounded-2xl shadow-xl">
-              <img
-                src="/logo-aguado.webp"
-                alt={`Logo de ${APP_BUSINESS_NAME}`}
-                width="150"
-                height="40"
-                className="h-12 w-auto"
-              />
+          <div className="lg:col-span-4 space-y-8">
+            <div className="relative inline-block">
+              <span className="text-3xl font-black italic tracking-tighter text-white">
+                YOTEA<span className="text-[#EE6C4D]">BRO</span>
+              </span>
             </div>
-            <h3 className="text-2xl font-black tracking-tight text-white italic">
-              Cerrajeros <span className="text-[#FF6B35]">Aguado</span>
-            </h3>
             <p className="text-gray-400 leading-relaxed text-sm md:text-base max-w-sm">
               Tu seguridad es nuestra obsesión. Líderes en {APP_LOCATION} con servicio técnico especializado y atención inmediata las 24 horas.
             </p>
             <div className="flex gap-4 pt-2">
-              <a href={`tel:${APP_PHONE}`} className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#FF6B35] transition-all group" aria-label="Llamar por teléfono a Cerrajeros Aguado">
+              <a href={`tel:${APP_PHONE}`} className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#EE6C4D] transition-all group" aria-label={`Llamar por teléfono a ${APP_BUSINESS_NAME}`}>
                 <Phone className="h-5 w-5 text-gray-400 group-hover:text-white" />
               </a>
-              <a href={`mailto:${APP_EMAIL}`} className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#FF6B35] transition-all group" aria-label="Enviar correo electrónico">
+              <a href={`mailto:${APP_EMAIL}`} className="h-10 w-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#EE6C4D] transition-all group" aria-label="Enviar correo electrónico">
                 <Mail className="h-5 w-5 text-gray-400 group-hover:text-white" />
               </a>
             </div>
@@ -58,12 +50,12 @@ export default function Footer() {
 
           {/* Columna Servicios (2 slots) */}
           <div className="lg:col-span-2">
-            <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-[#FF6B35] mb-6">Servicios</h4>
+            <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-[#EE6C4D] mb-6">Servicios</h4>
             <ul className="space-y-4">
               {serviceLinks.map((link) => (
                 <li key={link.href}>
                   <Link to={link.href} className="text-gray-400 hover:text-white transition-colors text-sm font-medium flex items-center gap-2 group">
-                    <span className="h-0.5 w-0 bg-[#FF6B35] transition-all group-hover:w-3"></span>
+                    <span className="h-0.5 w-0 bg-[#EE6C4D] transition-all group-hover:w-3"></span>
                     {link.label}
                   </Link>
                 </li>
@@ -73,7 +65,7 @@ export default function Footer() {
 
           {/* Columna Zonas (3 slots) */}
           <div className="lg:col-span-3">
-            <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-[#FF6B35] mb-6">Cobertura en Leganés</h4>
+            <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-[#EE6C4D] mb-6">Cobertura en Chamartín</h4>
             <div className="grid grid-cols-2 gap-y-3 gap-x-4">
               {zones.map((zone) => (
                 <Link
@@ -93,17 +85,17 @@ export default function Footer() {
 
           {/* Columna Contacto/Horario (3 slots) */}
           <div className="lg:col-span-3 space-y-6">
-            <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-[#FF6B35] mb-6">Atención al Cliente</h4>
+            <h4 className="text-sm font-bold uppercase tracking-[0.2em] text-[#e63946] mb-6">Atención al Cliente</h4>
             <div className="space-y-4">
-              <div className="bg-white/5 p-4 rounded-2xl border border-white/10 hover:border-[#FF6B35]/30 transition-all group">
+              <div className="bg-white/5 p-4 rounded-2xl border border-white/10 hover:border-[#e63946]/30 transition-all group">
                 <div className="flex items-center gap-3 mb-1">
-                  <Clock className="h-4 w-4 text-[#FF6B35]" />
+                  <Clock className="h-4 w-4 text-[#e63946]" />
                   <span className="text-sm font-bold">24 Horas / 365 Días</span>
                 </div>
                 <p className="text-[11px] text-gray-500 pl-7 uppercase tracking-wider font-semibold">Urgencias e Instalaciones</p>
               </div>
 
-              <div className="bg-gradient-to-br from-[#FF6B35] to-[#FF9F1C] p-4 rounded-2xl shadow-lg shadow-orange-500/10">
+              <div className="bg-gradient-to-br from-[#EE6C4D] to-[#293241] p-4 rounded-2xl shadow-lg shadow-[#EE6C4D]/10">
                 <p className="text-[10px] text-white/80 uppercase font-black tracking-widest mb-1">Central de Avisos</p>
                 <a href={`tel:${APP_PHONE}`} className="text-xl font-black text-white block hover:scale-105 transition-transform">
                   {APP_PHONE_DISPLAY}
@@ -142,4 +134,3 @@ export default function Footer() {
     </footer>
   );
 }
-

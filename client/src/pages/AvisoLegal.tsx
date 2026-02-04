@@ -42,7 +42,7 @@ export default function AvisoLegal() {
 
               <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-900">1. DATOS IDENTIFICATIVOS</h2>
               <p>
-                Usted está visitando la página web www.cerrajeriaaguado.com, titularidad de <strong>{APP_BUSINESS_LEGAL_NAME}</strong>, con domicilio social en <strong>{APP_LEGAL_ADDRESS}</strong>, con NIF <strong>{APP_NIF}</strong>, en adelante, el TITULAR.
+                Usted está visitando la página web www.cerrajerosdechamartin.madrid, titularidad de <strong>{APP_BUSINESS_LEGAL_NAME}</strong>, con domicilio social en <strong>{APP_LEGAL_ADDRESS}</strong>, con NIF <strong>{APP_NIF}</strong>, en adelante, el TITULAR.
               </p>
               <p>Puede contactar con el Titular por cualquiera de los siguientes medios:</p>
               <ul className="list-disc pl-6 space-y-2">
@@ -117,7 +117,7 @@ export default function AvisoLegal() {
 
               <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-900">8. ENLACES</h2>
               <p>
-                En el caso de que en www.cerrajeriaaguado.com se incluyesen enlaces o hipervínculos hacia otros sitios de Internet, el Titular no ejercerá ningún tipo de control sobre dichos sitios y contenidos ni asumirá responsabilidad alguna por los contenidos de algún enlace perteneciente a un sitio web ajeno, ni garantizará la disponibilidad técnica, calidad, fiabilidad, exactitud, amplitud, veracidad, validez y constitucionalidad de cualquier material o información contenida en ninguno de dichos hipervínculos u otros sitios de Internet.
+                En el caso de que en www.cerrajerosdechamartin.madrid se incluyesen enlaces o hipervínculos hacia otros sitios de Internet, el Titular no ejercerá ningún tipo de control sobre dichos sitios y contenidos ni asumirá responsabilidad alguna por los contenidos de algún enlace perteneciente a un sitio web ajeno, ni garantizará la disponibilidad técnica, calidad, fiabilidad, exactitud, amplitud, veracidad, validez y constitucionalidad de cualquier material o información contenida en ninguno de dichos hipervínculos u otros sitios de Internet.
               </p>
 
               <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-900">9. LEGISLACIÓN APLICABLE Y JURISDICCIÓN</h2>

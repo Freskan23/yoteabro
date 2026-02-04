@@ -21,55 +21,59 @@ import {
 export default function ServicesCarousel() {
     const services = [
         {
-            icon: <HomeIcon className="h-12 w-12 text-[#FF6B35]" />,
+            icon: <HomeIcon className="h-12 w-12 text-[#EE6C4D]" />,
             title: "Apertura de Puertas",
-            description: "¿Te has dejado las llaves en casa? Abrimos puertas en todo Leganés desde 90€. Sin romper, rápido y barato.",
-            image: "/servicio-apertura-puertas-3d.webp",
+            description: "¿Te has dejado las llaves en casa? Abrimos puertas en todo Chamartín desde 90€. Sin romper, rápido y barato.",
+            image: "/comic-apertura.png",
             link: "/apertura-puertas",
         },
         {
-            icon: <Clock className="h-12 w-12 text-[#FF6B35]" />,
+            icon: <Clock className="h-12 w-12 text-[#EE6C4D]" />,
             title: "Urgencias 24 Horas",
-            description: "Servicio inmediato día y noche. Llegamos en 20 minutos a cualquier punto de Leganés, festivos incluidos.",
-            image: "/servicio-domicilio-3d.webp",
+            description: "Servicio inmediato día y noche. Llegamos en 20 minutos a cualquier punto de Chamartín, festivos incluidos.",
+            image: "/comic-urgencias.png",
             link: "/urgencias-24h",
         },
         {
-            icon: <Wrench className="h-12 w-12 text-[#FF6B35]" />,
+            icon: <Wrench className="h-12 w-12 text-[#EE6C4D]" />,
             title: "Cambio de Cerraduras",
             description: "Sustitución e instalación de cerraduras de todas las marcas. Mejora la seguridad de tu hogar hoy mismo.",
-            image: "/servicio-cerraduras-3d.webp",
+            image: "/comic-cerraduras.png",
             link: "/cambio-cerraduras",
         },
         {
-            icon: <Lock className="h-12 w-12 text-[#FF6B35]" />,
+            icon: <Lock className="h-12 w-12 text-[#EE6C4D]" />,
             title: "Bombines Antibumping",
             description: "Instalación de cilindros de alta seguridad. Protección contra el método bumping, ganzúa y taladro.",
-            image: "/servicio-llaves-3d.webp",
+            image: "/comic-bombines.png",
             link: "/cambio-bombin",
         },
         {
-            icon: <Key className="h-12 w-12 text-[#FF6B35]" />,
+            icon: <Key className="h-12 w-12 text-[#EE6C4D]" />,
             title: "Amaestramientos",
             description: "Olvídate de llevar inmensos llaveros. Una sola llave para abrir todas las puertas de tu comunidad o negocio.",
-            image: "/servicio-llaves-3d.webp",
+            image: "/comic-bombines.png",
             link: "/amaestramiento",
         },
         {
-            icon: <Settings className="h-12 w-12 text-[#FF6B35]" />,
+            icon: <Settings className="h-12 w-12 text-[#EE6C4D]" />,
             title: "Mantenimiento",
             description: "Servicio de mantenimiento para comunidades de propietarios y empresas. Ajuste de muelles y puertas.",
-            image: "/servicio-cerraduras-3d.webp",
+            image: "/comic-cerraduras.png",
             link: "/contacto",
         },
     ];
 
     return (
-        <section id="servicios" className="py-20 bg-gray-50">
+        <section id="servicios" className="relative py-20 bg-gray-50 overflow-hidden">
+            {/* Zen Dot Pattern background */}
+            <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.03]"
+                style={{ backgroundImage: 'radial-gradient(circle, #293241 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }}>
+            </div>
             <div className="container">
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h2 className="text-4xl font-bold mb-4 text-[#001529]">
-                        Servicios de Cerrajería en Leganés
+                    <h2 className="text-4xl font-black mb-4 text-[#293241] uppercase italic tracking-tighter">
+                        Servicios de Cerrajería en <span className="text-[#EE6C4D]">Chamartín</span>
                     </h2>
                     <p className="text-xl text-gray-600">
                         Soluciones profesionales para tu hogar o negocio. Calidad garantizada.
@@ -106,13 +110,13 @@ export default function ServicesCarousel() {
                                             </div>
                                         </div>
                                         <CardContent className="p-6">
-                                            <h3 className="text-xl font-bold mb-3 text-[#001529] group-hover:text-[#FF6B35] transition-colors">
+                                            <h3 className="text-xl font-black mb-3 text-[#293241] group-hover:text-[#EE6C4D] transition-colors uppercase tracking-tighter italic">
                                                 {service.title}
                                             </h3>
                                             <p className="text-gray-600 leading-relaxed text-sm">
                                                 {service.description}
                                             </p>
-                                            <div className="mt-4 flex items-center text-[#FF6B35] font-semibold text-sm group-hover:translate-x-1 transition-transform" aria-label={`Ver detalles sobre ${service.title}`}>
+                                            <div className="mt-4 flex items-center text-[#EE6C4D] font-bold text-sm group-hover:translate-x-1 transition-transform" aria-label={`Ver detalles sobre ${service.title}`}>
                                                 Ver detalles <ArrowRight className="ml-2 h-4 w-4" />
                                             </div>
                                         </CardContent>
@@ -122,8 +126,8 @@ export default function ServicesCarousel() {
                         ))}
                     </CarouselContent>
                     <div className="hidden md:flex justify-end gap-2 mt-8">
-                        <CarouselPrevious className="relative translate-y-0 left-0 hover:bg-[#FF6B35] hover:text-white border-gray-200" />
-                        <CarouselNext className="relative translate-y-0 right-0 hover:bg-[#FF6B35] hover:text-white border-gray-200" />
+                        <CarouselPrevious className="relative translate-y-0 left-0 hover:bg-[#EE6C4D] hover:text-white border-gray-200" />
+                        <CarouselNext className="relative translate-y-0 right-0 hover:bg-[#EE6C4D] hover:text-white border-gray-200" />
                     </div>
                     <div className="flex md:hidden justify-center gap-2 mt-6">
                         <div className="flex gap-1">

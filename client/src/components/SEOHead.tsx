@@ -10,11 +10,11 @@ interface SEOHeadProps {
 }
 
 export default function SEOHead({
-  title = `Cerrajeros Leganés 24h ⚡ Llegamos en 20 min | Aguado ⭐ 5.0`,
-  description = `🔑 Cerrajeros en Leganés 24h. ¿Puerta cerrada? ¡No esperes fuera! Llegamos en 20 min. Apertura desde 90€ (Precio Cerrado). ☎️ ${APP_PHONE_DISPLAY}. ¡97 Reseñas Reales!`,
-  keywords = "cerrajeros leganés, cerrajería 24 horas leganés, apertura puertas leganés, cambio cerraduras leganés, cerrajero urgente leganés, bombín seguridad leganés, zarzaquemada, san nicasio, el carrascal",
-  ogImage = "https://cerrajerosdeleganes.madrid/images/og-image.webp",
-  canonicalUrl = "https://cerrajerosdeleganes.madrid/"
+  title = `Cerrajeros Chamartín 24h ⚡ Llegamos en 20 min | YOTEABRO ⭐ 5.0`,
+  description = `🔑 Cerrajeros en Chamartín 24h. ¿Puerta cerrada? ¡No esperes fuera! Llegamos en 20 min. Apertura desde 90€ (Precio Cerrado). ☎️ ${APP_PHONE_DISPLAY}. ¡97 Reseñas Reales!`,
+  keywords = "cerrajeros chamartín, cerrajería 24 horas chamartín, apertura puertas chamartín, cambio cerraduras chamartín, cerrajero urgente chamartín, bombín seguridad chamartín, el viso, nueva españa, hispanoamérica",
+  ogImage = "https://cerrajerosdechamartin.madrid/images/og-image.webp",
+  canonicalUrl = "https://cerrajerosdechamartin.madrid/"
 }: SEOHeadProps) {
   return (
     <Helmet>
@@ -41,7 +41,7 @@ export default function SEOHead({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:type" content="image/webp" />
-      <meta property="og:image:alt" content="Cerrajero profesional de Cerrajería Aguado en Leganés" />
+      <meta property="og:image:alt" content={`Cerrajero profesional de ${APP_BUSINESS_NAME} en Chamartín`} />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -52,9 +52,9 @@ export default function SEOHead({
 
       {/* Geo tags para SEO local */}
       <meta name="geo.region" content="ES-M" />
-      <meta name="geo.placename" content="Leganés" />
-      <meta name="geo.position" content="40.3283;-3.7667" />
-      <meta name="ICBM" content="40.3283, -3.7667" />
+      <meta name="geo.placename" content="Chamartín, Madrid" />
+      <meta name="geo.position" content="40.4571;-3.6769" />
+      <meta name="ICBM" content="40.4571, -3.6769" />
 
       {/* Información de negocio */}
       <meta name="author" content={APP_BUSINESS_NAME} />

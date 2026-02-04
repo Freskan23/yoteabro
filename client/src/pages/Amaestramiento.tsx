@@ -81,9 +81,9 @@ export default function Amaestramiento() {
   return (
     <div className="min-h-screen flex flex-col">
       <SEOHead
-        title={`Amaestramiento de Llaves Leganés 🔑 Una Llave para Todo | Aguado`}
-        description={`🏢 Comodidad total para comunidades y oficinas en Leganés. Diseñamos sistemas de llave maestra a medida. Simplifica tu vida y gana en seguridad.`}
-        canonicalUrl="https://cerrajerosdeleganes.madrid/amaestramiento"
+        title={`Amaestramiento de Llaves Chamartín 🔑 Una Llave para Todo | YOTEABRO`}
+        description={`🏢 Comodidad total para comunidades y oficinas en Chamartín. Diseñamos sistemas de llave maestra a medida. Simplifica tu vida y gana en seguridad.`}
+        canonicalUrl="https://cerrajerosdechamartin.madrid/amaestramiento"
       />
       <Header />
 
@@ -101,22 +101,25 @@ export default function Amaestramiento() {
           </div>
         </section>
 
-        {/* Hero */}
-        <section className="relative bg-gradient-to-br from-gray-800 to-gray-900 text-white py-16 overflow-hidden">
-          <div className="absolute inset-0 opacity-20">
-            <img
-              src="/cilindro-seguridad.jpg"
-              alt="Sistema de amaestramiento de llaves en Leganés"
-              className="w-full h-full object-cover"
-            />
+        {/* Hero Amaestramiento - Rebel & Zen */}
+        <section className="relative bg-[#3D5A80] text-white py-20 overflow-hidden">
+          <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden select-none">
+            {/* Zen Dot Pattern */}
+            <div className="absolute inset-0 opacity-[0.05]"
+              style={{ backgroundImage: 'radial-gradient(circle, #EE6C4D 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }}>
+            </div>
+            {/* Rebel Element */}
+            <div className="absolute -bottom-10 -right-10 text-[20rem] font-black text-white italic opacity-[0.03] rotate-[-15deg] leading-none">
+              CONTROL
+            </div>
           </div>
           <div className="container relative z-10">
             <div className="max-w-4xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                🔑 Una sola llave para todo: Amaestramiento en Leganés
+                🔑 Una sola llave para todo: Amaestramiento en Chamartín
               </h1>
               <p className="text-xl mb-8 text-gray-200">
-                La solución perfecta para comunidades de vecinos en barrios como Zarzaquemada y empresas de los polígonos de Leganés. Comodidad, control de accesos y máxima seguridad.
+                Diseñamos planes de cierre personalizados para comunidades de vecinos, locales comerciales y oficinas en barrios como <strong>El Viso</strong>, <strong>Prosperidad</strong> o <strong>Castilla</strong>. Olvídate de los manojos de llaves pesados.
               </p>
               <Button
                 asChild
@@ -236,9 +239,9 @@ export default function Amaestramiento() {
                     puertas o propietarios con múltiples inmuebles.
                   </p>
                   <ul className="text-gray-600 space-y-2 text-sm">
-                    <li>✓ Máxima simplicidad</li>
-                    <li>✓ Una llave para todo</li>
-                    <li>✓ Perfecto para uso personal</li>
+                    <li>✔ Máxima simplicidad</li>
+                    <li>✔ Una llave para todo</li>
+                    <li>✔ Perfecto para uso personal</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -251,13 +254,12 @@ export default function Amaestramiento() {
                   </h3>
                   <p className="text-gray-700 mb-4">
                     Sistema con <strong>diferentes niveles de acceso</strong>:
-                    llave maestra para administradores y llaves individuales para
-                    usuarios. Ideal para comunidades y empresas.
+                    🏢 Simplifica el acceso a tu comunidad o empresa en Chamartín
                   </p>
                   <ul className="text-gray-600 space-y-2 text-sm">
-                    <li>✓ Control total de accesos</li>
-                    <li>✓ Múltiples niveles jerárquicos</li>
-                    <li>✓ Máxima seguridad y organización</li>
+                    <li>✔ Control total de accesos</li>
+                    <li>✔ Múltiples niveles jerárquicos</li>
+                    <li>✔ Máxima seguridad y organización</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -280,7 +282,7 @@ export default function Amaestramiento() {
                 <div className="rounded-xl overflow-hidden h-64">
                   <img
                     src="/proceso-llegada.webp"
-                    alt="Cerrajero Aguado llegando en furgoneta a Leganés"
+                    alt="Cerrajero YOTEABRO llegando en furgoneta a Chamartín"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -394,9 +396,12 @@ export default function Amaestramiento() {
         {/* Servicios Relacionados */}
         <RelatedServices currentService="Amaestramiento" />
 
-        {/* CTA Final */}
-        <section className="py-16 bg-[#A52A2A] text-white">
-          <div className="container">
+        {/* CTA Final - Rebel & Zen */}
+        <section className="relative py-16 bg-[#A52A2A] text-white overflow-hidden">
+          <div className="absolute inset-0 z-0 opacity-[0.1]"
+            style={{ backgroundImage: 'radial-gradient(circle, white 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }}>
+          </div>
+          <div className="container relative z-10">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 ¿Necesitas un sistema de amaestramiento?

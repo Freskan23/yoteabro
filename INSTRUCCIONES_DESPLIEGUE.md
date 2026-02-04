@@ -1,4 +1,4 @@
-# Instrucciones de Despliegue - Cerrajería Aguado Leganés
+# Instrucciones de Despliegue - YOTEABRO Chamartín
 
 ## 📦 Archivos Generados
 
@@ -8,7 +8,7 @@ El build de producción está en la carpeta `dist/public/`. Estos son los archiv
 
 ### 1. Subir Archivos al Hosting
 
-Sube **TODO el contenido** de la carpeta `dist/public/` a la raíz de tu dominio `cerrajerosdeleganes.madrid`:
+Sube **TODO el contenido** de la carpeta `dist/public/` a la raíz de tu dominio `cerrajerosdechamartin.madrid`:
 
 ```
 dist/public/
@@ -17,8 +17,8 @@ dist/public/
 │   ├── index-CWFfmpRm.js
 │   └── index-BSIWlvcn.css
 ├── images/
-│   ├── logo-aguado.jpg
-│   ├── cerrajero-aguado.png
+│   ├── logo-yoteabro.webp
+│   ├── hero-cerrajero.webp
 │   ├── blog-*.jpg
 │   └── ...
 ├── robots.txt
@@ -37,8 +37,8 @@ Crea un archivo `.htaccess` en la raíz con este contenido:
   RewriteBase /
   
   # Redirigir www a no-www
-  RewriteCond %{HTTP_HOST} ^www\.cerrajerosdeleganes\.madrid [NC]
-  RewriteRule ^(.*)$ https://cerrajerosdeleganes.madrid/$1 [L,R=301]
+  RewriteCond %{HTTP_HOST} ^www\.cerrajerosdechamartin\.madrid [NC]
+  RewriteRule ^(.*)$ https://cerrajerosdechamartin.madrid/$1 [L,R=301]
   
   # Forzar HTTPS
   RewriteCond %{HTTPS} off
@@ -74,30 +74,30 @@ Añade esta configuración a tu archivo de configuración del sitio:
 ```nginx
 server {
     listen 80;
-    server_name cerrajeromajadahonda.madrid www.cerrajeromajadahonda.madrid;
+    server_name cerrajerosdechamartin.madrid www.cerrajerosdechamartin.madrid;
     
     # Redirigir a HTTPS
-    return 301 https://cerrajerosdeleganes.madrid$request_uri;
+    return 301 https://cerrajerosdechamartin.madrid$request_uri;
 }
 
 server {
     listen 443 ssl http2;
-    server_name www.cerrajerosdeleganes.madrid;
+    server_name www.cerrajerosdechamartin.madrid;
     
     # Redirigir www a no-www
-    return 301 https://cerrajerosdeleganes.madrid$request_uri;
+    return 301 https://cerrajerosdechamartin.madrid$request_uri;
 }
 
 server {
     listen 443 ssl http2;
-    server_name cerrajerosdeleganes.madrid;
+    server_name cerrajerosdechamartin.madrid;
     
-    root /var/www/cerrajerosdeleganes.madrid;
+    root /var/www/cerrajerosdechamartin.madrid;
     index index.html;
     
     # Certificado SSL (Let's Encrypt recomendado)
-    ssl_certificate /etc/letsencrypt/live/cerrajerosdeleganes.madrid/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/cerrajerosdeleganes.madrid/privkey.pem;
+    ssl_certificate /etc/letsencrypt/live/cerrajerosdechamartin.madrid/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cerrajerosdechamartin.madrid/privkey.pem;
     
     # SPA routing
     location / {
@@ -126,26 +126,26 @@ server {
 
 Una vez subidos los archivos, verifica:
 
-1. ✅ La web carga correctamente en `https://cerrajeromajadahonda.madrid`
+1. ✅ La web carga correctamente en `https://cerrajerosdechamartin.madrid`
 2. ✅ Todas las páginas funcionan (servicios, blog, contacto)
 3. ✅ Las imágenes se muestran correctamente
-4. ✅ El sitemap está accesible: `https://cerrajeromajadahonda.madrid/sitemap.xml`
-5. ✅ El robots.txt está accesible: `https://cerrajeromajadahonda.madrid/robots.txt`
+4. ✅ El sitemap está accesible: `https://cerrajerosdechamartin.madrid/sitemap.xml`
+5. ✅ El robots.txt está accesible: `https://cerrajerosdechamartin.madrid/robots.txt`
 
 ### 5. Registrar en Google Search Console
 
 1. Ve a [Google Search Console](https://search.google.com/search-console)
-2. Añade la propiedad `https://cerrajeromajadahonda.madrid`
+2. Añade la propiedad `https://cerrajerosdechamartin.madrid`
 3. Verifica la propiedad (método DNS o archivo HTML)
-4. Envía el sitemap: `https://cerrajeromajadahonda.madrid/sitemap.xml`
+4. Envía el sitemap: `https://cerrajerosdechamartin.madrid/sitemap.xml`
 
 ### 6. Registrar en Google My Business
 
 Asegúrate de que tu ficha de Google My Business esté actualizada con:
-- Nombre: Cerrajería Aguado
-- Dirección: Av. de Fuenlabrada, 37, local 34 (Galería Sanabria), 28912 Leganés, Madrid
-- Teléfono: 624 940 941
-- Sitio web: https://cerrajerosdeleganes.madrid
+- Nombre: YOTEABRO
+- Dirección: Calle de Alberto Alcocer, 43, 28016 Madrid (Chamartín)
+- Teléfono: 919 932 959
+- Sitio web: https://cerrajerosdechamartin.madrid
 - Horario: 24 horas
 
 ## 📊 Características Implementadas
@@ -164,7 +164,7 @@ Asegúrate de que tu ficha de Google My Business esté actualizada con:
 - ✅ Precios dinámicos según horario (90€ / 120€)
 - ✅ Integración meteorológica en tiempo real
 - ✅ Avisos automáticos por mal tiempo
-- ✅ Blog con 15 artículos optimizados SEO
+- ✅ Blog con artículos optimizados SEO
 - ✅ 4 páginas de servicios con interlinking
 - ✅ Páginas legales (RGPD compliant)
 - ✅ Banner de cookies
@@ -172,9 +172,9 @@ Asegúrate de que tu ficha de Google My Business esté actualizada con:
 - ✅ Botón flotante de WhatsApp
 
 ### Contacto
-- Teléfono: 624 940 941
-- Email: aguado@cerrajerosleganes.madrid
-- WhatsApp: 624 940 941
+- Teléfono: 919 932 959
+- Email: contacto@yoteabro.com
+- WhatsApp: 919 932 959
 
 ## 🔧 Soporte Técnico
 
@@ -194,5 +194,5 @@ Si tienes algún problema durante el despliegue, verifica:
 
 ---
 
-**¡Tu web está lista para dominar las búsquedas locales de cerrajeros en Leganés! 🔐⚡**
+**¡Tu web está lista para dominar las búsquedas locales de cerrajeros en Chamartín! 🔐⚡**
 

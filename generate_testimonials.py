@@ -4,9 +4,7 @@ import os
 from datetime import datetime, timedelta
 
 neighborhoods = [
-    "Zarzaquemada", "San Nicasio", "El Carrascal", "Leganés Norte", 
-    "Arroyo Culebro", "La Fortuna", "Valdepelayo", "Vereda de los Estudiantes", 
-    "Solagua", "Poza del Agua", "Los Santos", "Centro"
+    "El Viso", "Prosperidad", "Ciudad Jardín", "Hispanoamérica", "Nueva España", "Castilla", "Centro"
 ]
 
 services = [
@@ -58,7 +56,7 @@ templates = {
     "Urgencias 24h": [
         "A las 3 de la mañana y vinieron volando a {loc}. Gracias de corazón.",
         "Se me partió la llave de noche y en media hora estaba resuelto. Eficaces a tope.",
-        "Urgencia real en Leganés. Me salvaron la noche y el precio fue correcto.",
+        "Urgencia real en Chamartín. Me salvaron la noche y el precio fue correcto.",
         "Rápidos es poco. En {loc} no hay otros igual de urgencias.",
         "Atención telefónica de 10 y el cerrajero muy apañado. Rapidez máxima.",
         "No sabía a quién llamar y un acierto total. Súper rápidos.",

@@ -1,4 +1,4 @@
-# robots.txt para Cerrajería Aguado Leganés 🚀
+# robots.txt para YOTEABRO Chamartín 🚀
 # Optimizado para buscadores tradicionales y Agentes de IA
 
 User-agent: *
@@ -8,7 +8,7 @@ Disallow: /private/
 Disallow: /tmp/
 
 # Sitemap para indexación rápida
-Sitemap: https://cerrajerosdeleganes.madrid/sitemap.xml
+Sitemap: https://cerrajerosdechamartin.madrid/sitemap.xml
 
 # Control de bots de análisis
 User-agent: AhrefsBot

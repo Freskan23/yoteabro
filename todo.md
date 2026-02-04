@@ -51,7 +51,7 @@
 ## Schemas adicionales Schema.org (27 oct 2025)
 
 - [x] Añadir Menu Schema con estructura de servicios (SiteNavigationElement)
-- [x] Añadir Author/Person Schema para Cerrajería Aguado como experto
+- [x] Añadir Author/Person Schema para YOTEABRO como experto
 - [x] Añadir Organization Schema completo (complementa LocalBusiness)
 - [x] Añadir Service Schema individual para cada servicio (4 servicios detallados)
 - [ ] Verificar todos los schemas en Google Rich Results Test

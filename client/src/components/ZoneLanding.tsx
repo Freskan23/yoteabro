@@ -31,29 +31,35 @@ export default function ZoneLanding({
         <title>Cerrajeros {zoneName} 24 Horas | {APP_BUSINESS_NAME}</title>
         <meta
           name="description"
-          content={`Cerrajeros urgentes en ${zoneName}, Leganés. Llegamos en 20 minutos. Apertura de puertas, cambio de cerraduras y urgencias 24h en ${zoneName}. Precio cerrado.`}
+          content={`Cerrajeros urgentes en ${zoneName}, Chamartín. Llegamos en 20 minutos. Apertura de puertas, cambio de cerraduras y urgencias 24h en ${zoneName}. Precio cerrado.`}
         />
-        <link rel="canonical" href={`https://cerrajerosdeleganes.madrid/cerrajeros-${zoneName.toLowerCase().replace(/\s+/g, '-')}`} />
+        <link rel="canonical" href={`https://cerrajerosdechamartin.madrid/cerrajeros-${zoneName.toLowerCase().replace(/\s+/g, '-')}`} />
       </Helmet>
 
       <Header />
 
       <main>
-        {/* Hero Local */}
-        <section className="relative bg-[#001529] text-white py-20 overflow-hidden">
-          <div className="absolute inset-0 z-0 opacity-20">
-            {/* Usamos un patrón o imagen genérica de fondo oscurecida */}
-            <div className="w-full h-full bg-[url('/hero-cerrajero.webp')] bg-cover bg-center"></div>
+        {/* Hero Local - Rebel & Zen */}
+        <section className="relative bg-[#293241] text-white py-20 overflow-hidden">
+          <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden select-none">
+            {/* Zen Dot Pattern */}
+            <div className="absolute inset-0 opacity-[0.05]"
+              style={{ backgroundImage: 'radial-gradient(circle, #EE6C4D 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }}>
+            </div>
+            {/* Rebel Element */}
+            <div className="absolute -top-10 -right-10 text-[20rem] font-black text-white italic opacity-[0.03] rotate-[15deg] leading-none">
+              ZONE
+            </div>
           </div>
 
           <div className="container relative z-10">
             <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FF6B35]/20 border border-[#FF6B35]/50 text-[#FF6B35] text-sm font-bold mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EE6C4D]/20 border border-[#EE6C4D]/50 text-[#EE6C4D] text-sm font-bold mb-6">
                 <MapPin className="h-4 w-4" />
                 Servicio en {zoneName}
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                Cerrajeros en <span className="text-[#FF6B35]">{zoneName}</span> 24 Horas
+                Cerrajeros en <span className="text-[#EE6C4D]">{zoneName}</span> 24 Horas
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
                 {zoneDescription} Llegamos a cualquier calle de {zoneName} en menos de 20 minutos.
@@ -63,7 +69,7 @@ export default function ZoneLanding({
                 <Button
                   asChild
                   size="lg"
-                  className="bg-[#FF6B35] hover:bg-[#E55A2B] text-white text-lg px-8 py-6 shadow-lg shadow-orange-500/20"
+                  className="bg-[#EE6C4D] hover:bg-[#d62828] text-white text-lg px-8 py-6 shadow-lg shadow-orange-500/20"
                 >
                   <a href={`tel:${APP_PHONE}`}>
                     <Phone className="mr-2 h-6 w-6 animate-pulse" />
@@ -115,19 +121,22 @@ export default function ZoneLanding({
           </div>
         </section>
 
-        {/* CTA Final */}
-        <section className="py-12 bg-gray-50 border-t border-gray-200">
-          <div className="container text-center">
-            <h2 className="text-2xl font-bold mb-4">¿Vives en {zoneName}?</h2>
-            <p className="text-gray-600 mb-8">Estamos a la vuelta de la esquina. Llámanos y estaremos ahí antes de que te des cuenta.</p>
+        {/* CTA Final - Rebel & Zen */}
+        <section className="relative py-20 bg-[#EE6C4D] text-white overflow-hidden">
+          <div className="absolute inset-0 z-0 opacity-[0.1]"
+            style={{ backgroundImage: 'radial-gradient(circle, white 1.5px, transparent 1.5px)', backgroundSize: '32px 32px' }}>
+          </div>
+          <div className="container relative z-10 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">¿Vives en {zoneName}?</h2>
+            <p className="text-xl mb-8 opacity-90">Estamos a la vuelta de la esquina. Llámanos y estaremos ahí en menos de 20 minutos.</p>
             <Button
               asChild
               size="lg"
-              className="bg-[#004E89] hover:bg-[#003366] text-white px-8"
+              className="bg-white text-[#EE6C4D] hover:bg-gray-100 text-lg px-8 py-6"
             >
               <a href={`tel:${APP_PHONE}`}>
-                <Phone className="mr-2 h-5 w-5" />
-                Pedir presupuesto gratis
+                <Phone className="mr-2 h-6 w-6" />
+                Presupuesto Gratis: {APP_PHONE_DISPLAY}
               </a>
             </Button>
           </div>

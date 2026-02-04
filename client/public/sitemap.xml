@@ -6,100 +6,94 @@
 
   <!-- Página principal -->
   <url>
-    <loc>https://cerrajerosdeleganes.madrid/</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://cerrajerosdechamartin.madrid/</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Servicios -->
   <url>
-    <loc>https://cerrajerosdeleganes.madrid/apertura-puertas</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://cerrajerosdechamartin.madrid/apertura-puertas</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cerrajerosdeleganes.madrid/cambio-cerraduras</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://cerrajerosdechamartin.madrid/cambio-cerraduras</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cerrajerosdeleganes.madrid/cambio-bombin</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://cerrajerosdechamartin.madrid/cambio-bombin</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cerrajerosdeleganes.madrid/amaestramiento</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://cerrajerosdechamartin.madrid/amaestramiento</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cerrajerosdeleganes.madrid/urgencias-24h</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://cerrajerosdechamartin.madrid/urgencias-24h</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Zonas -->
-  <url><loc>https://cerrajerosdeleganes.madrid/cerrajeros-zarzaquemada</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerrajerosdeleganes.madrid/cerrajeros-san-nicasio</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerrajerosdeleganes.madrid/cerrajeros-el-carrascal</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerrajerosdeleganes.madrid/cerrajeros-la-fortuna</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerrajerosdeleganes.madrid/cerrajeros-leganes-norte</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerrajerosdeleganes.madrid/cerrajeros-arroyo-culebro</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerrajerosdeleganes.madrid/cerrajeros-valdepelayo</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerrajerosdeleganes.madrid/cerrajeros-vereda-estudiantes</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerrajerosdeleganes.madrid/cerrajeros-los-santos</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerrajerosdeleganes.madrid/cerrajeros-solagua</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerrajerosdeleganes.madrid/cerrajeros-poza-del-agua</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://cerrajerosdeleganes.madrid/cerrajeros-centro</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Zonas Chamartín -->
+  <url><loc>https://cerrajerosdechamartin.madrid/cerrajeros-el-viso</loc><lastmod>2026-02-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerrajerosdechamartin.madrid/cerrajeros-prosperidad</loc><lastmod>2026-02-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerrajerosdechamartin.madrid/cerrajeros-ciudad-jardin</loc><lastmod>2026-02-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerrajerosdechamartin.madrid/cerrajeros-hispanoamerica</loc><lastmod>2026-02-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerrajerosdechamartin.madrid/cerrajeros-nueva-espana</loc><lastmod>2026-02-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cerrajerosdechamartin.madrid/cerrajeros-castilla</loc><lastmod>2026-02-04</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Blog -->
   <url>
-    <loc>https://cerrajerosdeleganes.madrid/blog</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://cerrajerosdechamartin.madrid/blog</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://cerrajerosdeleganes.madrid/blog/robos-trasteros-leganes-norte</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://cerrajerosdeleganes.madrid/blog/cerraduras-antibumping-zarzaquemada</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://cerrajerosdeleganes.madrid/blog/seguridad-chalets-arroyo-culebro</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://cerrajerosdeleganes.madrid/blog/llaves-coche-parquesur</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://cerrajerosdeleganes.madrid/blog/puertas-okupas-leganes</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://cerrajerosdeleganes.madrid/blog/bombines-seguridad-baratos</loc><lastmod>2026-01-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cerrajerosdechamartin.madrid/blog/robos-trasteros-chamartin</loc><lastmod>2026-02-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cerrajerosdechamartin.madrid/blog/cerraduras-antibumping-el-viso</loc><lastmod>2026-02-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cerrajerosdechamartin.madrid/blog/seguridad-pisos-nueva-espana</loc><lastmod>2026-02-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cerrajerosdechamartin.madrid/blog/llaves-coche-prosperidad</loc><lastmod>2026-02-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cerrajerosdechamartin.madrid/blog/puertas-okupas-chamartin</loc><lastmod>2026-02-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://cerrajerosdechamartin.madrid/blog/bombines-seguridad-baratos</loc><lastmod>2026-02-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Otros -->
   <url>
-    <loc>https://cerrajerosdeleganes.madrid/testimonios</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://cerrajerosdechamartin.madrid/testimonios</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://cerrajerosdeleganes.madrid/contacto</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://cerrajerosdechamartin.madrid/contacto</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cerrajerosdeleganes.madrid/politica-privacidad</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://cerrajerosdechamartin.madrid/politica-privacidad</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://cerrajerosdeleganes.madrid/politica-cookies</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://cerrajerosdechamartin.madrid/politica-cookies</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://cerrajerosdeleganes.madrid/aviso-legal</loc>
-    <lastmod>2026-01-15</lastmod>
+    <loc>https://cerrajerosdechamartin.madrid/aviso-legal</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

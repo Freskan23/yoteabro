@@ -1,21 +1,21 @@
 export { COOKIE_NAME, ONE_YEAR_MS } from "@shared/const";
 
-export const APP_TITLE = "Cerrajeros Leganés Aguado 24h | Urgencias 20 min";
-export const APP_DESCRIPTION = "Cerrajeros en Leganés 24 horas. Llegamos en 20 minutos. Apertura de puertas desde 90€. Profesionales con más de 20 años de experiencia. Llama ahora.";
+export const APP_TITLE = "YOTEABRO Cerrajeros Chamartín 24h | Urgencias 20 min";
+export const APP_DESCRIPTION = "Cerrajeros en Chamartín 24 horas con YOTEABRO. Llegamos en 20 minutos. Apertura de puertas profesional. Más de 20 años de experiencia. Llama ahora.";
 
-export const APP_LOGO = "/logo-aguado.webp";
+export const APP_LOGO = "/logo-yoteabro.webp";
 
-// Cerrajería Aguado - Business Information
-export const APP_PHONE = "+34 624 940 941";
-export const APP_PHONE_DISPLAY = "624 940 941";
-export const APP_EMAIL = "aguado@cerrajerosleganes.madrid";
-export const APP_BUSINESS_NAME = "Cerrajeros Leganés Aguado";
-export const APP_BUSINESS_LEGAL_NAME = "CERRAJERIA AGUADO, S.L.";
+// YOTEABRO - Business Information
+export const APP_PHONE = "919932959";
+export const APP_PHONE_DISPLAY = "919 932 959";
+export const APP_EMAIL = "contacto@yoteabro.com";
+export const APP_BUSINESS_NAME = "YOTEABRO";
+export const APP_BUSINESS_LEGAL_NAME = "YOTEABRO S.L.";
 export const APP_NIF = "B86047636";
-export const APP_ADDRESS = "Av. de Fuenlabrada, 37, local 34 (Galería Sanabria), 28912 Leganés, Madrid";
-export const APP_LEGAL_ADDRESS = "C/ SANTILLANA DEL MAR, 14, 28660, BOADILLA DEL MONTE, MADRID";
-export const APP_LOCATION = "Leganés";
-export const APP_SERVICE_AREA = "Leganés y Zona Sur de Madrid";
+export const APP_ADDRESS = "Calle de Alberto Alcocer, 43, 28016 Madrid (Chamartín)";
+export const APP_LEGAL_ADDRESS = "Calle de Alberto Alcocer, 43, 28016 Madrid (Chamartín)";
+export const APP_LOCATION = "Chamartín";
+export const APP_SERVICE_AREA = "Chamartín y Norte de Madrid";
 
 // Generate login URL at runtime so redirect URI reflects the current origin.
 export const getLoginUrl = () => {
