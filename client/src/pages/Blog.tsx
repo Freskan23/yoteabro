@@ -9,58 +9,58 @@ import SEOHead from "@/components/SEOHead";
 
 const blogPosts = [
   {
-    id: "robos-trasteros-chamartin",
-    title: "Oleada de robos en trasteros de Chamartín: Cómo protegerte con Cerrajeros Chamartín",
-    excerpt: "¿Vives en la zona de El Viso o Prosperidad? Los trasteros son el nuevo objetivo. Descubre qué cerraduras resisten a los ladrones.",
-    date: "2025-10-20",
-    category: "Seguridad",
-    icon: <Shield className="h-6 w-6 text-[#EE6C4D]" />,
-    image: "/blog-robos-trasteros.webp"
+    id: "cerraduras-inteligentes-2026-chamartin",
+    title: "Cerraduras Inteligentes 2026: La Revolución de la Seguridad en Chamartín",
+    excerpt: "Las smart locks han llegado para quedarse. Descubre cómo abrir tu casa con el móvil, códigos temporales para invitados y control total desde cualquier lugar.",
+    date: "2026-02-03",
+    category: "Tecnología",
+    icon: <Key className="h-6 w-6 text-[#EE6C4D]" />,
+    image: "/blog-cerraduras-inteligentes.webp"
   },
   {
-    id: "cerraduras-antibumping-el-viso",
-    title: "Cerraduras Antibumping en Chamartín: Protege tu piso en El Viso",
-    excerpt: "La mayoría de bloques en El Viso tienen cerraduras de hace 20 años. El bumping las abre en segundos. ¿Es tu caso?",
-    date: "2025-10-18",
+    id: "seguridad-biometrica-hogar-chamartin",
+    title: "Seguridad Biométrica para tu Hogar en Chamartín: Huella y Reconocimiento Facial",
+    excerpt: "Olvídate de las llaves para siempre. Los sistemas biométricos de 2026 ofrecen máxima seguridad y comodidad. Te explicamos cómo funcionan.",
+    date: "2026-01-28",
+    category: "Innovación",
+    icon: <Shield className="h-6 w-6 text-[#EE6C4D]" />,
+    image: "/blog-biometrico.webp"
+  },
+  {
+    id: "ciberseguridad-cerraduras-conectadas",
+    title: "Ciberseguridad y Cerraduras Conectadas: Cómo Proteger tu Smart Lock de Hackers",
+    excerpt: "Tu cerradura inteligente puede ser hackeada si no la configuras bien. Guía de un cerrajero profesional para blindar tu hogar digital.",
+    date: "2026-01-20",
+    category: "Seguridad Digital",
+    icon: <AlertTriangle className="h-6 w-6 text-[#EE6C4D]" />,
+    image: "/blog-ciberseguridad.webp"
+  },
+  {
+    id: "cerraduras-antibumping-chamartin-2026",
+    title: "Cerraduras Antibumping en Chamartín 2026: La Guía Definitiva",
+    excerpt: "El bumping sigue siendo la técnica favorita de los ladrones. Descubre qué bombines de última generación los detienen en seco.",
+    date: "2026-01-15",
     category: "Prevención",
     icon: <Lock className="h-6 w-6 text-[#EE6C4D]" />,
     image: "/blog-cerradura-antibumping.webp"
   },
   {
-    id: "seguridad-pisos-nueva-espana",
-    title: "Seguridad para Pisos en Chamartín: Guía para Nueva España",
-    excerpt: "Vivir en el distrito es genial, pero requiere seguridad extra. Cerrojos, escudos y alarmas para dormir tranquilo.",
-    date: "2025-10-15",
-    category: "Hogar",
-    icon: <Key className="h-6 w-6 text-[#EE6C4D]" />,
-    image: "/blog-seguridad-chalets.webp"
-  },
-  {
-    id: "llaves-coche-chamartin",
-    title: "Cerrajeros de Coches en Chamartín: Solución rápida si pierdes las llaves",
-    excerpt: "Te explicamos paso a paso qué hacer si te quedas tirado en el parking o en la calle. Soluciones rápidas.",
-    date: "2025-10-12",
-    category: "Emergencias",
-    icon: <AlertTriangle className="h-6 w-6 text-[#EE6C4D]" />,
-    image: "/blog-llaves-coche.webp"
-  },
-  {
-    id: "puertas-okupas-chamartin",
-    title: "Evita la Ocupación en Chamartín: Puertas Anti-Okupa en Ciudad Jardín y Centro",
-    excerpt: "Si tienes un piso cerrado en la zona, cuidado. Las puertas anti-okupa son tu mejor inversión.",
-    date: "2025-10-10",
+    id: "puertas-antiokupa-chamartin-2026",
+    title: "Puertas Anti-Okupa en Chamartín 2026: Protege tu Propiedad Vacía",
+    excerpt: "Las ocupaciones ilegales han aumentado un 30% en Madrid. Te explicamos cómo blindar tu piso vacío con soluciones profesionales.",
+    date: "2026-01-10",
     category: "Seguridad",
     icon: <Shield className="h-6 w-6 text-[#EE6C4D]" />,
     image: "/blog-puerta-antiokupa.webp"
   },
   {
-    id: "bombines-seguridad-chamartin",
-    title: "¿Cerraduras Baratas en Chamartín? Por qué lo barato sale caro en seguridad",
-    excerpt: "Analizamos las marcas que venden en ferreterías de barrio vs. lo que realmente instala un profesional.",
-    date: "2025-10-08",
+    id: "cerrajero-urgente-chamartin-que-esperar",
+    title: "Cerrajero Urgente en Chamartín: Qué Esperar y Cómo Evitar Estafas",
+    excerpt: "¿Te has quedado fuera de casa? Aprende a distinguir un cerrajero profesional de uno fraudulento y cuánto deberías pagar realmente.",
+    date: "2026-01-05",
     category: "Consejos",
-    icon: <Lock className="h-6 w-6 text-[#EE6C4D]" />,
-    image: "/blog-bombines-comparativa.webp"
+    icon: <Key className="h-6 w-6 text-[#EE6C4D]" />,
+    image: "/blog-cerrajero-urgente.webp"
   }
 ];
 
@@ -70,7 +70,7 @@ export default function Blog() {
       <SEOHead
         title={`Blog de Seguridad y Cerrajería en ${APP_LOCATION} | ${APP_BUSINESS_NAME}`}
         description={`📰 Consejos de seguridad, avisos de robos y guías de cerrajería para los vecinos de ${APP_LOCATION}. Protege tu hogar con los mejores trucos profesionales.`}
-        canonicalUrl="https://cerrajerosdechamartin.madrid/blog"
+        canonicalUrl="https://cerrajerosenchamartin.madrid/blog"
       />
       <Header />
 
