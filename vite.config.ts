@@ -22,11 +22,14 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    cssCodeSplit: true,
+    cssMinify: 'lightningcss',
     rollupOptions: {
       output: {
         manualChunks: {
           'react-vendor': ['react', 'react-dom', 'wouter'],
           'ui-vendor': ['lucide-react'],
+          'radix-ui': ['@radix-ui/react-slot', '@radix-ui/react-tooltip', '@radix-ui/react-navigation-menu'],
         },
       },
     },
@@ -35,9 +38,15 @@ export default defineConfig({
       compress: {
         drop_console: true,
         drop_debugger: true,
+        passes: 2,
+      },
+      mangle: {
+        safari10: true,
       },
     },
     chunkSizeWarningLimit: 600,
+    target: 'es2020',
+    sourcemap: false,
   },
   server: {
     port: 3000,

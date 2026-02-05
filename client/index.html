@@ -14,23 +14,41 @@
   <!-- Critical CSS inline for LCP optimization -->
   <style>
     /* Font-face fallback for faster LCP */
-    @font-face {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400 900;
-      font-display: swap;
-      src: local('Montserrat');
-    }
-    /* Critical above-the-fold styles */
-    body{margin:0;font-family:'Montserrat',system-ui,-apple-system,sans-serif}
-    #root{min-height:100vh}
-    .container{max-width:1280px;margin:0 auto;padding:0 1rem}
+    @font-face{font-family:'Montserrat';font-style:normal;font-weight:400 900;font-display:swap;src:local('Montserrat')}
+    /* Critical above-the-fold styles - Hero section */
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;font-family:'Montserrat',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+    #root{min-height:100vh;display:flex;flex-direction:column}
+    .container{max-width:1280px;margin:0 auto;padding:0 1rem;width:100%}
+    /* Hero critical styles to prevent CLS */
+    .min-h-\[85vh\]{min-height:85vh}
+    .relative{position:relative}
+    .absolute{position:absolute}
+    .inset-0{inset:0}
+    .z-0{z-index:0}
+    .z-10{z-index:10}
+    .flex{display:flex}
+    .items-center{align-items:center}
+    .overflow-hidden{overflow:hidden}
+    .bg-\[\#293241\]{background-color:#293241}
+    .w-full{width:100%}
+    .h-full{height:100%}
+    .object-cover{object-fit:cover}
+    .text-white{color:#fff}
+    .font-black{font-weight:900}
+    /* Prevent layout shift for hero image */
+    img{max-width:100%;height:auto;display:block}
+    /* Loading skeleton */
+    .skeleton{background:linear-gradient(90deg,#293241 25%,#3d5a80 50%,#293241 75%);background-size:200% 100%;animation:shimmer 1.5s infinite}
+    @keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
   </style>
 
   <!-- Preconnect for faster resource fetching -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://api.open-meteo.com" crossorigin>
+
+  <!-- DNS Prefetch for non-critical resources -->
+  <link rel="dns-prefetch" href="https://api.open-meteo.com">
 
   <!-- Preload LCP image with high priority -->
   <link rel="preload" href="/hero-cerrajero.webp" as="image" type="image/webp" fetchpriority="high">
@@ -55,7 +73,20 @@
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <!-- Skeleton placeholder to prevent CLS while JS loads -->
+    <div style="min-height:100vh;display:flex;flex-direction:column">
+      <!-- Header placeholder -->
+      <div style="height:80px;background:#293241"></div>
+      <!-- Hero placeholder -->
+      <div style="min-height:85vh;background:#293241;display:flex;align-items:center;justify-content:center">
+        <div style="text-align:center;color:#fff;font-family:system-ui,sans-serif">
+          <div style="font-size:3rem;font-weight:900;text-transform:uppercase">CERRAJEROS</div>
+          <div style="font-size:4rem;font-weight:900;text-transform:uppercase">CHAMARTÍN</div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script type="module" src="/src/main.tsx"></script>
 </body>
 

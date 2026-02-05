@@ -83,14 +83,17 @@ export default function Home() {
       <main>
         {/* Hero Section */}
         <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-[#293241]">
-          {/* Background Image / Overlay con foto de Chamartín */}
-          <div className="absolute inset-0 z-0">
+          {/* Background Image / Overlay con foto de Chamartín - Optimizado para LCP */}
+          <div className="absolute inset-0 z-0" style={{ contain: 'layout paint' }}>
             <img
               src="/hero-cerrajero.webp"
               alt="Cerrajeros en Chamartín Madrid - Servicio profesional 24 horas"
-              width="1920"
-              height="1080"
+              width={1920}
+              height={1080}
               fetchPriority="high"
+              loading="eager"
+              decoding="async"
+              style={{ aspectRatio: '16/9' }}
               className="w-full h-full object-cover opacity-40 mix-blend-overlay grayscale"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[#293241]/95 via-[#293241]/80 to-transparent"></div>
