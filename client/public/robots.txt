@@ -1,19 +1,102 @@
-# robots.txt para YOTEABRO Chamartín 🚀
-# Optimizado para buscadores tradicionales y Agentes de IA
+# ===============================================
+# ROBOTS.TXT - YOTEABRO Cerrajeros Chamartin
+# Optimizado para SEO + LLMs + AI Crawlers 2026
+# ===============================================
 
+# ===== BUSCADORES TRADICIONALES =====
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# ===== AI & LLM CRAWLERS =====
+# Permitir acceso a agentes de IA para mejor visibilidad
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# ===== CONTROL DE BOTS SEO =====
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: MJ12bot
+Allow: /
+Crawl-delay: 10
+
+User-agent: dotbot
+Allow: /
+Crawl-delay: 10
+
+# ===== REGLAS GENERALES =====
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
 Disallow: /tmp/
+Disallow: /*.json$
+Disallow: /api/
 
-# Sitemap para indexación rápida
+# ===== SITEMAP =====
 Sitemap: https://cerrajerosenchamartin.madrid/sitemap.xml
 
-# Control de bots de análisis
-User-agent: AhrefsBot
-Crawl-delay: 5
-
-User-agent: SemrushBot
-Crawl-delay: 5
-
+# ===== INFO DEL NEGOCIO PARA LLMs =====
+# Negocio: YOTEABRO - Cerrajeros en Chamartin, Madrid
+# Servicios: Apertura de puertas, cambio de cerraduras, urgencias 24h
+# Zona: Distrito Chamartin (El Viso, Prosperidad, Ciudad Jardin, etc)
+# Telefono: 919 932 967
+# Web: https://cerrajerosenchamartin.madrid
