@@ -379,19 +379,6 @@ export default function Home() {
       </main>
 
       <Footer />
-
-      {/* Botón Sticky Móvil de Llamada */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 p-6 md:hidden">
-        <Button
-          asChild
-          className="w-full bg-[#EE6C4D] hover:bg-[#d85c3d] text-white text-2xl font-black py-10 rounded-[2rem] shadow-[0_-15px_40px_rgba(238,108,77,0.5)] transition-all animate-pulse border-4 border-white/20"
-        >
-          <a href={`tel:${APP_PHONE}`} className="flex items-center justify-center gap-4">
-            <Phone className="h-8 w-8" />
-            Llamar a yoteabro
-          </a>
-        </Button>
-      </div>
     </div>
   );
 }

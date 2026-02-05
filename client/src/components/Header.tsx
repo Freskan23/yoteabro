@@ -7,7 +7,6 @@ import { useDynamicPricing, getPricingText } from "@/hooks/useDynamicPricing";
 import PricingWarningBanner from "@/components/PricingWarningBanner";
 import WeatherWarningBanner from "@/components/WeatherWarningBanner";
 import WeatherTopBar from "@/components/WeatherTopBar";
-import AvailabilityBanner from "@/components/AvailabilityBanner";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -77,9 +76,6 @@ export default function Header() {
     <div className="contents">
       {/* Top bar minimalista */}
       <WeatherTopBar />
-
-      {/* Banner de disponibilidad en tiempo real */}
-      <AvailabilityBanner />
 
       {/* Banners de aviso (se mantienen para utilidad pero con diseño integrado) */}
       <WeatherWarningBanner />

@@ -53,47 +53,47 @@ export default function FloatingActionButtons() {
   const whatsappUrl = `https://wa.me/${APP_PHONE.replace(/\s+/g, "")}?text=${whatsappMessage}`;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4 items-end sm:bottom-8 sm:right-8">
-      {/* Botón WhatsApp con mensaje contextual */}
-      <a
-        href={whatsappUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:scale-110 transition-all duration-300 hover:shadow-2xl active:scale-95 border-2 border-white/20"
-        aria-label="Contactar por WhatsApp"
-      >
-        <MessageCircle className="h-7 w-7" />
-        <span className="absolute right-full mr-4 bg-[#25D366] text-white px-4 py-2 rounded-xl text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap pointer-events-none translate-x-2 group-hover:translate-x-0 border border-white/10 uppercase tracking-wider">
-          WhatsApp Directo
-        </span>
-      </a>
+    <>
+      {/* Botones flotantes - Ocultos en móvil porque hay barra sticky */}
+      <div className="fixed bottom-24 right-4 z-50 flex flex-col gap-3 items-end sm:bottom-8 sm:right-8">
+        {/* Botón WhatsApp con mensaje contextual */}
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:scale-110 transition-all duration-300 hover:shadow-2xl active:scale-95 border-2 border-white/20"
+          aria-label="Contactar por WhatsApp"
+        >
+          <MessageCircle className="h-6 w-6 sm:h-7 sm:w-7" />
+          <span className="absolute right-full mr-4 bg-[#25D366] text-white px-4 py-2 rounded-xl text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap pointer-events-none translate-x-2 group-hover:translate-x-0 border border-white/10 uppercase tracking-wider hidden sm:block">
+            WhatsApp Directo
+          </span>
+        </a>
 
-      {/* Botón Llamada Flotante (Escritorio / Tablet) */}
-      <a
-        href={`tel:${APP_PHONE}`}
-        className="group flex items-center justify-center w-16 h-16 bg-[#EE6C4D] text-white rounded-full shadow-lg hover:scale-110 transition-all duration-300 hover:shadow-2xl active:scale-95 relative border-2 border-white/20"
-        aria-label="Llamar ahora"
-      >
-        {/* Efecto de pulso */}
-        <span className="absolute inline-flex h-full w-full rounded-full bg-[#EE6C4D] opacity-40 animate-ping"></span>
-
-        <Phone className="h-8 w-8 relative z-10 animate-shake" />
-
-        <span className="absolute right-full mr-4 bg-[#EE6C4D] text-white px-4 py-2 rounded-xl text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap pointer-events-none translate-x-2 group-hover:translate-x-0 border border-white/10 uppercase tracking-wider">
-          Llamar 24h: {APP_PHONE_DISPLAY}
-        </span>
-      </a>
-
-      {/* Barra de Llamada Sticky (Solo Móvil < 640px) */}
-      <div className="fixed bottom-0 left-0 right-0 w-full h-16 bg-[#EE6C4D] sm:hidden flex items-center justify-center z-[60] shadow-[0_-4px_20px_rgba(238,108,77,0.3)] border-t border-white/10">
+        {/* Botón Llamada Flotante - Solo Desktop/Tablet */}
         <a
           href={`tel:${APP_PHONE}`}
-          className="flex items-center justify-center gap-3 w-full h-full text-white font-black text-lg active:bg-[#d62828] transition-colors uppercase tracking-widest"
+          className="hidden sm:flex group items-center justify-center w-16 h-16 bg-[#EE6C4D] text-white rounded-full shadow-lg hover:scale-110 transition-all duration-300 hover:shadow-2xl active:scale-95 relative border-2 border-white/20"
+          aria-label="Llamar ahora"
         >
-          <Phone className="h-6 w-6 animate-pulse" />
-          Llamar ahora: {APP_PHONE_DISPLAY}
+          <span className="absolute inline-flex h-full w-full rounded-full bg-[#EE6C4D] opacity-40 animate-ping"></span>
+          <Phone className="h-8 w-8 relative z-10 animate-shake" />
+          <span className="absolute right-full mr-4 bg-[#EE6C4D] text-white px-4 py-2 rounded-xl text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-300 whitespace-nowrap pointer-events-none translate-x-2 group-hover:translate-x-0 border border-white/10 uppercase tracking-wider">
+            Llamar 24h: {APP_PHONE_DISPLAY}
+          </span>
         </a>
       </div>
-    </div>
+
+      {/* Barra de Llamada Sticky - Solo Móvil */}
+      <div className="fixed bottom-0 left-0 right-0 w-full sm:hidden z-[60]">
+        <a
+          href={`tel:${APP_PHONE}`}
+          className="flex items-center justify-center gap-3 w-full h-14 bg-[#EE6C4D] text-white font-black text-base active:bg-[#d62828] transition-colors shadow-[0_-4px_20px_rgba(238,108,77,0.4)]"
+        >
+          <Phone className="h-5 w-5" />
+          <span>Llamar: {APP_PHONE_DISPLAY}</span>
+        </a>
+      </div>
+    </>
   );
 }
