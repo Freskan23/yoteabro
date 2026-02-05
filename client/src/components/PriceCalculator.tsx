@@ -133,6 +133,9 @@ export default function PriceCalculator() {
               </div>
               <button
                 onClick={() => setIsUrgent(!isUrgent)}
+                aria-label={isUrgent ? "Desactivar servicio urgente" : "Activar servicio urgente"}
+                aria-pressed={isUrgent}
+                role="switch"
                 className={`relative w-14 h-8 rounded-full transition-colors ${
                   isUrgent ? "bg-[#EE6C4D]" : "bg-white/20"
                 }`}

@@ -79,10 +79,13 @@ export default function QuickContactForm() {
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
+          <label htmlFor="contact-nombre" className="sr-only">Tu nombre</label>
           <input
+            id="contact-nombre"
             type="text"
             placeholder="Tu nombre"
             required
+            aria-label="Tu nombre"
             value={formData.nombre}
             onChange={(e) =>
               setFormData({ ...formData, nombre: e.target.value })
@@ -92,10 +95,13 @@ export default function QuickContactForm() {
         </div>
 
         <div>
+          <label htmlFor="contact-telefono" className="sr-only">Teléfono de contacto</label>
           <input
+            id="contact-telefono"
             type="tel"
             placeholder="Teléfono de contacto"
             required
+            aria-label="Teléfono de contacto"
             value={formData.telefono}
             onChange={(e) =>
               setFormData({ ...formData, telefono: e.target.value })
@@ -105,8 +111,11 @@ export default function QuickContactForm() {
         </div>
 
         <div>
+          <label htmlFor="contact-problema" className="sr-only">¿Cuál es tu problema?</label>
           <select
+            id="contact-problema"
             required
+            aria-label="Selecciona tu problema"
             value={formData.problema}
             onChange={(e) =>
               setFormData({ ...formData, problema: e.target.value })

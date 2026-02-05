@@ -148,7 +148,7 @@ export default function Urgencias24h() {
                             </div>
                             <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[400px]">
                                 <img
-                                    src="/yoteabro_technician_branded.png"
+                                    src="/yoteabro_technician_branded.webp"
                                     alt="Cerrajero urgente profesional en Chamartín"
                                     className="w-full h-full object-cover"
                                 />

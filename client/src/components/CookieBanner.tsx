@@ -47,7 +47,7 @@ export default function CookieBanner() {
               las cookies, acceda a nuestra{" "}
               <Link
                 href="/politica-cookies"
-                className="text-[#EE6C4D] underline hover:text-[#d62828] font-medium"
+                className="text-[#c44536] underline hover:text-[#9d2f23] font-semibold"
               >
                 Política de Cookies
               </Link>

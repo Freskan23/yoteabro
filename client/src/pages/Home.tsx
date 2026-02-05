@@ -222,7 +222,7 @@ export default function Home() {
                 <div className="relative">
                   <div className="absolute -inset-4 bg-gradient-to-tr from-[#EE6C4D] to-[#293241] rounded-[3rem] blur-2xl opacity-20 transition duration-500 group-hover:opacity-40"></div>
                   <img
-                    src="/yoteabro_technician_branded.png"
+                    src="/yoteabro_technician_branded.webp"
                     alt="Cerrajero profesional de yoteabro en Chamartín"
                     className="relative rounded-[3rem] shadow-2xl border-8 border-white object-cover aspect-[4/5] w-full"
                   />
