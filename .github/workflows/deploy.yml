@@ -37,4 +37,4 @@ jobs:
         # 👇 ¡AQUÍ ESTÁ EL TRUCO! 👇
         # Añadimos 'public/' para que suba solo el contenido final
         local-dir: ./dist/public/
-        server-dir: ./
+        server-dir: ./cerrajerosenchamartin.madrid/
