@@ -1,3 +1,4 @@
+// Blog posts - Updated Feb 2026
 import { useParams, Link } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
