@@ -12,8 +12,8 @@ export const APP_EMAIL = "contacto@yoteabro.com";
 export const APP_BUSINESS_NAME = "YOTEABRO";
 export const APP_BUSINESS_LEGAL_NAME = "YOTEABRO S.L.";
 export const APP_NIF = "B86047636";
-export const APP_ADDRESS = "Calle de Alberto Alcocer, 43, 28016 Madrid (Chamartín)";
-export const APP_LEGAL_ADDRESS = "Calle de Alberto Alcocer, 43, 28016 Madrid (Chamartín)";
+export const APP_ADDRESS = "Av. de Alberto Alcocer, 43, 28016 Madrid (Chamartín)";
+export const APP_LEGAL_ADDRESS = "Av. de Alberto Alcocer, 43, 28016 Madrid (Chamartín)";
 export const APP_LOCATION = "Chamartín";
 export const APP_SERVICE_AREA = "Chamartín y Norte de Madrid";
 
