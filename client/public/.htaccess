@@ -2,9 +2,9 @@
   RewriteEngine On
   RewriteBase /
   
-  # 1. Redirigir www a no-www (CORREGIDO con tu dominio de Leganés)
-  RewriteCond %{HTTP_HOST} ^www\.cerrajerosdeleganes\.madrid [NC]
-  RewriteRule ^(.*)$ https://cerrajerosdeleganes.madrid/$1 [L,R=301]
+  # 1. Redirigir www a no-www
+  RewriteCond %{HTTP_HOST} ^www\.cerrajerosenchamartin\.madrid [NC]
+  RewriteRule ^(.*)$ https://cerrajerosenchamartin.madrid/$1 [L,R=301]
   
   # 2. Forzar HTTPS
   RewriteCond %{HTTPS} off
