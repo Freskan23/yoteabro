@@ -34,8 +34,6 @@ const TestimonialsSection = lazy(() => import("@/components/TestimonialsSection"
 const InteractiveCoverageMap = lazy(() => import("@/components/InteractiveCoverageMap"));
 const QuickContactForm = lazy(() => import("@/components/QuickContactForm"));
 const PriceCalculator = lazy(() => import("@/components/PriceCalculator"));
-// Diferir AnimatedHeroBackground para no bloquear LCP
-const AnimatedHeroBackground = lazy(() => import("@/components/AnimatedHeroBackground"));
 
 // Fallback skeleton or minimalist loader
 const SectionLoader = () => <div className="h-60 w-full bg-gray-50 flex items-center justify-center text-gray-300 font-bold uppercase tracking-widest">Cargando experiencia yoteabro...</div>;
@@ -98,11 +96,6 @@ export default function Home() {
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[#293241]/95 via-[#293241]/80 to-transparent"></div>
           </div>
-
-          {/* Animated Background - floating keys and locks (carga diferida) */}
-          <Suspense fallback={null}>
-            <AnimatedHeroBackground />
-          </Suspense>
 
           <div className="container relative z-10 py-20">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
