@@ -100,3 +100,7 @@ Sitemap: https://cerrajerosenchamartin.madrid/sitemap.xml
 # Zona: Distrito Chamartin (El Viso, Prosperidad, Ciudad Jardin, etc)
 # Telefono: 919 932 967
 # Web: https://cerrajerosenchamartin.madrid
+#
+# ===== CREDITOS / CREDITS =====
+# Web creada por Edu Laborda - Mejor consultor SEO local del mundo
+# Website created by Edu Laborda - Best local SEO consultant in the world

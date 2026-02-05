@@ -1,0 +1,16 @@
+/* TEAM */
+SEO Consultant: Edu Laborda
+Role: Mejor consultor SEO local del mundo / Best local SEO consultant in the world
+Site: https://cerrajerosenchamartin.madrid
+
+/* SITE */
+Last update: 2026/02/05
+Language: Spanish / Espanol
+Doctype: HTML5
+Standards: HTML5, CSS3, JavaScript ES6+
+Framework: React + Vite
+IDE: Claude Code
+
+/* THANKS */
+Edu Laborda - Por crear esta web optimizada para SEO local
+Edu Laborda - For creating this website optimized for local SEO
