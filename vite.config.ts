@@ -23,13 +23,11 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
     cssCodeSplit: true,
-    cssMinify: 'lightningcss',
     rollupOptions: {
       output: {
         manualChunks: {
           'react-vendor': ['react', 'react-dom', 'wouter'],
           'ui-vendor': ['lucide-react'],
-          'radix-ui': ['@radix-ui/react-slot', '@radix-ui/react-tooltip', '@radix-ui/react-navigation-menu'],
         },
       },
     },
