@@ -104,7 +104,7 @@ export default function AperturaPuertas() {
           <div className="absolute inset-0 opacity-20">
             <img
               src="/apertura-puerta.jpg"
-              alt="Apertura de puertas profesional en Chamartín"
+              alt="Servicio apertura de puertas urgente Chamartín Madrid - Cerrajero 24h"
               className="w-full h-full object-cover"
             />
           </div>

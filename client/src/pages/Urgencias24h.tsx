@@ -149,7 +149,7 @@ export default function Urgencias24h() {
                             <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[400px]">
                                 <img
                                     src="/yoteabro_technician_branded.webp"
-                                    alt="Cerrajero urgente profesional en Chamartín"
+                                    alt="Cerrajero urgente 24 horas en Chamartín Madrid - YOTEABRO servicio rápido"
                                     className="w-full h-full object-cover"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">

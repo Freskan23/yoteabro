@@ -105,7 +105,7 @@ export default function CambioCerraduras() {
           <div className="absolute inset-0 opacity-20">
             <img
               src="/yoteabro_technician_working.png"
-              alt="Instalación de cerradura de alta seguridad en Chamartín"
+              alt="Cambio cerradura de seguridad Chamartín Madrid - Cerrajeros profesionales"
               className="w-full h-full object-cover"
             />
           </div>

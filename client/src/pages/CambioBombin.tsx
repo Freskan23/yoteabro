@@ -104,7 +104,7 @@ export default function CambioBombin() {
           <div className="absolute inset-0 opacity-20">
             <img
               src="/yoteabro_technician_working.png"
-              alt="Instalación de bombín antibumping en Chamartín"
+              alt="Cambio bombín antibumping alta seguridad Chamartín Madrid - YOTEABRO"
               className="w-full h-full object-cover"
             />
           </div>

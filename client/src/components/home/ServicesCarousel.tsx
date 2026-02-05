@@ -25,6 +25,7 @@ export default function ServicesCarousel() {
             title: "Apertura de Puertas",
             description: "¿Te has dejado las llaves en casa? Abrimos puertas en todo Chamartín desde 90€. Sin romper, rápido y barato.",
             image: "/comic-apertura.webp",
+            alt: "Cerrajero abriendo puerta en Chamartín Madrid - Servicio apertura puertas 24h",
             link: "/apertura-puertas",
         },
         {
@@ -32,6 +33,7 @@ export default function ServicesCarousel() {
             title: "Urgencias 24 Horas",
             description: "Servicio inmediato día y noche. Llegamos en 20 minutos a cualquier punto de Chamartín, festivos incluidos.",
             image: "/comic-urgencias.webp",
+            alt: "Cerrajero urgente 24 horas Chamartín - Llegamos en 20 minutos",
             link: "/urgencias-24h",
         },
         {
@@ -39,6 +41,7 @@ export default function ServicesCarousel() {
             title: "Cambio de Cerraduras",
             description: "Sustitución e instalación de cerraduras de todas las marcas. Mejora la seguridad de tu hogar hoy mismo.",
             image: "/comic-cerraduras.webp",
+            alt: "Instalación de cerradura de seguridad en Chamartín Madrid",
             link: "/cambio-cerraduras",
         },
         {
@@ -46,6 +49,7 @@ export default function ServicesCarousel() {
             title: "Bombines Antibumping",
             description: "Instalación de cilindros de alta seguridad. Protección contra el método bumping, ganzúa y taladro.",
             image: "/comic-bombines.webp",
+            alt: "Bombín antibumping alta seguridad - Cerrajeros Chamartín",
             link: "/cambio-bombin",
         },
         {
@@ -53,6 +57,7 @@ export default function ServicesCarousel() {
             title: "Amaestramientos",
             description: "Olvídate de llevar inmensos llaveros. Una sola llave para abrir todas las puertas de tu comunidad o negocio.",
             image: "/comic-bombines.webp",
+            alt: "Servicio de amaestramiento de llaves en Chamartín Madrid",
             link: "/amaestramiento",
         },
         {
@@ -60,6 +65,7 @@ export default function ServicesCarousel() {
             title: "Mantenimiento",
             description: "Servicio de mantenimiento para comunidades de propietarios y empresas. Ajuste de muelles y puertas.",
             image: "/comic-cerraduras.webp",
+            alt: "Mantenimiento de cerraduras y puertas en comunidades Chamartín",
             link: "/contacto",
         },
     ];
@@ -98,9 +104,10 @@ export default function ServicesCarousel() {
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
                                             <img
                                                 src={service.image}
-                                                alt={service.title}
+                                                alt={service.alt}
                                                 width="400"
                                                 height="300"
+                                                loading="lazy"
                                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                             />
                                             <div className="absolute bottom-4 left-4 z-20">

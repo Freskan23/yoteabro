@@ -86,7 +86,7 @@ export default function Home() {
           <div className="absolute inset-0 z-0">
             <img
               src="/chamartin_street_ponzano_v2_1770201309405.png"
-              alt="Calle de Chamartín, Madrid"
+              alt="Cerrajeros en Chamartín Madrid - Calle Ponzano barrio de Chamartín"
               className="w-full h-full object-cover opacity-40 mix-blend-overlay grayscale"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[#293241]/95 via-[#293241]/80 to-transparent"></div>
@@ -223,7 +223,7 @@ export default function Home() {
                   <div className="absolute -inset-4 bg-gradient-to-tr from-[#EE6C4D] to-[#293241] rounded-[3rem] blur-2xl opacity-20 transition duration-500 group-hover:opacity-40"></div>
                   <img
                     src="/yoteabro_technician_branded.webp"
-                    alt="Cerrajero profesional de yoteabro en Chamartín"
+                    alt="Cerrajero profesional YOTEABRO en Chamartín Madrid - Servicio 24 horas"
                     className="relative rounded-[3rem] shadow-2xl border-8 border-white object-cover aspect-[4/5] w-full"
                   />
                   {/* Floating Badge */}
