@@ -10,11 +10,11 @@ interface SEOHeadProps {
 }
 
 export default function SEOHead({
-  title = `Cerrajeros Chamartín 24h ⚡ Llegamos en 20 min | YOTEABRO ⭐ 5.0`,
-  description = `🔑 Cerrajeros en Chamartín 24h. ¿Puerta cerrada? ¡No esperes fuera! Llegamos en 20 min. Apertura desde 90€ (Precio Cerrado). ☎️ ${APP_PHONE_DISPLAY}. ¡97 Reseñas Reales!`,
+  title = `Cerrajeros Chamartín 24h ⚡ 20 Min | Desde 90€ ☎️ 919 932 967`,
+  description = `¿Te has quedado FUERA? Cerrajeros en Chamartín las 24 HORAS. Llegamos en 20 minutos REALES. Precio cerrado SIN SORPRESAS desde 90€. Llama AHORA ☎️ ${APP_PHONE_DISPLAY}`,
   keywords = "cerrajeros chamartín, cerrajería 24 horas chamartín, apertura puertas chamartín, cambio cerraduras chamartín, cerrajero urgente chamartín, bombín seguridad chamartín, el viso, nueva españa, hispanoamérica",
-  ogImage = "https://cerrajerosdechamartin.madrid/images/og-image.webp",
-  canonicalUrl = "https://cerrajerosdechamartin.madrid/"
+  ogImage = "https://cerrajerosenchamartin.madrid/images/og-image.webp",
+  canonicalUrl = "https://cerrajerosenchamartin.madrid/"
 }: SEOHeadProps) {
   return (
     <Helmet>
