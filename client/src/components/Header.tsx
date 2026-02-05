@@ -218,15 +218,24 @@ export default function Header() {
                 </span>
               </div>
 
-              <Button
-                asChild
-                className="bg-[#EE6C4D] hover:bg-[#d85c3d] text-white font-bold h-11 px-6 rounded-xl shadow-lg shadow-[#EE6C4D]/20 active:scale-95 transition-all text-sm md:text-base"
+              <a
+                href={`tel:${APP_PHONE}`}
+                aria-label={`Llamar a ${APP_BUSINESS_NAME} al ${APP_PHONE_DISPLAY}`}
+                className="flex justify-center gap-2 items-center shadow-xl text-sm md:text-base bg-gray-50 backdrop-blur-md font-bold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#EE6C4D] hover:text-white before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2.5 overflow-hidden border-2 rounded-full group text-[#293241]"
               >
-                <a href={`tel:${APP_PHONE}`} className="flex items-center gap-2" aria-label={`Llamar a ${APP_BUSINESS_NAME} al ${APP_PHONE_DISPLAY}`}>
-                  <Phone className="h-4 w-4 md:h-5 md:w-5 animate-pulse text-white" />
-                  <span className="whitespace-nowrap text-white">{APP_PHONE_DISPLAY}</span>
-                </a>
-              </Button>
+                <Phone className="h-4 w-4 md:h-5 md:w-5 group-hover:text-white transition-colors" />
+                <span className="whitespace-nowrap group-hover:text-white transition-colors">{APP_PHONE_DISPLAY}</span>
+                <svg
+                  className="w-7 h-7 justify-end group-hover:rotate-90 group-hover:bg-white text-white ease-linear duration-300 rounded-full border border-[#293241] group-hover:border-none p-1.5 rotate-45"
+                  viewBox="0 0 16 19"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                    className="fill-[#293241] group-hover:fill-white"
+                  ></path>
+                </svg>
+              </a>
 
               {/* Mobile Toggle */}
               <button
