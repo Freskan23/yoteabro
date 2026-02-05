@@ -209,11 +209,11 @@ export default function Header() {
             <div className="flex items-center gap-3 md:gap-4">
               {/* Badge de Precio Premium Dinámico */}
               <div className="hidden md:flex flex-col items-end pr-4 border-r border-gray-100">
-                <div className="flex items-center gap-1.5 text-[#EE6C4D] font-bold text-lg leading-none">
-                  <span className="text-sm font-medium opacity-70">Desde</span>
+                <div className="flex items-center gap-1.5 text-[#c44536] font-bold text-lg leading-none">
+                  <span className="text-sm font-medium text-gray-600">Desde</span>
                   {currentPrice}€
                 </div>
-                <span className="text-[10px] text-gray-400 font-medium uppercase tracking-tighter">
+                <span className="text-[10px] text-gray-500 font-medium uppercase tracking-tighter">
                   {isNormalHours ? "Tarifa Comercial" : "Tarifa Urgencias"}
                 </span>
               </div>
