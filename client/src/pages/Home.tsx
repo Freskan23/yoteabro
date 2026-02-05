@@ -30,6 +30,11 @@ import { useDynamicPricing } from "@/hooks/useDynamicPricing";
 const ServicesCarousel = lazy(() => import("@/components/home/ServicesCarousel"));
 const LocationSection = lazy(() => import("@/components/home/LocationSection"));
 const BrandsSection = lazy(() => import("@/components/BrandsSection"));
+const StatsCounter = lazy(() => import("@/components/StatsCounter"));
+const TestimonialsSection = lazy(() => import("@/components/TestimonialsSection"));
+const InteractiveCoverageMap = lazy(() => import("@/components/InteractiveCoverageMap"));
+const QuickContactForm = lazy(() => import("@/components/QuickContactForm"));
+const PriceCalculator = lazy(() => import("@/components/PriceCalculator"));
 
 // Fallback skeleton or minimalist loader
 const SectionLoader = () => <div className="h-60 w-full bg-gray-50 flex items-center justify-center text-gray-300 font-bold uppercase tracking-widest">Cargando experiencia yoteabro...</div>;
@@ -177,6 +182,11 @@ export default function Home() {
           <ServicesCarousel />
         </Suspense>
 
+        {/* Stats Counter Section */}
+        <Suspense fallback={<SectionLoader />}>
+          <StatsCounter />
+        </Suspense>
+
         {/* Why Choose Us Section */}
         <section id="ventajas" className="py-24 bg-white overflow-hidden">
           <div className="container">
@@ -228,36 +238,35 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Zones Section */}
-        <section id="zonas" className="py-24 bg-[#293241] text-white">
+        {/* Interactive Coverage Map Section */}
+        <Suspense fallback={<SectionLoader />}>
+          <InteractiveCoverageMap />
+        </Suspense>
+
+        {/* Testimonials Section */}
+        <Suspense fallback={<SectionLoader />}>
+          <TestimonialsSection />
+        </Suspense>
+
+        {/* Tools Section: Calculator & Quick Contact */}
+        <section className="py-24 bg-white">
           <div className="container">
-            <div className="text-center max-w-4xl mx-auto mb-20">
-              <span className="text-[#EE6C4D] font-black text-xs uppercase tracking-[0.4em] mb-4 block">Cobertura Total</span>
-              <h2 className="text-6xl md:text-7xl font-black mb-6 uppercase italic tracking-tighter leading-none">
-                Llegamos a tu <span className="text-[#EE6C4D]">portal</span> <br />en Chamartín
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="text-[#EE6C4D] font-black text-xs uppercase tracking-[0.4em] mb-4 block">
+                Herramientas útiles
+              </span>
+              <h2 className="text-5xl md:text-6xl font-black text-[#293241] uppercase italic tracking-tighter leading-none">
+                Calcula tu <span className="text-[#EE6C4D]">presupuesto</span>
               </h2>
-              <p className="text-2xl text-gray-400 font-medium max-w-2xl mx-auto">
-                Técnicos de guardia permanentes en cada una de las zonas clave del distrito.
-              </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {zones.map((zone, index) => (
-                <Link key={index} href={zone.url}>
-                  <div className="flex items-center gap-6 p-8 bg-white/5 rounded-[2rem] hover:bg-white/10 transition-all backdrop-blur-md cursor-pointer group border border-white/10 overflow-hidden relative">
-                    <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-20 transition-opacity">
-                      <MapPin className="h-20 w-20 text-[#EE6C4D]" />
-                    </div>
-                    <div className="h-14 w-14 rounded-2xl bg-[#EE6C4D]/20 flex items-center justify-center group-hover:bg-[#EE6C4D] transition-all group-hover:rotate-12">
-                      <MapPin className="h-7 w-7 text-[#EE6C4D] group-hover:text-white" />
-                    </div>
-                    <div className="flex flex-col">
-                      <span className="text-xs text-gray-500 font-black uppercase tracking-widest leading-none mb-1">Cerrajero en</span>
-                      <span className="font-black text-2xl text-white uppercase tracking-tighter italic">{zone.name}</span>
-                    </div>
-                  </div>
-                </Link>
-              ))}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              <Suspense fallback={<SectionLoader />}>
+                <PriceCalculator />
+              </Suspense>
+              <Suspense fallback={<SectionLoader />}>
+                <QuickContactForm />
+              </Suspense>
             </div>
           </div>
         </section>
