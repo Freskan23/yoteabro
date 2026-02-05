@@ -144,7 +144,7 @@ Una vez subidos los archivos, verifica:
 Asegúrate de que tu ficha de Google My Business esté actualizada con:
 - Nombre: YOTEABRO
 - Dirección: Calle de Alberto Alcocer, 43, 28016 Madrid (Chamartín)
-- Teléfono: 919 932 959
+- Teléfono: 919 932 967
 - Sitio web: https://cerrajerosdechamartin.madrid
 - Horario: 24 horas
 
@@ -172,9 +172,9 @@ Asegúrate de que tu ficha de Google My Business esté actualizada con:
 - ✅ Botón flotante de WhatsApp
 
 ### Contacto
-- Teléfono: 919 932 959
+- Teléfono: 919 932 967
 - Email: contacto@yoteabro.com
-- WhatsApp: 919 932 959
+- WhatsApp: 919 932 967
 
 ## 🔧 Soporte Técnico
 

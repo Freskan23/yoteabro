@@ -6,8 +6,8 @@ export const APP_DESCRIPTION = "Cerrajeros en Chamartín 24 horas con YOTEABRO. 
 export const APP_LOGO = "/logo-yoteabro.webp";
 
 // YOTEABRO - Business Information
-export const APP_PHONE = "919932959";
-export const APP_PHONE_DISPLAY = "919 932 959";
+export const APP_PHONE = "919932967";
+export const APP_PHONE_DISPLAY = "919 932 967";
 export const APP_EMAIL = "contacto@yoteabro.com";
 export const APP_BUSINESS_NAME = "YOTEABRO";
 export const APP_BUSINESS_LEGAL_NAME = "YOTEABRO S.L.";
