@@ -8,7 +8,7 @@ Disallow: /private/
 Disallow: /tmp/
 
 # Sitemap para indexación rápida
-Sitemap: https://cerrajerosdechamartin.madrid/sitemap.xml
+Sitemap: https://cerrajerosenchamartin.madrid/sitemap.xml
 
 # Control de bots de análisis
 User-agent: AhrefsBot
