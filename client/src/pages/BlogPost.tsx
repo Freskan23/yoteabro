@@ -397,8 +397,8 @@ En **YOTEABRO** somos **cerrajeros de confianza en Chamartín** con cientos de r
 };
 
 export default function BlogPost() {
-  const { postId } = useParams();
-  const post = (blogPostsContent as Record<string, any>)[postId as string];
+  const { id } = useParams();
+  const post = (blogPostsContent as Record<string, any>)[id as string];
 
   if (!post) {
     return (
