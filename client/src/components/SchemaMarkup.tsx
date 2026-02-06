@@ -9,12 +9,12 @@ export default function SchemaMarkup() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": APP_BUSINESS_NAME,
-    "url": "https://cerrajerosdechamartin.madrid",
+    "url": "https://cerrajerosenchamartin.madrid",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://cerrajerosdechamartin.madrid/?s={search_term_string}"
+        "urlTemplate": "https://cerrajerosenchamartin.madrid/?s={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }
@@ -23,20 +23,20 @@ export default function SchemaMarkup() {
   const aboutPageSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "@id": "https://cerrajerosdechamartin.madrid/#about",
-    "url": "https://cerrajerosdechamartin.madrid/",
+    "@id": "https://cerrajerosenchamartin.madrid/#about",
+    "url": "https://cerrajerosenchamartin.madrid/",
     "name": `Sobre Nosotros - ${APP_BUSINESS_NAME}`,
     "description": `Conoce más sobre YOTEABRO, tus cerrajeros de confianza en Chamartín con más de 20 años de experiencia.`,
     "mainEntity": {
-      "@id": "https://cerrajerosdechamartin.madrid/#organization"
+      "@id": "https://cerrajerosenchamartin.madrid/#organization"
     }
   };
 
   const contactPageSchema = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "@id": "https://cerrajerosdechamartin.madrid/#contact",
-    "url": "https://cerrajerosdechamartin.madrid/#ubicacion",
+    "@id": "https://cerrajerosenchamartin.madrid/#contact",
+    "url": "https://cerrajerosenchamartin.madrid/#ubicacion",
     "name": `Contacto - ${APP_BUSINESS_NAME}`,
     "description": `Contacta con YOTEABRO para urgencias 24h o presupuestos de cerrajería en Chamartín.`,
     "mainEntity": {
@@ -57,31 +57,31 @@ export default function SchemaMarkup() {
       {
         "@type": "ListItem",
         "position": 1,
-        "url": "https://cerrajerosdechamartin.madrid/apertura-puertas",
+        "url": "https://cerrajerosenchamartin.madrid/apertura-puertas",
         "name": "Apertura de Puertas"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "url": "https://cerrajerosdechamartin.madrid/urgencias-24h",
+        "url": "https://cerrajerosenchamartin.madrid/urgencias-24h",
         "name": "Urgencias 24 Horas"
       },
       {
         "@type": "ListItem",
         "position": 3,
-        "url": "https://cerrajerosdechamartin.madrid/cambio-cerraduras",
+        "url": "https://cerrajerosenchamartin.madrid/cambio-cerraduras",
         "name": "Cambio de Cerraduras"
       },
       {
         "@type": "ListItem",
         "position": 4,
-        "url": "https://cerrajerosdechamartin.madrid/cambio-bombin",
+        "url": "https://cerrajerosenchamartin.madrid/cambio-bombin",
         "name": "Cambio de Bombín"
       },
       {
         "@type": "ListItem",
         "position": 5,
-        "url": "https://cerrajerosdechamartin.madrid/amaestramiento",
+        "url": "https://cerrajerosenchamartin.madrid/amaestramiento",
         "name": "Amaestramiento de Llaves"
       }
     ]
@@ -90,12 +90,12 @@ export default function SchemaMarkup() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "Locksmith",
-    "@id": "https://cerrajerosdechamartin.madrid/#organization",
+    "@id": "https://cerrajerosenchamartin.madrid/#organization",
     "name": APP_BUSINESS_NAME,
     "legalName": "YOTEABRO S.L.",
-    "url": "https://cerrajerosdechamartin.madrid",
-    "logo": "https://cerrajerosdechamartin.madrid/logo-yoteabro.webp",
-    "image": "https://cerrajerosdechamartin.madrid/hero-cerrajero.webp",
+    "url": "https://cerrajerosenchamartin.madrid",
+    "logo": "https://cerrajerosenchamartin.madrid/logo-yoteabro.webp",
+    "image": "https://cerrajerosenchamartin.madrid/hero-cerrajero.webp",
     "description": "Cerrajeros profesionales en Chamartín disponibles 24/7 para cualquier urgencia. Apertura de puertas desde 90€, cambio de cerraduras, bombines de seguridad y amaestramiento.",
     "telephone": APP_PHONE,
     "email": APP_EMAIL,
@@ -141,7 +141,7 @@ export default function SchemaMarkup() {
           "itemOffered": {
             "@type": "Service",
             "name": "Apertura de Puertas",
-            "url": "https://cerrajerosdechamartin.madrid/apertura-puertas"
+            "url": "https://cerrajerosenchamartin.madrid/apertura-puertas"
           }
         },
         {
@@ -149,7 +149,7 @@ export default function SchemaMarkup() {
           "itemOffered": {
             "@type": "Service",
             "name": "Cambio de Cerraduras",
-            "url": "https://cerrajerosdechamartin.madrid/cambio-cerraduras"
+            "url": "https://cerrajerosenchamartin.madrid/cambio-cerraduras"
           }
         },
         {
@@ -157,7 +157,7 @@ export default function SchemaMarkup() {
           "itemOffered": {
             "@type": "Service",
             "name": "Cambio de Bombín",
-            "url": "https://cerrajerosdechamartin.madrid/cambio-bombin"
+            "url": "https://cerrajerosenchamartin.madrid/cambio-bombin"
           }
         }
       ]
@@ -172,8 +172,8 @@ export default function SchemaMarkup() {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "40.4344",
-      "longitude": "-3.7038"
+      "latitude": "40.4578",
+      "longitude": "-3.6872"
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -195,12 +195,12 @@ export default function SchemaMarkup() {
     "sameAs": [
       "https://www.facebook.com/yoteabro",
       "https://www.instagram.com/yoteabro",
-      "https://cerrajerosdechamartin.madrid"
+      "https://cerrajerosenchamartin.madrid"
     ],
     "brand": {
       "@type": "Brand",
       "name": "YOTEABRO",
-      "logo": "https://cerrajerosdechamartin.madrid/logo-yoteabro.webp"
+      "logo": "https://cerrajerosenchamartin.madrid/logo-yoteabro.webp"
     }
   };
 
@@ -294,10 +294,10 @@ export default function SchemaMarkup() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://cerrajerosdechamartin.madrid/#organization",
+    "@id": "https://cerrajerosenchamartin.madrid/#organization",
     "name": APP_BUSINESS_NAME,
-    "url": "https://cerrajerosdechamartin.madrid",
-    "logo": "https://cerrajerosdechamartin.madrid/logo-yoteabro.webp",
+    "url": "https://cerrajerosenchamartin.madrid",
+    "logo": "https://cerrajerosenchamartin.madrid/logo-yoteabro.webp",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": APP_PHONE,
@@ -314,19 +314,19 @@ export default function SchemaMarkup() {
         "@type": "ListItem",
         "position": 1,
         "name": "Inicio",
-        "item": "https://cerrajerosdechamartin.madrid/"
+        "item": "https://cerrajerosenchamartin.madrid/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Apertura de Puertas",
-        "item": "https://cerrajerosdechamartin.madrid/apertura-puertas"
+        "item": "https://cerrajerosenchamartin.madrid/apertura-puertas"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Blog",
-        "item": "https://cerrajerosdechamartin.madrid/blog"
+        "item": "https://cerrajerosenchamartin.madrid/blog"
       }
     ]
   };

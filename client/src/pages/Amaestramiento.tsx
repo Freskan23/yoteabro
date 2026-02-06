@@ -83,7 +83,7 @@ export default function Amaestramiento() {
       <SEOHead
         title={`Amaestramiento de Llaves Chamartín 🔑 Una Llave para Todo | YOTEABRO`}
         description={`🏢 Comodidad total para comunidades y oficinas en Chamartín. Diseñamos sistemas de llave maestra a medida. Simplifica tu vida y gana en seguridad.`}
-        canonicalUrl="https://cerrajerosdechamartin.madrid/amaestramiento"
+        canonicalUrl="https://cerrajerosenchamartin.madrid/amaestramiento"
       />
       <Header />
 

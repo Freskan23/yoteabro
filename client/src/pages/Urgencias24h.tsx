@@ -57,7 +57,7 @@ export default function Urgencias24h() {
             <SEOHead
                 title={`Cerrajero Urgente Chamartín ⚡ 20 Min | YOTEABRO 24h ⭐ 5.0`}
                 description={`🚨 ¿Te has quedado fuera? Cerrajero Urgente en Chamartín. Llegamos en 20 min reales. Apertura de puertas y cerraduras sin daños. Precio cerrado 📞 ¡Llama ya!`}
-                canonicalUrl="https://cerrajerosdechamartin.madrid/urgencias-24h"
+                canonicalUrl="https://cerrajerosenchamartin.madrid/urgencias-24h"
             />
             <Header />
 

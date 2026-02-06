@@ -29,7 +29,7 @@ export default function Contacto() {
             <SEOHead
                 title={`Contacta con ${APP_BUSINESS_NAME} | Cerrajeros en Chamartín 24h`}
                 description={`¿Necesitas un cerrajero en Chamartín? Contacta con nosotros. Atendemos todo el distrito. Atención inmediata 24 horas para urgencias.`}
-                canonicalUrl="https://cerrajerosdechamartin.madrid/contacto"
+                canonicalUrl="https://cerrajerosenchamartin.madrid/contacto"
             />
             <Header />
 

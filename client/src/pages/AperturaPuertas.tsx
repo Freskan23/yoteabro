@@ -79,7 +79,7 @@ export default function AperturaPuertas() {
       <SEOHead
         title={`Apertura de Puertas Chamartín 🔓 Sin Daños | YOTEABRO 24h ⭐ 5.0`}
         description={`🔑 ¿Llaves dentro? Abrimos tu puerta en Chamartín en 20-30 min. Sin romper, sin daños y con precio cerrado desde 90€. 📞 Llama ahora y recupera el acceso.`}
-        canonicalUrl="https://cerrajerosdechamartin.madrid/apertura-puertas"
+        canonicalUrl="https://cerrajerosenchamartin.madrid/apertura-puertas"
       />
       <Header />
 

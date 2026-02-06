@@ -79,7 +79,7 @@ export default function CambioBombin() {
       <SEOHead
         title={`Cambio de Bombín Chamartín 🔑 Antibumping desde 70€ | YOTEABRO`}
         description={`🛡️ La forma más barata de asegurar tu puerta. Cambiamos tu bombín en 20 min en Chamartín. Protección real contra robos. 📞 ¡Llama y evita el bumping!`}
-        canonicalUrl="https://cerrajerosdechamartin.madrid/cambio-bombin"
+        canonicalUrl="https://cerrajerosenchamartin.madrid/cambio-bombin"
       />
       <Header />
 

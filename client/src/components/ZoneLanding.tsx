@@ -33,7 +33,7 @@ export default function ZoneLanding({
           name="description"
           content={`Cerrajeros urgentes en ${zoneName}, Chamartín. Llegamos en 20 minutos. Apertura de puertas, cambio de cerraduras y urgencias 24h en ${zoneName}. Precio cerrado.`}
         />
-        <link rel="canonical" href={`https://cerrajerosdechamartin.madrid/cerrajeros-${zoneName.toLowerCase().replace(/\s+/g, '-')}`} />
+        <link rel="canonical" href={`https://cerrajerosenchamartin.madrid/cerrajeros-${zoneName.toLowerCase().replace(/\s+/g, '-')}`} />
       </Helmet>
 
       <Header />

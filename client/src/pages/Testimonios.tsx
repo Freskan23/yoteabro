@@ -28,7 +28,7 @@ export default function Testimonios() {
       <SEOHead
         title="Opiniones y Reseñas Reales | YOTEABRO Chamartín ⭐⭐⭐⭐⭐"
         description="Descubre por qué somos los cerrajeros mejor valorados en Chamartín. Lee 97 opiniones reales sobre apertura de puertas, cambio de cerraduras y urgencias 24h."
-        canonicalUrl="https://cerrajerosdechamartin.madrid/testimonios"
+        canonicalUrl="https://cerrajerosenchamartin.madrid/testimonios"
       />
 
       <main className="min-h-screen bg-[#0f172a] text-slate-200 selection:bg-[#EE6C4D]/30">

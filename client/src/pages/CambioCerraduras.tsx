@@ -80,7 +80,7 @@ export default function CambioCerraduras() {
       <SEOHead
         title={`Cambio de Cerraduras Chamartín 🔧 Seguridad | YOTEABRO 24h`}
         description={`🔐 Protege tu hogar hoy. Instalamos cerraduras antibumping en Chamartín con garantía total. Marcas: Mottura, Tesa, Ezcurra. Presupuesto sin compromiso.`}
-        canonicalUrl="https://cerrajerosdechamartin.madrid/cambio-cerraduras"
+        canonicalUrl="https://cerrajerosenchamartin.madrid/cambio-cerraduras"
       />
       <Header />
 
