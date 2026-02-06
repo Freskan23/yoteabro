@@ -448,7 +448,7 @@ export default function BlogPost() {
         title={`${post.title} | Blog YOTEABRO`}
         description={post.content.substring(0, 160).replace(/[#*>\n]/g, '').trim() + "..."}
         ogImage={`https://cerrajerosenchamartin.madrid${post.image}`}
-        canonicalUrl={`https://cerrajerosenchamartin.madrid/blog/${postId}`}
+        canonicalUrl={`https://cerrajerosenchamartin.madrid/blog/${id}`}
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <Header />
