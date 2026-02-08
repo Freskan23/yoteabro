@@ -55,14 +55,14 @@ export default function LocationSection() {
                         <div className="absolute -inset-4 bg-[#293241]/5 rounded-[2.5rem] transform -rotate-2"></div>
                         <div className="relative h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24285.4593641!2d-3.684!3d40.467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e35359a377%3A0xe744e27f0607ce3e!2sChamart%C3%ADn%2C%20Madrid!5e0!3m2!1ses!2ses!4v1707045000000!5m2!1ses!2ses"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.7403445743757!2d-3.6801481999999996!3d40.45888360000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229007b93f6d7%3A0x46be79f5f0f40254!2sYoteaBRO%20-%20Cerrajeros%20Chamart%C3%ADn%2024%20horas!5e0!3m2!1ses!2ses!4v1770509400511!5m2!1ses!2ses"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}
                                 allowFullScreen
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                title="Ubicación de YOTEABRO en Chamartín"
+                                title="Ubicación de YOTEABRO - Cerrajeros Chamartín 24 horas en Google Maps"
                             ></iframe>
                         </div>
                     </div>

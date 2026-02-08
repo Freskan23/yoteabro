@@ -1,4 +1,4 @@
-import { APP_BUSINESS_NAME, APP_PHONE, APP_EMAIL, APP_ADDRESS, APP_LOCATION } from "@/const";
+import { APP_BUSINESS_NAME, APP_PHONE, APP_EMAIL, APP_ADDRESS, APP_LOCATION, GMB_URL } from "@/const";
 
 /**
  * Schema.org markup para SEO local
@@ -193,6 +193,7 @@ export default function SchemaMarkup() {
       { "@type": "City", "name": "Castilla" }
     ],
     "sameAs": [
+      GMB_URL,
       "https://www.facebook.com/yoteabro",
       "https://www.instagram.com/yoteabro",
       "https://cerrajerosenchamartin.madrid"
