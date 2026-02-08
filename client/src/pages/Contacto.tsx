@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import { trackPhoneClick, trackEmailClick } from "@/lib/analytics";
 
 export default function Contacto() {
     return (
@@ -79,7 +80,7 @@ export default function Contacto() {
                                 </div>
                                 <h3 className="text-xl font-black text-[#293241] mb-2 uppercase tracking-tighter">Llámanos ahora</h3>
                                 <p className="text-gray-500 mb-6 text-sm">Disponible 24h para urgencias en Chamartín</p>
-                                <a href={`tel:${APP_PHONE}`} className="text-2xl font-black text-[#EE6C4D] hover:opacity-80 transition-opacity italic">
+                                <a href={`tel:${APP_PHONE}`} onClick={() => trackPhoneClick("contact_page")} className="text-2xl font-black text-[#EE6C4D] hover:opacity-80 transition-opacity italic">
                                     {APP_PHONE_DISPLAY}
                                 </a>
                             </div>
@@ -91,7 +92,7 @@ export default function Contacto() {
                                 </div>
                                 <h3 className="text-xl font-black text-[#293241] mb-2 uppercase tracking-tighter">Email directo</h3>
                                 <p className="text-gray-500 mb-6 text-sm">Para presupuestos y consultas no urgentes</p>
-                                <a href={`mailto:${APP_EMAIL}`} className="text-lg font-bold text-[#3D5A80] hover:opacity-80 transition-opacity">
+                                <a href={`mailto:${APP_EMAIL}`} onClick={() => trackEmailClick("contact_page")} className="text-lg font-bold text-[#3D5A80] hover:opacity-80 transition-opacity">
                                     {APP_EMAIL}
                                 </a>
                             </div>

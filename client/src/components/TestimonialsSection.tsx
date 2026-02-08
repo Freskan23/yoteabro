@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Star, Quote, MapPin } from "lucide-react";
 import { GMB_REVIEWS_URL } from "@/const";
+import { trackGoogleReviewsClick } from "@/lib/analytics";
 
 interface Testimonial {
   id: number;
@@ -194,6 +195,7 @@ export default function TestimonialsSection() {
             href={GMB_REVIEWS_URL}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackGoogleReviewsClick("testimonials")}
             className="inline-flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-md border border-gray-100 hover:shadow-lg hover:scale-105 transition-all"
           >
             <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none">

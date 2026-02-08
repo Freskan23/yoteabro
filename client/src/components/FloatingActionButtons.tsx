@@ -1,6 +1,7 @@
 import { Phone, MessageCircle } from "lucide-react";
 import { APP_PHONE, APP_PHONE_DISPLAY } from "@/const";
 import { useLocation } from "wouter";
+import { trackPhoneClick, trackWhatsAppClick } from "@/lib/analytics";
 
 // Genera mensaje de WhatsApp según la página actual
 function getWhatsAppMessage(pathname: string): string {
@@ -61,6 +62,7 @@ export default function FloatingActionButtons() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackWhatsAppClick("floating_button", { page_type: location, message_type: location.includes("urgencias") ? "urgent" : "general" })}
           className="group flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:scale-110 transition-all duration-300 hover:shadow-2xl active:scale-95 border-2 border-white/20"
           aria-label="Contactar por WhatsApp"
         >
@@ -73,6 +75,7 @@ export default function FloatingActionButtons() {
         {/* Botón Llamada Flotante - Solo Desktop/Tablet */}
         <a
           href={`tel:${APP_PHONE}`}
+          onClick={() => trackPhoneClick("floating_desktop", { page_path: location })}
           className="hidden sm:flex group items-center justify-center w-16 h-16 bg-[#EE6C4D] text-white rounded-full shadow-lg hover:scale-110 transition-all duration-300 hover:shadow-2xl active:scale-95 relative border-2 border-white/20"
           aria-label="Llamar ahora"
         >
@@ -88,6 +91,7 @@ export default function FloatingActionButtons() {
       <div className="fixed bottom-0 left-0 right-0 w-full sm:hidden z-[60]">
         <a
           href={`tel:${APP_PHONE}`}
+          onClick={() => trackPhoneClick("floating_mobile", { page_path: location })}
           className="flex items-center justify-center gap-3 w-full h-14 bg-[#EE6C4D] text-white font-black text-base active:bg-[#d62828] transition-colors shadow-[0_-4px_20px_rgba(238,108,77,0.4)]"
         >
           <Phone className="h-5 w-5" />

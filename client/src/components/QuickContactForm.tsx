@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone, Send, CheckCircle, Loader2 } from "lucide-react";
 import { APP_PHONE } from "@/const";
+import { trackFormStart, trackFormSubmit, trackFormSuccess, trackWhatsAppClick, trackPhoneClick } from "@/lib/analytics";
 
 interface FormData {
   nombre: string;
@@ -17,10 +18,32 @@ export default function QuickContactForm() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const formStartTime = useRef<number | null>(null);
+  const hasTrackedStart = useRef(false);
+
+  const handleFormFocus = () => {
+    if (!hasTrackedStart.current) {
+      trackFormStart("quick_contact_form");
+      formStartTime.current = Date.now();
+      hasTrackedStart.current = true;
+    }
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    // Calculate form completion time
+    const completionTime = formStartTime.current
+      ? Date.now() - formStartTime.current
+      : undefined;
+
+    // Track form submit
+    trackFormSubmit("quick_contact_form", {
+      problem_selected: formData.problema,
+      delivery_method: "whatsapp",
+      form_completion_time_ms: completionTime,
+    });
 
     // Simular envío (aquí conectarías con tu backend o servicio)
     await new Promise((resolve) => setTimeout(resolve, 1500));
@@ -39,6 +62,15 @@ export default function QuickContactForm() {
       "_blank"
     );
 
+    // Track WhatsApp click from form
+    trackWhatsAppClick("form_submit", {
+      page_type: window.location.pathname,
+      message_type: "service_specific",
+    });
+
+    // Track form success
+    trackFormSuccess("quick_contact_form");
+
     setIsSubmitting(false);
     setIsSubmitted(true);
 
@@ -46,6 +78,7 @@ export default function QuickContactForm() {
     setTimeout(() => {
       setIsSubmitted(false);
       setFormData({ nombre: "", telefono: "", problema: "" });
+      hasTrackedStart.current = false;
     }, 5000);
   };
 
@@ -87,6 +120,7 @@ export default function QuickContactForm() {
             required
             aria-label="Tu nombre"
             value={formData.nombre}
+            onFocus={handleFormFocus}
             onChange={(e) =>
               setFormData({ ...formData, nombre: e.target.value })
             }
@@ -164,6 +198,7 @@ export default function QuickContactForm() {
         <p className="text-sm text-gray-400 mb-3">¿Prefieres llamar tú?</p>
         <a
           href={`tel:${APP_PHONE}`}
+          onClick={() => trackPhoneClick("quick_contact_form")}
           className="inline-flex items-center gap-2 text-[#EE6C4D] font-bold hover:underline"
         >
           <Phone className="h-4 w-4" />

@@ -7,6 +7,7 @@ import { useDynamicPricing, getPricingText } from "@/hooks/useDynamicPricing";
 import PricingWarningBanner from "@/components/PricingWarningBanner";
 import WeatherWarningBanner from "@/components/WeatherWarningBanner";
 import WeatherTopBar from "@/components/WeatherTopBar";
+import { trackPhoneClick, trackNavigationClick, trackMenuToggle } from "@/lib/analytics";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -220,6 +221,7 @@ export default function Header() {
 
               <a
                 href={`tel:${APP_PHONE}`}
+                onClick={() => trackPhoneClick("header")}
                 aria-label={`Llamar a ${APP_BUSINESS_NAME} al ${APP_PHONE_DISPLAY}`}
                 className="flex justify-center gap-2 items-center shadow-xl text-sm md:text-base bg-white backdrop-blur-md font-bold isolation-auto border-[#EE6C4D] before:absolute before:w-full before:transition-all before:duration-500 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#EE6C4D] hover:text-[#293241] before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-500 relative z-10 px-4 py-2.5 overflow-hidden border-2 rounded-full group text-[#293241]"
               >
@@ -240,7 +242,10 @@ export default function Header() {
               {/* Mobile Toggle */}
               <button
                 className="lg:hidden p-2 text-gray-800 hover:text-[#EE6C4D] transition-colors"
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                onClick={() => {
+                  setMobileMenuOpen(!mobileMenuOpen);
+                  trackMenuToggle(mobileMenuOpen ? "close" : "open");
+                }}
                 aria-label={mobileMenuOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
                 aria-expanded={mobileMenuOpen}
               >
@@ -318,7 +323,7 @@ export default function Header() {
                   <p className="text-4xl font-black italic">{currentPrice}€</p>
                 </div>
                 <Button asChild className="bg-[#EE6C4D] hover:bg-[#d85c3d] text-white font-black py-6 rounded-2xl">
-                  <a href={`tel:${APP_PHONE}`} className="flex items-center justify-center gap-3">
+                  <a href={`tel:${APP_PHONE}`} onClick={() => trackPhoneClick("header_mobile")} className="flex items-center justify-center gap-3">
                     <Phone className="h-5 w-5" />
                     Llamar Urgente
                   </a>

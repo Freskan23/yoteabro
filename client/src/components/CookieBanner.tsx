@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 import { Link } from "wouter";
+import { trackCookieConsent } from "@/lib/analytics";
 
 export default function CookieBanner() {
   const [showBanner, setShowBanner] = useState(false);
@@ -15,11 +16,13 @@ export default function CookieBanner() {
 
   const acceptCookies = () => {
     localStorage.setItem("cookie-consent", "accepted");
+    trackCookieConsent("accepted");
     setShowBanner(false);
   };
 
   const rejectCookies = () => {
     localStorage.setItem("cookie-consent", "rejected");
+    trackCookieConsent("rejected");
     setShowBanner(false);
   };
 
