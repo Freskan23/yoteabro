@@ -24,6 +24,9 @@ export const GMB_URL = "https://www.google.com/maps?cid=5097645925446451796";
 export const GMB_REVIEWS_URL = "https://www.google.com/search?hl=es-ES&gl=es&q=YoteaBRO+-+Cerrajeros+Chamart%C3%ADn+24+horas,+Av.+de+Alberto+Alcocer,+43,+Chamart%C3%ADn,+28016+Madrid&ludocid=5097645925446451796&lsig=AB86z5WVCLEoZ09Cn4wRlahwmI_8#lrd=0xd4229007b93f6d7:0x46be79f5f0f40254,3";
 export const GMB_EMBED_URL = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.7403445743757!2d-3.6801481999999996!3d40.45888360000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229007b93f6d7%3A0x46be79f5f0f40254!2sYoteaBRO%20-%20Cerrajeros%20Chamart%C3%ADn%2024%20horas!5e0!3m2!1ses!2ses!4v1770509400511!5m2!1ses!2ses";
 
+// Google Analytics 4
+export const GA4_MEASUREMENT_ID = "G-8L4DF6XVMG";
+
 // Generate login URL at runtime so redirect URI reflects the current origin.
 export const getLoginUrl = () => {
   const oauthPortalUrl = import.meta.env.VITE_OAUTH_PORTAL_URL;
